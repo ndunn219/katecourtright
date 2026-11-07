@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Compare the migration with the accepted capture, independently of templates."""
+from collections import Counter
 import hashlib
 import json
 from pathlib import Path
@@ -62,11 +63,16 @@ COPY_REPLACEMENTS = {
     )],
 }
 
-# Redesign issue #11 rebuilt these routes' copy into structured components, so
-# text order changed. Every original word (except the retired connective
-# labels) must still appear, and every original link is still checked below.
+# The redesign rebuilt these routes into structured components, so text order
+# changed. Every original word must still appear at least as many times as in
+# the capture, except the listed retired labels, headings and typo fixes.
+# Every original link is still checked below.
 RESTRUCTURED = {
+    # #11: "Available at:" labels became format headings.
     '/short-stories-novellas/': {'available', 'at', 'for', 'download', '|'},
+    # #12: "elecronic" typo fixed; "Cemetery of First Pages for Hello, Honeymoon"
+    # became an eyebrow plus heading. Excerpts moved into <details>.
+    '/works-in-progress/': {'elecronic', 'for'},
 }
 
 
@@ -141,7 +147,8 @@ for p in inventory:
         for old, new in replacements:
             expected_text = expected_text.replace(compact(old), compact(new))
         if route in RESTRUCTURED:
-            missing = set(words(block.text())) - set(words(main(actual).text())) - RESTRUCTURED[route]
+            available = Counter(words(main(actual).text()))
+            missing = {w for w, n in Counter(words(block.text())).items() if available[w] < n} - RESTRUCTURED[route]
             assert not missing, (route, 'restructured copy lost words', missing)
         else:
             assert expected_text in actual_text, (route, 'missing original text', block.text()[:120])

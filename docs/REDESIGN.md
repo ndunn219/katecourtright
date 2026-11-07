@@ -22,3 +22,10 @@ The November 2026 redesign (tracking issue #17) replaces the Squarespace-parity 
 - `/about-late/` is now its own template (in `src/about.njk`) instead of the `split-page` variant, which was removed. The bio is unchanged but split into a lede and two paragraphs.
 - The new facts row (Writes / Lives / First story, a `<dl>`) only restates the bio. "Bookbub" is now capitalized "BookBub", matching the service. Both changes are recorded as an approved replacement in `check_migration.py`.
 - The Keep reading section links to Books, Works in Progress and Musings.
+
+## Works in Progress (#12)
+
+- The page keeps **all** of its text. A word-count comparison of the source before and after the change found only two words missing: the typo "elecronic", now "electronic", and the "for" in the old heading "Cemetery of First Pages for Hello, Honeymoon". That heading became the eyebrow "Hello, Honeymoon" above the heading "Cemetery of First Pages". `check_migration.py` enforces this with word counts.
+- The pull quote "A story does need to delight me before I can call it done." repeats a sentence from the text. It is `aria-hidden` so screen readers don't read it twice.
+- Each first page and the Shakespeare in the Glen chapter is a native `<details>`. The summary shows the title, a status tag and a chevron. The italic one-line preview (the excerpt's first sentence) sits inside the summary so it shows while the page is closed, and it is hidden when open. The original status "July 2023 Still Breathing" reads "Still breathing · July 2023". The breathing page is open by default and ends with a link to Contact.
+- Section headings have `id`s (`hello-honeymoon`, `cemetery-of-first-pages`, `shakespeare-in-the-glen`, plus `hello-friends` on the intro) for the sticky "On this page" list, which is hidden at ≤1000px. No scroll-spy JavaScript was added, so the list has no current-section state.
