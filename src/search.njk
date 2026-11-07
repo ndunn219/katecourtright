@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+title: Search
+permalink: /search/
+sitemap: false
+---
+<h1>Explore the site</h1>
+<p>Browse Kate’s stories, works in progress, and Musings below.</p>
+<ul>
+{% for item in navigation %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}
+</ul>
+{% include "partials/archive-links.njk" %}
+{% set archivePosts = collections.posts %}
+{% include "partials/post-list.njk" %}

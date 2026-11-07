@@ -130,3 +130,11 @@ blockquote { margin: 2em 0; border-left: 2px solid #d8e0e1; padding-left: 28px; 
   .site-footer { padding-top: 50px; padding-bottom: 50px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.archive-content .blog-grid { padding: 0; }
+.archive-links { margin-bottom: 50px; }
+.archive-links ul { display: flex; flex-wrap: wrap; gap: 12px 24px; list-style: none; padding: 0; }
+.archive-links a, .post-meta a, .post-categories a { border-bottom: 1px solid #d8e0e1; }
+.archive-links a[aria-current] { color: var(--ink); font-weight: 700; }
+.reading-page .page-copy { max-width: 950px; margin: auto; }
+.download-cover { width: 320px; margin: 36px auto; }

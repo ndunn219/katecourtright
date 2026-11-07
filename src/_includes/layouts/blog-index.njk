@@ -7,12 +7,10 @@ layout: layouts/base.njk
     <img src="/assets/images/musings-beach.webp" alt="A sandy path between fences leading to the sea" width="1000" height="563">
     <div class="blog-intro-copy prose">{{ content | safe }}</div>
   </div>
-  <div class="blog-grid page-content">
-    {% for post in posts %}
-    <article>
-      <p class="post-date"><time datetime="{{ post.date }}">{{ post.date | readableDate }}</time></p>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </article>
-    {% endfor %}
+  <div class="page-content archive-content">
+    {% include "partials/archive-links.njk" %}
+    {% set archivePosts = collections.posts %}
+    {% include "partials/post-list.njk" %}
   </div>
+  <script src="/assets/js/author-filter.js" defer></script>
 </main>

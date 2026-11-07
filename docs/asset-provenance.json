@@ -70,5 +70,11 @@
     "source": "reference/squarespace/2026-11-07/images/4f32f7c6e864--January-mid-newsletter-2023.jpg",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg",
     "sha256": "cf3ff159a9ad189281ba1299bc5caa7b3b15d0707d761d16f628e58d157b3e01"
+  },
+  {
+    "file": "src/assets/images/first-impressions-cover.webp",
+    "source": "reference/squarespace/2026-11-07/images/b8a43ca7467e--e-Book-cover-First-Impressions.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg",
+    "sha256": "268903a66165615a43e4f04b80bc3b41b3893f61e9418ac370e5a7c7cf65473a"
   }
 ]

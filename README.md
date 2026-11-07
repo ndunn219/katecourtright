@@ -2,7 +2,7 @@
 
 Recreate [katecourtright.com](https://katecourtright.com) with Eleventy and GitHub Pages, preserving the existing appearance and content except for the contact form and newsletter signup.
 
-Implementation is tracked in [issues #1–#6](https://github.com/ndunn219/katecourtright/issues). The Eleventy foundation for issue #2 is implemented with shared layouts, custom CSS, and eight representative pages. Full content migration, remaining behavior, and deployment are later steps. The original Squarespace site has not been changed.
+Implementation is tracked in [issues #1–#6](https://github.com/ndunn219/katecourtright/issues). The Eleventy foundation and issue #3 content migration are implemented: 34 HTML pages, all 14 Musings posts, category/author archives, retained legacy content, and both EPUB downloads. The original Squarespace site has not been changed. See [migration decisions and verification](docs/CONTENT-MIGRATION.md) for URL handling and remaining work.
 
 ## Run and build
 
@@ -18,7 +18,7 @@ npm run build:preview  # GitHub repository path /katecourtright/
 npm run check          # Build and check both paths; finishes with the root build
 ```
 
-Build commands clean `_site/` first. Publish **only the contents of `_site/`**, never this checkout or `reference/`. The generated `.nojekyll` marker supports GitHub Pages. No deployment workflow, domain change, or Sites hosting is included in issue #2.
+Build commands clean `_site/` first. Publish **only the contents of `_site/`**, never this checkout or `reference/`. The generated `.nojekyll` marker supports GitHub Pages. No deployment workflow, domain change, or hosting change is included here.
 
 To develop with the repository prefix, use `SITE_PATH_PREFIX=/katecourtright/ npm run dev` and open `http://localhost:8080/katecourtright/`. Other prefixes can be set with `SITE_PATH_PREFIX=/another-path/ npm run build`. Restart the dev server when changing environment variables. `.env.example` documents the variables; `.env` files are not loaded automatically.
 
@@ -32,8 +32,13 @@ The [Eleventy HTML Base plugin](https://www.11ty.dev/docs/plugins/html-base/) ap
 | `src/_includes/partials/` | Shared header, footer, book card, and reader links |
 | `src/_data/navigation.json` | Desktop and mobile navigation from one list |
 | `src/_data/site.js` | Site metadata and owner-controlled font configuration |
-| `src/_data/books.json`, `posts.json` | Book cards and representative blog index metadata |
+| `src/_data/books.json` | Book cards and retailer links |
 | `src/*.njk`, `src/posts/*.njk` | Page content and front matter |
+| `src/authors.njk`, `src/categories.njk` | Static archives generated from post metadata |
+| `eleventy.config.js` | Post ordering, archive collections, shared filters, and path-prefix configuration |
+| `src/assets/js/author-filter.js` | Compatibility for old `?author=` links |
+| `src/static/s/` | EPUB files at their original download paths |
+| `src/sitemap.njk` | Canonical production sitemap |
 | `src/_includes/content/welcome.njk` | Shared content for `/` and `/welcome/` |
 | `src/assets/css/site.css` | Typography, colors, responsive grids, hero crops, and menu styling |
 | `src/assets/css/fonts.css` | Optional licensed self-hosted font declarations |
@@ -49,15 +54,17 @@ permalink: /page-path/
 ---
 ```
 
-The standard layout accepts an optional `image` object (`src`, `alt`, `width`, `height`), `pageClass`, and `hero`/`shortHero` flags. Use the existing About, Contact, and Works pages as examples. For blog posts, set `published` explicitly and keep the legacy `permalink` independent of that date; use `previousPost` and/or `nextPost` objects (`url`, `title`) for adjacent navigation. Updating a shared layout updates every page that uses it.
+The standard layout accepts an optional `image` object (`src`, `alt`, `width`, `height`), `pageClass`, and `hero`/`shortHero` flags. Use the existing About, Contact, and Works pages as examples. `documentTitle` preserves a legacy browser title when it differs from the visible heading; `canonicalPath` overrides the canonical path for aliases such as `/welcome/`.
+
+Each blog post is an editable HTML body in a `.njk` file with JSON front matter. Set `tags: ["posts"]`, `published` (an explicit `YYYY-MM-DD` string), `author`, `authorId`, `categories` (an array, possibly empty), `title`, and `permalink`. Keep the legacy permalink independent of the displayed publication date. Collections generate the index, category and author archives, and adjacent-post navigation from this single source; there is no separate post index to synchronize. Updating a shared layout updates every page that uses it. See [content editing](docs/CONTENT-MIGRATION.md#editing-and-verification) for a complete example.
 
 ## Current verification and remaining work
 
-`npm run check` validates the internal link graph, anchor targets, CSS asset references, image metadata/types, source attribution, publication date, representative grids, and archive exclusion under both hosting paths. It does not fetch external destinations or prove visual equivalence.
+`npm run check` validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links. It does not fetch external destinations or prove visual equivalence. Builds need only `src/`; the migration checks also read `reference/`.
 
 Freight fonts need an owner-controlled Adobe Fonts project ID or separately licensed webfonts. The build currently warns and uses explicitly documented Georgia/Arial system fallbacks. See [font setup](docs/FONTS.md). Browser verification was skipped at the user's request after browser access failed; [layout verification notes](docs/LAYOUT-VERIFICATION.md) list the reference comparisons and remaining differences.
 
-This is a migration preview with `noindex, nofollow`. The 13 posts not yet migrated, the privacy policy, and retained legacy content links still lead to the live site; see the exact scope in the verification notes. Complete later migration issues and review `src/_data/site.js` before public launch.
+This remains a migration preview with `noindex, nofollow`. Content links now resolve locally. Search currently supplies a browseable directory at its legacy URL; query search and remaining interactions belong to issue #5. Complete the issue #4 form-removal/policy audit, remaining behavior, fonts, and deployment review before enabling indexing in `src/_data/site.js`.
 
 ## Source capture
 

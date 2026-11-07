@@ -3,9 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if title and title != site.title %}{{ title }} — {% endif %}{{ site.title }}</title>
+  <title>{% if documentTitle %}{{ documentTitle }}{% else %}{% if title and title != site.title %}{{ title }} — {% endif %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
   <meta name="robots" content="{{ site.robots }}">
+  <link rel="canonical" href="{{ (canonicalPath or page.url) | canonicalUrl }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ (canonicalPath or page.url) | canonicalUrl }}">
+  <meta property="og:type" content="{% if published %}article{% else %}website{% endif %}">
+  <meta name="twitter:card" content="summary">
+  {% if published %}<meta property="article:published_time" content="{{ published }}">
+  <meta name="author" content="{{ author }}">{% endif %}
   {% if site.adobeProjectId %}<link rel="stylesheet" href="https://use.typekit.net/{{ site.adobeProjectId }}.css">{% endif %}
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="stylesheet" href="/assets/css/fonts.css">

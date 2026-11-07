@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.authors
+  size: 1
+  alias: archive
+  addAllPagesToCollections: true
+permalink: "{{ archive.url }}"
+eleventyComputed:
+  title: "{{ archive.name }} — Musings"
+---
+<main id="main" class="page-content archive-content">
+  <h1>Musings by {{ archive.name }}</h1>
+  {% include "partials/archive-links.njk" %}
+  {% set archivePosts = archive.posts %}
+  {% include "partials/post-list.njk" %}
+</main>

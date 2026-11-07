@@ -8,11 +8,13 @@ layout: layouts/base.njk
       <h1>{{ title }}</h1>
     </header>
     <div class="prose post-body">{{ content | safe }}</div>
-    <p class="post-meta">{{ author }} · <time datetime="{{ published }}">{{ published | readableDate }}</time></p>
+    <p class="post-meta"><a href="{{ authorId | authorUrl }}">{{ author }}</a> · <time datetime="{{ published }}">{{ published | readableDate }}</time></p>
+    {% if categories.length %}<p class="post-categories">{% for category in categories %}<a href="{{ category | categoryUrl }}">{{ category }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
   </article>
   <nav class="post-navigation" aria-label="Post navigation">
     <a href="/musings/">All musings</a>
-    {% if previousPost %}<a href="{{ previousPost.url }}">Previous<br>{{ previousPost.title }}</a>{% endif %}
-    {% if nextPost %}<a href="{{ nextPost.url }}">Next<br>{{ nextPost.title }} →</a>{% endif %}
+    {% set adjacent = collections.posts | adjacentPosts(page.url) %}
+    {% if adjacent.newer %}<a href="{{ adjacent.newer.url }}">Newer<br>{{ adjacent.newer.data.title }}</a>{% endif %}
+    {% if adjacent.older %}<a href="{{ adjacent.older.url }}">Older<br>{{ adjacent.older.data.title }} →</a>{% endif %}
   </nav>
 </main>

@@ -1,11 +1,37 @@
 import { HtmlBasePlugin } from '@11ty/eleventy';
 
+const postsByDate = collection => collection.getFilteredByTag('posts')
+  .sort((a, b) => b.data.published.localeCompare(a.data.published));
+const categoryUrl = name => `/musings/category/${encodeURIComponent(name).replaceAll('%20', '+')}/`;
+const authorUrl = id => `/musings/author/${encodeURIComponent(id)}/`;
+
 export default function (config) {
   config.addPlugin(HtmlBasePlugin);
   config.addPassthroughCopy('src/assets');
   config.addPassthroughCopy({ 'src/static': '/' });
   config.watchIgnores.add('reference/**');
   config.setNunjucksEnvironmentOptions({ autoescape: true });
+  config.addCollection('posts', postsByDate);
+  config.addCollection('categories', collection => {
+    const posts = postsByDate(collection);
+    return [...new Set(posts.flatMap(post => post.data.categories))].sort().map(name => ({
+      name, url: categoryUrl(name), posts: posts.filter(post => post.data.categories.includes(name)),
+    }));
+  });
+  config.addCollection('authors', collection => {
+    const posts = postsByDate(collection);
+    return [...new Set(posts.map(post => post.data.authorId))].map(id => ({
+      id, name: posts.find(post => post.data.authorId === id).data.author,
+      url: authorUrl(id), posts: posts.filter(post => post.data.authorId === id),
+    }));
+  });
+  config.addFilter('categoryUrl', categoryUrl);
+  config.addFilter('authorUrl', authorUrl);
+  config.addFilter('adjacentPosts', (posts, url) => {
+    const index = posts.findIndex(post => post.url === url);
+    return { newer: posts[index - 1], older: posts[index + 1] };
+  });
+  config.addFilter('canonicalUrl', path => new URL(path, 'https://katecourtright.com').href);
   config.addFilter('readableDate', value => new Intl.DateTimeFormat('en-US', {
     month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC',
   }).format(new Date(value)));

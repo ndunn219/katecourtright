@@ -1,0 +1,236 @@
+[
+  {
+    "source": "/",
+    "destination": "/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/about-late",
+    "destination": "/about-late/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/arc",
+    "destination": "/arc/",
+    "status": "migrated",
+    "note": "Invitation text retained; signup omitted and its unavailability stated. Issue #4 owns the final form-removal audit."
+  },
+  {
+    "source": "/contact",
+    "destination": "/contact/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/first-impressions",
+    "destination": "/first-impressions/",
+    "status": "migrated",
+    "note": "Retain content, linked book cover, and both EPUB downloads; keep out of primary navigation."
+  },
+  {
+    "source": "/listing-01-hatch",
+    "destination": null,
+    "status": "retired",
+    "note": "Sample real-estate content, unrelated to the author site; use the shared GitHub Pages 404."
+  },
+  {
+    "source": "/listing-02-hatch",
+    "destination": "/listing-02-hatch/",
+    "status": "migrated",
+    "note": "Retain Fire Boy excerpt and listing-02-info fragment, preserve document title, repair empty Read the Book link to the library."
+  },
+  {
+    "source": "/listing-03-hatch",
+    "destination": null,
+    "status": "retired",
+    "note": "Sample real-estate content, unrelated to the author site; use the shared GitHub Pages 404."
+  },
+  {
+    "source": "/listing-04-hatch",
+    "destination": null,
+    "status": "retired",
+    "note": "Sample real-estate content, unrelated to the author site; use the shared GitHub Pages 404."
+  },
+  {
+    "source": "/musings",
+    "destination": "/musings/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2022/3/1/some-of-my-favorite-romantic-moments-in-fiction",
+    "destination": "/musings/2022/3/1/some-of-my-favorite-romantic-moments-in-fiction/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves",
+    "destination": "/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/4/14/reflections-on-the-joy-and-power-of-stories",
+    "destination": "/musings/2023/4/14/reflections-on-the-joy-and-power-of-stories/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/4/14/what-my-enneagram-number-reveals-about-my-writing-process",
+    "destination": "/musings/2023/4/14/what-my-enneagram-number-reveals-about-my-writing-process/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/4/14/why-i-didnt-stop-writing-even-when-i-seriously-thought-about-it",
+    "destination": "/musings/2023/4/14/why-i-didnt-stop-writing-even-when-i-seriously-thought-about-it/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/6/30/kristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process",
+    "destination": "/musings/2023/6/30/kristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process",
+    "destination": "/musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/6/30/the-creative-path-to-avoiding-burnout",
+    "destination": "/musings/2023/6/30/the-creative-path-to-avoiding-burnout/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/6/30/the-creative-process-of-late-bloomers",
+    "destination": "/musings/2023/6/30/the-creative-process-of-late-bloomers/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/6/30/the-joys-of-writing-longhand",
+    "destination": "/musings/2023/6/30/the-joys-of-writing-longhand/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/7/31/where-am-i-on-the-spectrum-of-plotting-vs-pantsing",
+    "destination": "/musings/2023/7/31/where-am-i-on-the-spectrum-of-plotting-vs-pantsing/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/8/8/for-this-season-of-gratitude-ten-things-im-grateful-for",
+    "destination": "/musings/2023/8/8/for-this-season-of-gratitude-ten-things-im-grateful-for/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/9/1/reconnecting-to-playtime",
+    "destination": "/musings/2023/9/1/reconnecting-to-playtime/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/2023/9/1/the-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my",
+    "destination": "/musings/2023/9/1/the-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/category/Musings+on+Creativity",
+    "destination": "/musings/category/Musings+on+Creativity/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/category/My+Sharing+Shelf",
+    "destination": "/musings/category/My+Sharing+Shelf/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/category/Storytelling+that+Touches+the+Heart",
+    "destination": "/musings/category/Storytelling+that+Touches+the+Heart/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings/category/The+Writing+Journey",
+    "destination": "/musings/category/The+Writing+Journey/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/musings?author=536510cee4b043dbe028347e",
+    "destination": "/musings/author/536510cee4b043dbe028347e/",
+    "status": "query-alias",
+    "note": "Musings recognizes the original author query and opens this static archive; visible author links also work without JavaScript."
+  },
+  {
+    "source": "/musings?author=5c8160afdb7926584fdf6899",
+    "destination": "/musings/author/5c8160afdb7926584fdf6899/",
+    "status": "query-alias",
+    "note": "Musings recognizes the original author query and opens this static archive; visible author links also work without JavaScript."
+  },
+  {
+    "source": "/newsletter",
+    "destination": "/newsletter/",
+    "status": "retirement-notice",
+    "note": "Empty signup page retired; the old path explains signup removal and links to Musings."
+  },
+  {
+    "source": "/privacy-policy",
+    "destination": "/privacy-policy/",
+    "status": "migrated",
+    "note": "Preserve original policy; review references to removed services before launch in issue #4/#6."
+  },
+  {
+    "source": "/schedule-appointment-hatch",
+    "destination": null,
+    "status": "retired",
+    "note": "Already 404 in the source; unused sample appointment URL remains 404."
+  },
+  {
+    "source": "/search",
+    "destination": "/search/",
+    "status": "browse-fallback",
+    "note": "Retained as a static directory of pages/posts; query search is explicitly deferred to issue #5."
+  },
+  {
+    "source": "/short-stories-novellas",
+    "destination": "/short-stories-novellas/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/welcome",
+    "destination": "/welcome/",
+    "status": "migrated",
+    "note": "Homepage alias; canonical URL is the root."
+  },
+  {
+    "source": "/works-in-progress",
+    "destination": "/works-in-progress/",
+    "status": "migrated",
+    "note": "Preserved at the original path with a trailing slash."
+  },
+  {
+    "source": "/s/First-Impressions-Generic.epub",
+    "destination": "/s/First-Impressions-Generic.epub",
+    "status": "download",
+    "note": "Byte-identical EPUB from the source capture."
+  },
+  {
+    "source": "/s/First-Impressions-Kindle.epub",
+    "destination": "/s/First-Impressions-Kindle.epub",
+    "status": "download",
+    "note": "Byte-identical EPUB from the source capture."
+  }
+]
