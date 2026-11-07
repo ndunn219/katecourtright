@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import { HtmlBasePlugin } from '@11ty/eleventy';
 import { writeSearchIndex } from './scripts/search-index.mjs';
 
@@ -43,6 +44,12 @@ export default function (config) {
   config.addFilter('adjacentPosts', (posts, url) => {
     const index = posts.findIndex(post => post.url === url);
     return { newer: posts[index - 1], older: posts[index + 1] };
+  });
+  // Responsive candidates: the resized variants from scripts/resize_images.py
+  // that exist, plus the original at its intrinsic width.
+  config.addFilter('srcset', (src, width) => {
+    const variants = [800, 1600].filter(w => w < width && existsSync(`src${src.replace(/\.webp$/, `-w${w}.webp`)}`));
+    return [...variants.map(w => `${src.replace(/\.webp$/, `-w${w}.webp`)} ${w}w`), `${src} ${width}w`].join(', ');
   });
   config.addFilter('canonicalUrl', path => new URL(path, 'https://katecourtright.com').href);
   config.addFilter('encodeURIComponent', encodeURIComponent);

@@ -55,3 +55,17 @@ The November 2026 redesign (tracking issue #17) replaces the Squarespace-parity 
   - **No contact/newsletter/sign-up forms:** `check_forms.py` allows only the two search forms (`/search/` and `/musings/`), both of which submit a query to the local search page.
 - No Amazon affiliate tag was kept (#11), so the policy has no Amazon cookie line. If the tag is restored, add one.
 - `check_migration.py` treats this route as **replaced**: it requires the new copy and rejects the retired analytics language, instead of comparing the captured text.
+
+## Clean-up and verification (#16)
+
+- **Secondary pages:** `layouts/page.njk` is now a single 760px reading column used by ARC, First Impressions (ARC copy), newsletter, search, 404 and the legacy Fire Boy listing. It no longer has image, hero, or `pageClass` options. Inline `text-align` styles were removed from the ARC pages. The search form and results use the new pill and list styles.
+- **Removed:**
+  - Styles for the old layout: hero-overlay header, `.nav-secondary`, `.split-page`, `.home-intro`, `.hero`/`.hero--short`, scroll indicator, old blog grid and book styles, and `display-copy`.
+  - Scripts: parallax and scroll-indicator code, and `author-filter.js`.
+  - Partials: `reader-links.njk`.
+  - Images: `home-background.webp`, together with its provenance entry.
+  - A scan found no remaining class in `site.css` that templates or output don't use.
+- **Kept:** the legacy home anchors `#intro` and `#reviews` stay on the new home sections.
+- **Performance:** responsive WebP variants (`scripts/resize_images.py`) with `srcset`/`sizes` on all photos and covers; explicit dimensions; lazy loading below the fold; two font preloads.
+- **Verification:** results are in [LAYOUT-VERIFICATION.md](LAYOUT-VERIFICATION.md). `scripts/browser-qa.cjs` repeats the browser checks.
+- **Hand-off:** for #6, "compare against the Squarespace references" now means "compare against the redesign canvas".

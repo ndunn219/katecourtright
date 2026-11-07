@@ -1,9 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-<main id="main">
-  <div id="page-content" class="page-content {{ pageClass or '' }}">
-    {% if image %}<img class="page-image" src="{{ image.src }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}">{% endif %}
-    <div class="page-copy prose">{{ content | safe }}</div>
-  </div>
+{# Standard reading layout for secondary pages (ARC, newsletter, search, 404, legacy pages). #}
+<main id="main" class="wrap">
+  <div class="page-copy prose">{{ content | safe }}</div>
 </main>

@@ -15,7 +15,7 @@
 
 {% macro bookCard(book) %}
 <article class="book-card">
-  <img src="{{ book.cover.src }}" alt="{{ book.cover.alt }}" width="{{ book.cover.width }}" height="{{ book.cover.height }}" loading="lazy">
+  <img src="{{ book.cover.src }}" srcset="{{ book.cover.src | srcset(book.cover.width) }}" sizes="(max-width: 1000px) 45vw, 280px" alt="{{ book.cover.alt }}" width="{{ book.cover.width }}" height="{{ book.cover.height }}" loading="lazy">
   <h3>{{ book.title }}</h3>
   {% if book.subtitle %}<p class="book-subtitle">{{ book.subtitle }}</p>{% endif %}
   {{ bookFormats(book, true) }}

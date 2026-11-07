@@ -14,7 +14,7 @@ layout: layouts/base.njk
 
   <section class="featured-book" aria-labelledby="featured-book-title">
     <article class="wrap featured-book-grid">
-      <img class="featured-book-cover" src="{{ featured.cover.src }}" alt="{{ featured.cover.alt }}" width="{{ featured.cover.width }}" height="{{ featured.cover.height }}" fetchpriority="high">
+      <img class="featured-book-cover" src="{{ featured.cover.src }}" srcset="{{ featured.cover.src | srcset(featured.cover.width) }}" sizes="(max-width: 720px) 240px, 400px" alt="{{ featured.cover.alt }}" width="{{ featured.cover.width }}" height="{{ featured.cover.height }}" fetchpriority="high">
       <div>
         <p class="badge">Latest book</p>
         <h2 id="featured-book-title">{{ featured.title }}</h2>

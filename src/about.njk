@@ -9,7 +9,7 @@
 <main id="main">
   <section class="about-main">
     <div class="wrap about-grid">
-      <img class="about-photo" src="/assets/images/about-portrait.webp" alt="Kate Courtright" width="2500" height="2500" fetchpriority="high">
+      <img class="about-photo" src="/assets/images/about-portrait.webp" srcset="{{ '/assets/images/about-portrait.webp' | srcset(2500) }}" sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1240px) 40vw, 480px" alt="Kate Courtright" width="2500" height="2500" fetchpriority="high">
       <div class="about-copy">
         <p class="eyebrow">About</p>
         <h1>About Kate</h1>

@@ -1,60 +1,80 @@
-# Issue #2 implementation and verification
+# Layout verification (redesign)
 
-This document records the issue #2 baseline. Issue #3 subsequently migrated all posts and retained pages, made content links local, and added category/author archives, downloads, metadata, and legacy URL handling. See [CONTENT-MIGRATION.md](CONTENT-MIGRATION.md) for current content scope and verification; statements below about unmigrated content describe the earlier baseline.
+The site follows the November 2026 redesign canvas (<https://claude.ai/artifact/1YXR6qKXa53DZo98aNpWRh>, tracked in issue #17) rather than the original Squarespace layout. The earlier Squarespace-parity comparison no longer applies and was removed from this file. It is still in the git history, and the reference captures are in `reference/`. Content and URL decisions made during the redesign are in [REDESIGN.md](REDESIGN.md).
 
-Issue #4 completes the signup-copy audit and Contact/Newsletter/ARC decisions. See [FORM-REMOVAL.md](FORM-REMOVAL.md) for the current responsive CSS review and browser-access limitation; the historical old-URL follow-ups below are resolved there.
+## Design system
 
-Issue #5 subsequently implements independent search, menu focus management, scrolling effects, sharing links, and the platform-credit replacement. See [INTERACTIONS.md](INTERACTIONS.md) for current behavior and verification limits; behavior follow-ups below describe the earlier baseline.
+| Token | Value | Use |
+| --- | --- | --- |
+| `--ink` | `#3d6870` | Links, eyebrows, buttons |
+| `--ink-deep` | `#264950` | Headings, brand, footer background |
+| `--text` | `#3c4649` | Body text |
+| `--muted` | `#5b6669` | Secondary text and dates |
+| `--line` | `#d9e3e4` | Borders and dividers |
+| `--sea` | `#edf3f3` | Tinted sections, hover and current-page fills |
+| `--sand` | `#f7f4ee` | Musings intro, Cemetery of First Pages |
 
-## Scope
+- **Type:** Newsreader for display text and Source Sans 3 for body text, both self-hosted ([FONTS.md](FONTS.md)). Body is 18px/1.7 (17px at ≤720px). H1 is 58px, H2 42px and H3 25px (H1 38px and H2 32px at ≤720px).
+- **Layout:** the content wrapper is 1240px with 56px gutters (20px at ≤720px).
+- **Breakpoints:** ≤1000px collapses the menu and narrows grids; ≤720px is the phone layout. Plain media queries are used, not container queries.
+- **Components:** buttons are 48px pills. Retailer, share and social chips are 44px pills, slightly taller than the artboard's 40px to meet the 44px target-size rule.
 
-Implemented: Eleventy 3.1.8 with a lockfile, clean production builds, shared templates and navigation data, custom responsive CSS, configurable Adobe font embedding, path-prefix support, and developer documentation. Builds read only `src/` and do not depend on the source archive. Selected image copies are mapped in [asset-provenance.json](asset-provenance.json); the archive is unchanged.
+## Contrast (WCAG 2.x, computed November 7, 2026)
 
-Representative routes:
+| Foreground on background | Ratio | Result |
+| --- | --- | --- |
+| `--text` on white | 9.70:1 | AA/AAA |
+| `--muted` on white / `--sea` / `--sand` | 5.92 / 5.27 / 5.39:1 | AA |
+| `--ink` on white / `--sea` / `--sand` | 6.15 / 5.48 / 5.61:1 | AA |
+| White on `--ink` (buttons, badges, tags) | 6.15:1 | AA |
+| Footer text `#c9d8da` / `#b9cdd0` / headings `#a9c3c6` on `--ink-deep` | 6.66 / 5.91 / 5.26:1 | AA |
 
-- `/` and `/welcome/`: shared homepage content, bench hero, distinct homepage portrait, muted teal introduction background.
-- `/about-late/`: source biography, 7:5 portrait/text layout, stacked mobile layout.
-- `/short-stories-novellas/`: featured First Impressions banner, all four remaining covers, two-column book grid, source retailer/audio links.
-- `/works-in-progress/`: full-height railway hero and source long-form content, headings, and excerpts.
-- `/contact/`: short cropped hero, source invitation and reader links, no contact form.
-- `/musings/`: source introduction and 14 dated post cards to exercise the four-column desktop index.
-- `/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves/`: source post body, bold italic styling, attribution, explicit October 1 publication date, and adjacent-post navigation.
+The old body color `#7a7d7f` (which failed AA) is gone. White text on the home hero sits on a dark scrim, which is stronger on phones, where the text covers more of the photo.
 
-This selection supplies real content for layout work, not completion of issue #3. Thirteen post destinations and the next-post link still point to the live Squarespace site; privacy-policy and any retained legacy links also remain external until migrated. First Impressions downloads, ARC, categories, author archives, and other legacy destinations are outside this implementation. No archive content or scope decisions have been discarded.
+## Automated checks (November 7, 2026)
 
-## Reference review
+`npm run check` passed for the repository preview (`/katecourtright/`), production root and root preview builds. Each build had 34 HTML pages and 1,197 local links/assets, and the run covered:
 
-Source declarations in [DESIGN.md](../reference/squarespace/2026-11-07/DESIGN.md), original text blocks, and saved images informed the implementation. The saved reference images were visually inspected during this work; **the new site's rendered appearance has not been verified**.
+- **Link graph:** anchors, CSS URLs (including font files), image dimensions/types and `srcset` candidates, one `<main>` per page, and the indexing policy.
+- **Migration fidelity:** the 39 URL decisions, all 14 post bodies, dates, categories, archive membership/order, canonical URLs, sitemap and EPUB integrity. Approved redesign copy changes are listed explicitly in `scripts/check_migration.py`.
+- **Forms:** only the two local search forms exist; no signup remnants.
+- **Search and menu:** search behavior, menu focus/state logic, and the absence of parallax code.
+- **Fonts:** no third-party font hosts, every font file present as WOFF2, and the OFL license files deployed.
+- **Privacy-policy claims:** no cookie, storage or analytics code, and no inline or non-local scripts.
+- **Book data:** structured, with no HTML strings and no affiliate tag.
 
-| Reference inspected | Implementation |
-| --- | --- |
-| Home desktop top/full and mobile top/content | Full viewport bench crop, overlaid desktop branding, separate 70px mobile header, portrait/text introduction; source teal background retained despite the full-page capture artifact |
-| About desktop full and mobile full | Wide portrait at left, inset text at right, 34px column gap; mobile portrait above text |
-| Library desktop top and middle | Featured banner at 10/12 content width, two-column grid at 8/12 width, uncropped covers and large serif book titles |
-| Works desktop top | Full-height railway image and overlay header |
-| Contact desktop/mobile full | 214px desktop hero and 96px mobile image below the header; contact invitation retained |
-| Musings desktop top, posts, and bottom | Wide beach image, 8/12-width introduction, four-column dated grid; source-hidden author/category metadata remains in data |
-| Anna Quindlen desktop top | Uppercase date above 40px heading; bold italic body paragraphs |
+`python3 scripts/verify_capture.py` still validates the archived capture.
 
-Source typography, colors, heading sizes, 640px mobile breakpoint, and horizontal padding steps (150/64/48/36/20px) are encoded in CSS. The book grid stacks on mobile; the blog grid uses four, three, two, and one columns as space decreases. Intermediate column transitions are implementation choices pending rendered comparison.
+## Browser checks (headless Chromium, November 7, 2026)
 
-## Known differences and follow-ups
+`npm run build:preview && node scripts/browser-qa.cjs _site` (Playwright; not part of `npm run check`) passed with exit code 0:
 
-- **Fonts:** owner-controlled Freight fonts remain unavailable. Georgia/Arial fallbacks change wrapping and page lengths. See [FONTS.md](FONTS.md). Exact font loading/computed typography verification is still pending.
-- **Browser QA:** Chrome native access failed; the browser host was unavailable, and alternate browser access was not approved. The user explicitly requested skipping this check. No new-site screenshots, viewport measurements, overflow checks, keyboard interaction checks, or visual match claims are reported.
-- **Forms:** newsletter signup and its navigation entry, plus the contact form, are omitted per the migration brief. Footer/page heights consequently differ from the source. Old signup URL decisions remain for issue #4.
-- **Behavior:** native `<details>` provides a keyboard-operable mobile navigation disclosure without JavaScript. Its visual overlay is styled, but focus management and browser behavior still need review. Squarespace AJAX, parallax movement, index-navigation controls, sharing widgets, author/category filtering, and search are not reproduced here; behavior work remains for issue #5.
-- **Header/footer:** desktop branding wraps; mobile branding stays on one line. The secondary desktop Musings button is shown on hero headers and hidden on white headers, matching the inspected references. Removing Newsletter changes navigation wrapping. Source copyright and design/platform credits are retained; platform credit changes belong to issue #5.
-- **Content:** full migration and editorial verification remain for issue #3. The privacy link currently opens the original policy; no revised policy is invented. Pages are marked `noindex, nofollow` until migration and launch review are complete.
-- **Assets:** selected original WebP responses are copied with correct extensions, without new responsive derivatives. Image optimization can follow without changing the preserved archive.
+- **Horizontal overflow:** none on any of the 34 pages at 390, 768, 1024 or 1440px wide.
+- **Tap targets:** at 390px, every link, button, summary and input outside running text is at least 44px tall. Post items in the Musings lists use the whole row as the target. Inline links in paragraphs and the byline fall under the WCAG 2.5.8 inline exception.
+- **Keyboard:** a Tab pass on every page at 390 and 1440px found a visible focus indicator (2px `--ink` outline, 3px offset) at every stop. The skip link is the first stop.
+- **Menu and disclosures:** with JavaScript on and off, the mobile menu opens from the keyboard and focus moves into it. It closes with Escape (JS on) or by toggling its summary (JS off). The Cemetery of First Pages and the Musings "Why I write these" disclosures open and close with Enter and Space.
+- **Reduced motion:** with `prefers-reduced-motion: reduce`, the content fade is off and scrolling is `auto`. There are no parallax or scroll effects at all.
+- **Network and privacy:** visiting every page plus a search query made no request to any other host, set no cookies, and wrote nothing to `localStorage` or `sessionStorage`. Newsreader and Source Sans 3 (roman and italic) loaded from `/assets/fonts/`.
+- **Visual review:** full-page screenshots at 390 and 1440px were compared by eye with the artboards for Home, About, Books, Works in Progress, Musings, a post, Contact and Privacy, plus the secondary pages: search, ARC, First Impressions ARC copy, newsletter notice, 404, the legacy Fire Boy listing, and category/author archives.
 
-## Automated verification
+### Deliberate differences from the artboards
 
-On November 7, 2026:
+- **Chips:** retailer, share and social chips are 44px tall instead of 40px, for target size.
+- **Home hero:** the phone scrim is darker than the artboard's.
+- **Works in Progress:** every original paragraph is kept (the artboard shows a subset). The closed-page preview sits inside each `<summary>` so it shows while the page is closed. The "On this page" list has no scroll-tracked current state.
+- **Musings:** all of the intro text is kept inside "Why I write these" (the artboard abridges it), and topic chips follow the year list.
+- **Privacy and Contact:** the policy has no "draft" badge, and Contact has no email placeholder.
 
-- A clean `npm ci` from the lockfile succeeded (using the populated npm cache in offline mode).
-- `npm run check` built root and `/katecourtright/` variants successfully: eight pages and 146 local HTML links/assets checked in each variant.
-- The check also validates fragment targets, CSS asset URLs, image metadata/types, main landmarks, viewport declarations, date/author preservation, all 14 index cards, all five book cards, and archive/dependency exclusion from output.
-- Eleventy development mode successfully started at `http://localhost:8080/`; it was stopped after the user skipped browser QA. An HTTP/browser response was not independently confirmed.
+## Performance
 
-These checks verify generated artifacts, not pixel equivalence, external link availability, or font entitlement. Run `npm run check` after further template/content changes. Revisit desktop 1440×900 and mobile 390×844 rendering when browser access and licensed fonts are available.
+- Photos and covers have explicit `width`/`height`. Images below the fold use `loading="lazy"`, and the first image on each page uses `fetchpriority="high"`.
+- `scripts/resize_images.py` makes 800px and 1600px WebP variants, which the templates offer through `srcset`/`sizes`. For example, a book cover card now loads about 60–120 KB instead of up to 3.6 MB.
+- Only two font files are preloaded: Source Sans 3 Latin roman and Newsreader Latin roman.
+- The only JavaScript is the mobile menu enhancement (`site.js`) and the search page module.
+
+## Not verified here
+
+- Real touch devices and Safari/Firefox rendering.
+- Screen-reader output.
+- External destination availability.
+- The deployed GitHub Pages preview, after this branch is merged (see #6).

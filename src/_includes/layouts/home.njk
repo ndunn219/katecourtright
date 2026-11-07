@@ -5,8 +5,8 @@ bodyClass: home
 {% from "partials/book.njk" import bookFormats %}
 {% set featured = books | selectattr("featured") | first %}
 <main id="main">
-  <section class="home-hero" aria-labelledby="home-title">
-    <img src="/assets/images/whidbey-bench.webp" alt="A wooden bench beside a fence overlooking the water on Whidbey Island" width="2500" height="1875" fetchpriority="high">
+  <section id="intro" class="home-hero" aria-labelledby="home-title">
+    <img src="/assets/images/whidbey-bench.webp" srcset="{{ '/assets/images/whidbey-bench.webp' | srcset(2500) }}" sizes="100vw" alt="A wooden bench beside a fence overlooking the water on Whidbey Island" width="2500" height="1875" fetchpriority="high">
     <div class="home-hero-copy">
       <div class="wrap">
         <p class="eyebrow">Author of {{ featured.title }}</p>
@@ -19,9 +19,9 @@ bodyClass: home
     </div>
   </section>
 
-  <section class="home-welcome" aria-labelledby="home-welcome-title">
+  <section id="reviews" class="home-welcome" aria-labelledby="home-welcome-title">
     <div class="wrap home-welcome-grid">
-      <img class="home-portrait" src="/assets/images/home-portrait.webp" alt="Kate Courtright" width="2500" height="2500" loading="lazy">
+      <img class="home-portrait" src="/assets/images/home-portrait.webp" srcset="{{ '/assets/images/home-portrait.webp' | srcset(2500) }}" sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1240px) 40vw, 480px" alt="Kate Courtright" width="2500" height="2500" loading="lazy">
       <div>
         <p class="eyebrow" id="home-welcome-title">Welcome</p>
         {{ content | safe }}
@@ -35,7 +35,7 @@ bodyClass: home
 
   <section class="home-book" aria-labelledby="home-book-title">
     <div class="wrap home-book-grid">
-      <img class="home-book-image" src="{{ featured.banner.src }}" alt="{{ featured.banner.alt }}" width="{{ featured.banner.width }}" height="{{ featured.banner.height }}" loading="lazy">
+      <img class="home-book-image" src="{{ featured.banner.src }}" srcset="{{ featured.banner.src | srcset(featured.banner.width) }}" sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1240px) 55vw, 660px" alt="{{ featured.banner.alt }}" width="{{ featured.banner.width }}" height="{{ featured.banner.height }}" loading="lazy">
       <div>
         <p class="eyebrow">Latest book</p>
         <h2 id="home-book-title">{{ featured.title }}</h2>

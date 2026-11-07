@@ -9,7 +9,7 @@ layout: layouts/base.njk
         <h1><em>{{ heading }}</em></h1>
         <div class="musings-intro-copy">{{ content | safe }}</div>
       </div>
-      <img src="/assets/images/musings-beach.webp" alt="A sandy path between fences leading to the sea" width="1000" height="563" fetchpriority="high">
+      <img src="/assets/images/musings-beach.webp" srcset="{{ '/assets/images/musings-beach.webp' | srcset(1000) }}" sizes="(max-width: 720px) calc(100vw - 40px), 460px" alt="A sandy path between fences leading to the sea" width="1000" height="563" fetchpriority="high">
     </div>
   </section>
 
