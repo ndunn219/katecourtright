@@ -1,0 +1,8 @@
+[
+  { "label": "Welcome", "url": "/" },
+  { "label": "About Kate", "url": "/about-late/" },
+  { "label": "Short Stories & Novellas", "url": "/short-stories-novellas/" },
+  { "label": "Works In Progress", "url": "/works-in-progress/" },
+  { "label": "Contact", "url": "/contact/" },
+  { "label": "Musings", "url": "/musings/", "secondary": true }
+]

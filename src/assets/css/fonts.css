@@ -1,0 +1,5 @@
+/* Owner-controlled font setup. See docs/FONTS.md before changing this file.
+   Adobe hosting: set ADOBE_FONTS_PROJECT_ID at build time.
+   Licensed self-hosting: put WOFF2 files in assets/fonts and declare @font-face
+   here, with url('../fonts/...woff2') so both hosting paths work.
+   No Squarespace font binaries or generated Typekit kit are copied. */

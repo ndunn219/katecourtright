@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and title != site.title %}{{ title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="robots" content="{{ site.robots }}">
+  {% if site.adobeProjectId %}<link rel="stylesheet" href="https://use.typekit.net/{{ site.adobeProjectId }}.css">{% endif %}
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+</head>
+<body class="{{ bodyClass or '' }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "partials/header.njk" %}
+  {{ content | safe }}
+  {% include "partials/footer.njk" %}
+</body>
+</html>

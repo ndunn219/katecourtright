@@ -1,0 +1,74 @@
+[
+  {
+    "file": "src/assets/images/whidbey-bench.webp",
+    "source": "reference/squarespace/2026-11-07/images/77e132d761ab--bench-on-Whidby-Island.JPG",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563660277571-TURJASI9S08KLP5473U9/bench+on+Whidby+Island.JPG",
+    "sha256": "0f35921bdc79d1f5044c31eef3111a323ff294a732753eed8a769d7543c10948"
+  },
+  {
+    "file": "src/assets/images/home-portrait.webp",
+    "source": "reference/squarespace/2026-11-07/images/023431a85950--Kate-Author-Photo-4.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg",
+    "sha256": "a5a6359df89033cec7753d398fe6aeb8edb7cc882f0788226fad744dbaa8a02e"
+  },
+  {
+    "file": "src/assets/images/home-background.webp",
+    "source": "reference/squarespace/2026-11-07/images/efb41c3381f6--Untitled-1.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468792865049-VAA248EV8CDTG7TMWKSH/Untitled-1.jpg",
+    "sha256": "75267ba1158285c3a03c49b8f297da47cfba368134cf7fde21652d4eb8d7c106"
+  },
+  {
+    "file": "src/assets/images/about-portrait.webp",
+    "source": "reference/squarespace/2026-11-07/images/7151a010f74c--Kate-Author-Photo.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg",
+    "sha256": "56a7929810a676427a771e6e2734e13b63247863415f4ee3128a987b58b4bcad"
+  },
+  {
+    "file": "src/assets/images/contact-lake.webp",
+    "source": "reference/squarespace/2026-11-07/images/9fa7d9ec923a--IMG_0673.JPG",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563665092983-FJ7TC86S079MYIHMAP91/IMG_0673.JPG",
+    "sha256": "6b3e0bb1a12a2e06803bac40e356014196ab19ba7d684f0fd618e627a50497f9"
+  },
+  {
+    "file": "src/assets/images/works-landscape.webp",
+    "source": "reference/squarespace/2026-11-07/images/b69673153a9f--IMG_2312.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1604758013437-LCBKLD1UUMYN6S4VWX8D/IMG_2312.jpg",
+    "sha256": "c7fffd385ac0017003e9deea02932fe8c732e8b33f9f80709b22e6a20056ad55"
+  },
+  {
+    "file": "src/assets/images/first-impressions-banner.webp",
+    "source": "reference/squarespace/2026-11-07/images/c29e022091e9--The-book-First-Impressions_PROMO-banner-2-281-29.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg",
+    "sha256": "a4e547158bb6d37290fb0d461b89ab970c54f354b5e4611669003437605385ff"
+  },
+  {
+    "file": "src/assets/images/pinkie.webp",
+    "source": "reference/squarespace/2026-11-07/images/7775bd2cce11--e-Book-cover-Pinkie_updated.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg",
+    "sha256": "41d13162e973321e58996f5ee613a13c4b260599ecb8b0cd18046a61efa3edce"
+  },
+  {
+    "file": "src/assets/images/fire-boy.webp",
+    "source": "reference/squarespace/2026-11-07/images/d047f9a08d15--Fireboy-Cover-medium.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg",
+    "sha256": "d2263113e73c763b00b5b1e6b6d376aa84dd370a99afed931f4646c5a6c80bdf"
+  },
+  {
+    "file": "src/assets/images/former-things.webp",
+    "source": "reference/squarespace/2026-11-07/images/805f1625316f--e-Book-cover-Former-Things-final-draft-1.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg",
+    "sha256": "8c67499f846129549cf068165bcf40cb14d5feb37a5e17b98c430e6c292327c2"
+  },
+  {
+    "file": "src/assets/images/new-york.webp",
+    "source": "reference/squarespace/2026-11-07/images/288eb0ffeea2--e-Book-cover-It-s-Up-to-You-2C-New-York.png",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png",
+    "sha256": "9720fa150f19a20f8b015baff0da6253db692ab94afa5dd89722a9221ed6f6c8"
+  },
+  {
+    "file": "src/assets/images/musings-beach.webp",
+    "source": "reference/squarespace/2026-11-07/images/4f32f7c6e864--January-mid-newsletter-2023.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg",
+    "sha256": "cf3ff159a9ad189281ba1299bc5caa7b3b15d0707d761d16f628e58d157b3e01"
+  }
+]

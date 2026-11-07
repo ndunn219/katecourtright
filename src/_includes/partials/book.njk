@@ -1,0 +1,7 @@
+{% macro bookCard(book, featured) %}
+<article class="book{% if featured %} book--featured{% endif %}">
+  <img src="{{ book.image.src }}" alt="{{ book.image.alt }}" width="{{ book.image.width }}" height="{{ book.image.height }}"{% if not featured %} loading="lazy"{% endif %}>
+  <h2 class="book-title">{{ book.title }}{% if book.subtitle %}<br>{{ book.subtitle }}{% endif %}</h2>
+  <div class="book-links display-copy">{{ book.links | safe }}</div>
+</article>
+{% endmacro %}

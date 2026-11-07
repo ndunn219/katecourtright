@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+<main id="main" class="page-content blog-post">
+  <article>
+    <header>
+      <p class="post-date"><time datetime="{{ published }}">{{ published | readableDate }}</time></p>
+      <h1>{{ title }}</h1>
+    </header>
+    <div class="prose post-body">{{ content | safe }}</div>
+    <p class="post-meta">{{ author }} · <time datetime="{{ published }}">{{ published | readableDate }}</time></p>
+  </article>
+  <nav class="post-navigation" aria-label="Post navigation">
+    <a href="/musings/">All musings</a>
+    {% if previousPost %}<a href="{{ previousPost.url }}">Previous<br>{{ previousPost.title }}</a>{% endif %}
+    {% if nextPost %}<a href="{{ nextPost.url }}">Next<br>{{ nextPost.title }} →</a>{% endif %}
+  </nav>
+</main>

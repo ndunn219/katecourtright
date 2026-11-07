@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+hero: true
+bodyClass: home
+---
+<main id="main">
+  <section id="intro" class="hero" aria-label="A bench overlooking the water on Whidbey Island">
+    <img src="/assets/images/whidbey-bench.webp" alt="A wooden bench beside a fence overlooking the water on Whidbey Island" width="2500" height="1875" fetchpriority="high">
+    <a class="scroll-indicator" href="#reviews">Scroll<span aria-hidden="true"></span></a>
+  </section>
+  <section id="reviews" class="home-intro page-content">
+    <img class="home-portrait" src="/assets/images/home-portrait.webp" alt="Kate Courtright" width="2500" height="2500" loading="lazy">
+    <div class="prose">{{ content | safe }}</div>
+  </section>
+</main>
