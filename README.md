@@ -2,7 +2,7 @@
 
 Recreate [katecourtright.com](https://katecourtright.com) with Eleventy and GitHub Pages, preserving the existing appearance and content except for the contact form and newsletter signup.
 
-Implementation is tracked in [issues #1–#6](https://github.com/ndunn219/katecourtright/issues). The Eleventy foundation and issue #3 content migration are implemented: 34 HTML pages, all 14 Musings posts, category/author archives, retained legacy content, and both EPUB downloads. The original Squarespace site has not been changed. See [migration decisions and verification](docs/CONTENT-MIGRATION.md) for URL handling and remaining work.
+Implementation is tracked in [issues #1–#6](https://github.com/ndunn219/katecourtright/issues). The Eleventy foundation, issue #3 content migration, and issue #4 form-removal audit are implemented: 34 HTML pages, all 14 Musings posts, category/author archives, retained legacy content, and both EPUB downloads. The original Squarespace site has not been changed. See [migration decisions and verification](docs/CONTENT-MIGRATION.md) for URL handling and remaining work.
 
 ## Run and build
 
@@ -71,11 +71,11 @@ Each blog post is an editable HTML body in a `.njk` file with JSON front matter.
 
 ## Current verification and remaining work
 
-`npm run check` validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links. It does not fetch external destinations or prove visual equivalence. Builds need only `src/`; the migration checks also read `reference/`.
+`npm run check` validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links and audits generated HTML, JavaScript, and CSS for removed signup integrations and calls to action. See [form-removal decisions and verification](docs/FORM-REMOVAL.md). It does not fetch external destinations or prove visual equivalence. Builds need only `src/`; the migration checks also read `reference/`.
 
 Freight fonts need an owner-controlled Adobe Fonts project ID or separately licensed webfonts. The build currently warns and uses explicitly documented Georgia/Arial system fallbacks. See [font setup](docs/FONTS.md). Browser verification was skipped at the user's request after browser access failed; [layout verification notes](docs/LAYOUT-VERIFICATION.md) list the reference comparisons and remaining differences.
 
-This remains a migration preview with `noindex, nofollow`. Content links now resolve locally. Search currently supplies a browseable directory at its legacy URL; query search and remaining interactions belong to issue #5. Complete the issue #4 form-removal/policy audit, remaining behavior, fonts, and deployment review before enabling indexing in `src/_data/site.js`.
+This remains a migration preview with `noindex, nofollow`. Content links now resolve locally. Search currently supplies a browseable directory at its legacy URL; query search and remaining interactions belong to issue #5. Complete the remaining behavior, fonts, final service-policy review, and deployment review before enabling indexing in `src/_data/site.js`. Issue #4’s signup audit is complete; desktop/mobile browser QA remains unverified because browser access is unavailable.
 
 ## Source capture
 

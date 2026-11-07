@@ -15,13 +15,13 @@
     "source": "/arc",
     "destination": "/arc/",
     "status": "migrated",
-    "note": "Invitation text retained; signup omitted and its unavailability stated. Issue #4 owns the final form-removal audit."
+    "note": "Retain as an informational ARC page; replace the signup invitation with an explanation and unavailable-signup notice plus reading links. No signup form or submission code."
   },
   {
     "source": "/contact",
     "destination": "/contact/",
     "status": "migrated",
-    "note": "Preserved at the original path with a trailing slash."
+    "note": "Retain the page, hero, invitation, and original social/reader links. Contact form and submission code are absent; no replacement data collection."
   },
   {
     "source": "/first-impressions",
@@ -183,13 +183,13 @@
     "source": "/newsletter",
     "destination": "/newsletter/",
     "status": "retirement-notice",
-    "note": "Empty signup page retired; the old path explains signup removal and links to Musings."
+    "note": "Retire signup; serve a static notice at the old directory URL with a Musings link (200, no redirect). Exclude from navigation and sitemap."
   },
   {
     "source": "/privacy-policy",
     "destination": "/privacy-policy/",
     "status": "migrated",
-    "note": "Preserve original policy; review references to removed services before launch in issue #4/#6."
+    "note": "Issue #4 replaces the form/newsletter collection paragraph with current form availability and existing-email unsubscribe guidance. Remaining hosting, analytics, and font policy review belongs to launch issue #6."
   },
   {
     "source": "/schedule-appointment-hatch",

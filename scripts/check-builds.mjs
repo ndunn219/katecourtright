@@ -12,5 +12,6 @@ for (const prefix of ['/katecourtright/', '/']) {
   run(process.execPath, ['scripts/build.mjs'], env);
   run('python3', ['scripts/check_site.py', prefix], env);
   run('python3', ['scripts/check_migration.py', prefix], env);
+  run('python3', ['scripts/check_forms.py', prefix], env);
   run(process.execPath, ['scripts/check-author-filter.mjs'], env);
 }
