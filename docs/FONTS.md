@@ -1,32 +1,27 @@
-# Independent font configuration
+# Fonts
 
-Status: **owner-controlled fonts pending**. No Adobe project ID or licensed font files were supplied. No Squarespace kit or font binaries have been copied. Browser font loading and actual rendered faces have not been verified.
+Status: **self-hosted, open-source fonts** (redesign decision recorded November 7, 2026).
 
-The original declarations are preserved in `src/assets/css/site.css`:
+| Role | Family | Faces | CSS token |
+| --- | --- | --- | --- |
+| Display: headings, brand, ledes, excerpts | [Newsreader](https://github.com/productiontype/Newsreader) | Variable roman + italic, `opsz` and `wght` axes (200–800) | `--display: 'Newsreader', Georgia, serif` |
+| Body and interface | [Source Sans 3](https://github.com/adobe-fonts/source-sans) | Variable roman + italic, `wght` axis (200–900) | `--sans: 'Source Sans 3', system-ui, sans-serif` |
 
-| Family | Required faces |
-| --- | --- |
-| `freight-display-pro` | Light 300, Medium 500, plus italics and bold used by headings and book links |
-| `freight-sans-pro` | Regular 400, Medium 500, bold and italic; the representative post uses bold italic |
+The design uses Newsreader at 400–600 and Source Sans 3 at 400–700. Optical sizing (`opsz`) is applied automatically by browsers through `font-optical-sizing: auto`.
 
-Default preview stacks are `freight-display-pro, Georgia, serif` and `freight-sans-pro, Arial, sans-serif`. These are explicit temporary fallbacks, not a claim of design equivalence or an approved replacement. They change text widths, wrapping, page height, and perceived weight. Every build without the Adobe ID emits a font warning. No font setup details are placed in visitor-facing page content.
+## Files and licensing
 
-## Adobe Fonts
+- WOFF2 files live in `src/assets/fonts/newsreader/` and `src/assets/fonts/source-sans-3/`, copied unmodified from the Fontsource npm packages `@fontsource-variable/newsreader@5.3.0` (the `opsz` files, which include the weight axis) and `@fontsource-variable/source-sans-3@5.3.1` (the `wght` files).
+- Only the **Latin** and **Latin Extended** subsets are committed: four files per family (roman/italic × two subsets). `unicode-range` makes browsers fetch the Latin Extended files only for pages that use those characters.
+- Both families are licensed under the **SIL Open Font License 1.1**. The license text sits next to the files as `OFL.txt` and is deployed with them. The OFL permits bundling and redistributing the fonts with the site; it forbids selling the fonts by themselves.
 
-Supply an owner-controlled project containing the required families/faces, authorized for the relevant domains. Set the seven-character ID from its CSS embed URL:
+## How they load
 
-```sh
-ADOBE_FONTS_PROJECT_ID=YOUR_ID npm run build
-ADOBE_FONTS_PROJECT_ID=YOUR_ID npm run build:preview
-ADOBE_FONTS_PROJECT_ID=YOUR_ID npm run dev
-```
+- `src/assets/css/fonts.css` declares each `@font-face` with `font-display: swap` and URLs relative to the stylesheet (`../fonts/...`), so the same CSS works at the domain root and under the `/katecourtright/` repository preview path.
+- `src/_includes/layouts/base.njk` preloads the two most-used files (Source Sans 3 Latin roman and Newsreader Latin roman). The italics and Latin Extended files load on demand.
+- No request goes to Adobe Fonts, Google Fonts, or any other font host, so visitors' IP addresses are not shared with a font provider. `scripts/check_site.py` (run by `npm run check`) fails if generated HTML, CSS, JS, or JSON mentions a third-party font host, if a font file referenced by `fonts.css` is missing or is not WOFF2, or if a license file is missing.
+- No build variables or accounts are involved. The earlier `ADOBE_FONTS_PROJECT_ID` option and its build warning have been removed.
 
-`YOUR_ID` is a placeholder; replace it with the real seven lowercase alphanumeric characters. Invalid IDs fail the build. The base layout emits `https://use.typekit.net/<id>.css` only when configured. The local build does not download or bundle provider font files. Set this variable in the eventual CI build environment as well as locally.
+## Updating
 
-After the project is supplied, inspect its CSS family names and available weights. Update `--display` and `--sans` only if the project's family names differ. Confirm loading and rendered fonts in the browser on both the preview and custom-domain paths, including bold italic post text, before judging line breaks and final spacing.
-
-## Licensed self-hosting alternative
-
-With separately licensed WOFF2 files, add them under `src/assets/fonts/` and define `@font-face` rules in `src/assets/css/fonts.css`. Use the family names above and declare each actual weight/style; use relative URLs such as `url('../fonts/freight-display-light.woff2')`. The asset copy includes that directory automatically and relative CSS URLs support both hosting paths. Remove or revise the Adobe-specific warning in `src/_data/site.js` when self-hosting is actually configured and verified.
-
-Licensing options and the original capture's findings are recorded in [the source font report](../reference/squarespace/2026-11-07/FONTS.md). An Adobe-hosted project does not imply permission to copy the font files into this repository.
+To update a family, download the new Fontsource package (`npm pack @fontsource-variable/<name>`), copy the same Latin/Latin Extended files over the existing ones, and update the version numbers here and in the comment at the top of `fonts.css`. Keep the `unicode-range` values in sync with the package's CSS. To add another subset, add its files and a matching `@font-face` block.

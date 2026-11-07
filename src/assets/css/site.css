@@ -3,8 +3,8 @@
   --muted-ink: rgba(61, 104, 112, .6);
   --body: #7a7d7f;
   --gutter: 150px;
-  --display: 'freight-display-pro', Georgia, serif;
-  --sans: 'freight-sans-pro', Arial, sans-serif;
+  --display: 'Newsreader', Georgia, serif;
+  --sans: 'Source Sans 3', system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }

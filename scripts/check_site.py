@@ -42,8 +42,7 @@ class Page(HTMLParser):
             assert attrs.get('action') == PREFIX + 'search/' and attrs.get('method') == 'get', 'Search must stay local'
         assert not any(key.startswith('on') for key in attrs), f'{self.file}: inline event handler'
         assert not (tag == 'script' and attrs.get('src', '').startswith('http')), f'{self.file}: unexpected external runtime'
-        # Rendering must not depend on Squarespace (or another asset host).
-        # The explicitly configured, owner-controlled Adobe font project is optional.
+        # Rendering must not depend on Squarespace, a font host, or any other asset host.
         resources = [attrs.get(key, '') for key in ('src', 'poster')]
         if tag == 'link' and attrs.get('rel') in ('stylesheet', 'preload', 'icon'):
             resources.append(attrs.get('href', ''))
@@ -51,7 +50,7 @@ class Page(HTMLParser):
             resources.extend(item.strip().split()[0] for item in attrs['srcset'].split(','))
         for resource in resources:
             host = urlsplit(resource).hostname
-            assert not host or (tag == 'link' and attrs.get('rel') == 'stylesheet' and host == 'use.typekit.net'), f'{self.file}: external asset {resource}'
+            assert not host, f'{self.file}: external asset {resource}'
 
 
 def resolve_reference(reference, base_url):
@@ -111,6 +110,16 @@ for file in OUTPUT.rglob('*.css'):
 for file in OUTPUT.rglob('*'):
     if file.suffix in ('.html', '.css', '.js', '.json'):
         assert not re.search(r'(?:squarespace(?:-cdn|-mail)?\.com|sqspcdn\.com|sqs-block-|Static\.SQUARESPACE_CONTEXT)', file.read_text(), re.I), f'{file}: Squarespace dependency returned'
+        assert not re.search(r'typekit|googleapis|gstatic|fonts\.bunny|fontawesome', file.read_text(), re.I), f'{file}: third-party font host'
+
+# Self-hosted fonts: every declared face and its license are deployed.
+fonts_css = (OUTPUT / 'assets/css/fonts.css').read_text()
+for family in ('Newsreader', 'Source Sans 3'):
+    assert f"font-family: '{family}'" in fonts_css, f'{family} not declared'
+for license_file in ('newsreader/OFL.txt', 'source-sans-3/OFL.txt'):
+    assert (OUTPUT / 'assets/fonts' / license_file).is_file(), f'{license_file} missing'
+for font in re.findall(r"url\('\.\./fonts/([^']+)'\)", fonts_css):
+    assert (OUTPUT / 'assets/fonts' / font).read_bytes()[:4] == b'wOF2', f'{font}: not WOFF2'
 
 post = OUTPUT / 'musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves/index.html'
 assert 'datetime="2023-10-01"' in post.read_text(), 'Publication date was lost or derived from permalink'

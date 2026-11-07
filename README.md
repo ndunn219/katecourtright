@@ -27,7 +27,7 @@ The [Pages workflow](.github/workflows/pages.yml) installs locked dependencies, 
 
 Pages is now configured with **GitHub Actions** as its source. The [existing preview](https://ndunn219.github.io/katecourtright/) is live with no custom domain and indexing disabled. The updated deployment passed all 62 HTTP/artifact checks; see [the dated verification record](docs/DEPLOYMENT-VERIFICATION.md) for evidence and remaining launch requirements. The updated workflow passed its [first run](https://github.com/ndunn219/katecourtright/actions/runs/42407667213), including post-deployment verification, and saved its report as an Actions artifact.
 
-See [deployment, updates, and rollback](docs/DEPLOYMENT.md) for repeatable checks, the production switch, DNS preservation, apex/www HTTPS verification, and rollback to Squarespace. Browser QA, font and service-policy decisions, and the domain cutover remain pending. The live domain's DNS is unchanged. No personal access token or deployment secret is needed for the workflow. Set `ADOBE_FONTS_PROJECT_ID` when an owner-controlled font project is available.
+See [deployment, updates, and rollback](docs/DEPLOYMENT.md) for repeatable checks, the production switch, DNS preservation, apex/www HTTPS verification, and rollback to Squarespace. Browser QA, the service-policy review, and the domain cutover remain pending. The live domain's DNS is unchanged. No personal access token or deployment secret is needed for the workflow.
 
 To develop with the repository prefix, use `SITE_PATH_PREFIX=/katecourtright/ npm run dev` and open `http://localhost:8080/katecourtright/`. Other prefixes can be set with `SITE_PATH_PREFIX=/another-path/ npm run build`. Restart the dev server when changing environment variables. `.env.example` documents the variables; `.env` files are not loaded automatically.
 
@@ -40,7 +40,8 @@ The [Eleventy HTML Base plugin](https://www.11ty.dev/docs/plugins/html-base/) ap
 | `src/_includes/layouts/` | Base document, standard page, home, library, blog index, and blog post templates |
 | `src/_includes/partials/` | Shared header, footer, book card, and reader links |
 | `src/_data/navigation.json` | Desktop and mobile navigation from one list |
-| `src/_data/site.js` | Site metadata and owner-controlled font configuration |
+| `src/_data/site.js` | Site metadata and indexing policy |
+| `src/assets/fonts/` | Self-hosted Newsreader and Source Sans 3 WOFF2 files with their OFL licenses |
 | `src/_data/books.json` | Book cards and retailer links |
 | `src/*.njk`, `src/posts/*.njk` | Page content and front matter |
 | `src/authors.njk`, `src/categories.njk` | Static archives generated from post metadata |
@@ -52,7 +53,7 @@ The [Eleventy HTML Base plugin](https://www.11ty.dev/docs/plugins/html-base/) ap
 | `src/sitemap.njk` | Canonical production sitemap |
 | `src/_includes/content/welcome.njk` | Shared content for `/` and `/welcome/` |
 | `src/assets/css/site.css` | Typography, colors, responsive grids, hero crops, and menu styling |
-| `src/assets/css/fonts.css` | Optional licensed self-hosted font declarations |
+| `src/assets/css/fonts.css` | `@font-face` declarations for the self-hosted fonts |
 | `src/assets/images/` | Selected original images, correctly named as WebP |
 
 Add a page as Markdown (`.md`) or Nunjucks (`.njk`) under `src/` with front matter:
@@ -73,9 +74,9 @@ Each blog post is an editable HTML body in a `.njk` file with JSON front matter.
 
 `npm run check` validates three configurations (repository preview, production root, and root preview), tests the hosted checker against a local HTTP server, and validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links and audits generated HTML, JavaScript, and CSS for removed signup integrations and calls to action. See [form-removal decisions and verification](docs/FORM-REMOVAL.md). It also checks the 30-page search index, search ranking and UI states, mobile-menu keyboard/focus handlers, reduced motion, sharing URLs, and external asset exclusion. These handler tests use DOM doubles; they do not replace browser QA. It does not fetch external destinations or prove visual equivalence. The separate `scripts/check_hosted.py` audits deployed files or external links; see the [verification record](docs/DEPLOYMENT-VERIFICATION.md) for actual HTTP results. Site builds do not need the capture archive; the migration checks also read `reference/`.
 
-Freight fonts need an owner-controlled Adobe Fonts project ID or separately licensed webfonts. The build currently warns and uses explicitly documented Georgia/Arial system fallbacks. See [font setup](docs/FONTS.md). Browser verification was skipped at the user's request after browser access failed; [layout verification notes](docs/LAYOUT-VERIFICATION.md) list the reference comparisons and remaining differences.
+Fonts are self-hosted: Newsreader (display) and Source Sans 3 (body), both under the SIL Open Font License, with no third-party font host. See [font setup](docs/FONTS.md). Browser verification was skipped at the user's request after browser access failed; [layout verification notes](docs/LAYOUT-VERIFICATION.md) list the reference comparisons and remaining differences.
 
-This remains a migration preview with `noindex, nofollow`. Content links resolve locally, and `/search/?q=` searches retained pages and all 14 posts. Search also offers a browse directory without JavaScript. See [independent interactions and verification](docs/INTERACTIONS.md) for mobile navigation, scrolling effects, sharing, and dependency decisions. Complete fonts, final service-policy review, and deployment review before selecting `SITE_ENV=production` for deployment. Desktop/mobile browser QA remains unverified because the browser access host is unavailable.
+This remains a migration preview with `noindex, nofollow`. Content links resolve locally, and `/search/?q=` searches retained pages and all 14 posts. Search also offers a browse directory without JavaScript. See [independent interactions and verification](docs/INTERACTIONS.md) for mobile navigation, scrolling effects, sharing, and dependency decisions. Complete the final service-policy review and deployment review before selecting `SITE_ENV=production` for deployment. Desktop/mobile browser QA remains unverified because the browser access host is unavailable.
 
 ## Source capture
 
