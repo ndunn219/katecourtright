@@ -49,6 +49,13 @@ COPY_REPLACEMENTS = {
     # Redesign issue #9: the welcome follow line became two buttons.
     '/': WELCOME_FOLLOW,
     '/welcome/': WELCOME_FOLLOW,
+    # Redesign issue #10: a facts row (drawn from the bio) precedes the follow
+    # line, which gains BookBub's capitalization and two buttons.
+    '/about-late/': [(
+        'whenever she can. You can follow me on Bookbub & Goodreads, too!',
+        'whenever she can. Writes Short & long form love stories Lives New York City First story Cinderella eating spaghetti, age seven'
+        ' You can follow me on BookBub & Goodreads, too!',
+    )],
     '/privacy-policy/': [(
         'Newsletter Lists All information collected from this site is used only by Kate and is managed by Kate and her web design team. It is not ever sold to a third party or made available for sale. The information collected, such as your email address, is stored in order for Kate to communicate directly with you through newsletters, promotions or special offers. If you do not wish to receive such emails, you may unsubscribe by clicking the link at the bottom of the newsletter.',
         'Contact and Signup Forms This website no longer offers a contact form, newsletter signup, or ARC signup, and does not collect names or email addresses through those forms. If you already receive a newsletter and wish to unsubscribe, use the unsubscribe link in that email.',

@@ -16,3 +16,9 @@ The November 2026 redesign (tracking issue #17) replaces the Squarespace-parity 
 - The welcome copy is unchanged but uses an italic H2 and a lede paragraph instead of `<h2>` blocks. "Follow me on Bookbub & Goodreads, too!" became the buttons "Follow on BookBub" and "Follow on Goodreads", which are recorded as an approved copy replacement in `scripts/check_migration.py`.
 - The Latest book section reads the featured book from `books.json`. The From the Musings cards are the three newest posts from `collections.posts`, so they update automatically.
 - At phone width, the hero scrim is stronger than in the artboard because the taller text block otherwise sat over bright sky.
+
+## About Kate (#10)
+
+- `/about-late/` is now its own template (in `src/about.njk`) instead of the `split-page` variant, which was removed. The bio is unchanged but split into a lede and two paragraphs.
+- The new facts row (Writes / Lives / First story, a `<dl>`) only restates the bio. "Bookbub" is now capitalized "BookBub", matching the service. Both changes are recorded as an approved replacement in `check_migration.py`.
+- The Keep reading section links to Books, Works in Progress and Musings.
