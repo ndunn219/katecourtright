@@ -145,7 +145,7 @@ links.forEach(link => { link.closest = () => link; });
 doc.querySelector = selector => ({ '.mobile-menu': menu, '.brand': background[1], '.home-intro': intro })[selector];
 doc.querySelectorAll = selector => selector === '.scroll-indicator' ? [scrollLink] : selector === '.hero:not(.hero--short)' ? [hero] : background;
 doc.getElementById = id => id === 'reviews' ? destination : null;
-win.matchMedia = query => query.includes('640') ? mobile : motion;
+win.matchMedia = query => query.includes('1000') ? mobile : motion;
 vm.runInNewContext(readFileSync('_site/assets/js/site.js', 'utf8'), { document: doc, window: win, requestAnimationFrame: callback => callback() });
 assert.equal(toggle.attrs['aria-expanded'], 'false');
 menu.open = true;

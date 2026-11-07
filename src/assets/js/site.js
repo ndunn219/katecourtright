@@ -1,7 +1,7 @@
 const menu = document.querySelector('.mobile-menu');
 const toggle = menu.querySelector('summary');
-const mobile = window.matchMedia('(max-width: 640px)');
-const background = [...document.querySelectorAll('.skip-link, .brand, .desktop-nav, main, .site-footer')];
+const mobile = window.matchMedia('(max-width: 1000px)');
+const background = [...document.querySelectorAll('.skip-link, .brand, main, .site-footer')];
 const inertBeforeOpen = new Map();
 menu.dataset.enhanced = 'true';
 

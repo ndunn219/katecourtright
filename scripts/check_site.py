@@ -87,7 +87,8 @@ for file, page in pages.items():
     assert any(tag == 'summary' and attrs.get('aria-controls') == 'mobile-navigation' for tag, attrs in page.tags), f'{file}: menu control missing'
     assert 'mobile-navigation' in page.ids, f'{file}: menu target missing'
     if re.match(r'musings/\d{4}/', route):
-        shares = [attrs['href'] for tag, attrs in page.tags if tag == 'a' and urlsplit(attrs.get('href', '')).hostname in ('www.facebook.com', 'twitter.com', 'www.linkedin.com', 'www.reddit.com', 'www.tumblr.com')]
+        # Share URLs carry the page in a query parameter; profile links do not.
+        shares = [attrs['href'] for tag, attrs in page.tags if tag == 'a' and urlsplit(attrs.get('href', '')).hostname in ('www.facebook.com', 'twitter.com', 'www.linkedin.com', 'www.reddit.com', 'www.tumblr.com') and urlsplit(attrs['href']).query]
         assert len(shares) == 5, f'{file}: sharing controls missing'
         for share in shares:
             query = parse_qs(urlsplit(share).query)

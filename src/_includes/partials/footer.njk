@@ -1,4 +1,28 @@
 <footer class="site-footer">
-  <p><strong>Copyright 2019–2025 Kate Courtright</strong><br>
-  Built with <a href="https://www.11ty.dev/">Eleventy</a> | <a href="/search/">Search</a> | <a href="/privacy-policy/">Privacy Policy</a> | Designed &amp; Managed by Brisbane Creative LLC</p>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="/">Kate Courtright</a>
+        <p class="footer-tagline">{{ site.tagline }}</p>
+      </div>
+      <nav aria-labelledby="footer-explore">
+        <p class="footer-heading" id="footer-explore">Explore</p>
+        <ul class="footer-list">
+          {% for item in navigation %}{% if not loop.first %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {% endif %}{% endfor %}
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-heading" id="footer-follow">Follow Kate</p>
+        <ul class="footer-list" aria-labelledby="footer-follow">
+          {% for social in site.social %}<li><a href="{{ social.url }}">{{ social.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>© 2019–2026 Kate Courtright</p>
+      <nav aria-label="Legal"><a href="/privacy-policy/">Privacy Policy</a><a href="/search/">Search</a></nav>
+    </div>
+  </div>
 </footer>
