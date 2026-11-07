@@ -1,0 +1,1785 @@
+[
+  {
+    "source_url": "https://assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.svg",
+    "local_path": "images/6c3cdd2dc67b--social-icon-font.svg",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.svg",
+    "content_type": "image/svg+xml",
+    "ok": true,
+    "bytes": 64791,
+    "sha256": "6be491a05f067cbb264e947021ed06461a15d998b6a2a8b6710eaeff6fe14a7a",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/fonts/squarespace-ui-font.svg",
+    "local_path": "images/1c4a02464f78--squarespace-ui-font.svg",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/fonts/squarespace-ui-font.svg",
+    "content_type": "image/svg+xml",
+    "ok": true,
+    "bytes": 23403,
+    "sha256": "b2c65392aeaf9d21e88be0c05112727bd1043d04c0df3050a25873b2844577a8",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-aviary-light.png",
+    "local_path": "images/f99b85facdd0--edit-aviary-light.png",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-aviary-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 2968,
+    "sha256": "804733d799cf64fe2cde46abce2fadf6bb0a6a09c8fc3e0100b0fb724ea42f7e",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-aviary-light@2x.png",
+    "local_path": "images/d1b7b16844c8--edit-aviary-light-2x.png",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-aviary-light@2x.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3097,
+    "sha256": "f1f8e262c6997136a55d3872ed235226187cf7db6fa2b70f29d0b4461de1fa9a",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-info-light.png",
+    "local_path": "images/6515a4ce4f78--edit-info-light.png",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-info-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3051,
+    "sha256": "9aad395bfb9f92176e54943e32dfdaeb0af2bd040df88dc057a7134ced3f498c",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-info-light@2x.png",
+    "local_path": "images/a1c0f7e16624--edit-info-light-2x.png",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/edit-info-light@2x.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3420,
+    "sha256": "e8d16fc04f91fcd0e6bf79d51ee7b4de31fa7cee65bcfe3f7d51ab59285014e1",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/error-dark.png",
+    "local_path": "images/678af680adca--error-dark.png",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/error-dark.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1262,
+    "sha256": "b709a4b47768d2a15152bd6f69a4a7c7768ec19537188c5f999c693f8e22249c",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/error-dark@2x.png",
+    "local_path": "images/850048a1b8b3--error-dark-2x.png",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/error-dark@2x.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1676,
+    "sha256": "ba2cb1879206e3b94683b4ef18a0db806286dbfa47efc3b199f14e3050526494",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/getty-16-light.png",
+    "local_path": "images/3553a4129616--getty-16-light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/getty-16-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3072,
+    "sha256": "299509eb1233b87e1965a273eede209d9e04d393eff2812a80eeb0dbc430718b",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/getty-32-light.png",
+    "local_path": "images/8bd31ed280f3--getty-32-light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/getty-32-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3374,
+    "sha256": "6530213db066fc0e5dd15f17cbfc7c7169fe4f855e3695e5bb10ec919807b1ff",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/play-button.png",
+    "local_path": "images/0c29686cdd65--play-button.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/play-button.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1219,
+    "sha256": "c8e214c8a689800e4083b385274bb0dc12ced5d3e08ec4c4e93da64a56b671a3",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/play-button@2x.png",
+    "local_path": "images/694fa1986887--play-button-2x.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/play-button@2x.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 2909,
+    "sha256": "91b16760ef63b3f07e88e28fa4e0dd4a56013e7d43754a2a65e8fe7f78ff7ac3",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/shopping-cart-16-light.png",
+    "local_path": "images/a9a4147de3d6--shopping-cart-16-light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/shopping-cart-16-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3010,
+    "sha256": "80aaa276275997c0ec2296cde87ffdc62dd7a2faf65ab29072a852ec7a78deae",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/shopping-cart-32-light.png",
+    "local_path": "images/171b1e46a8a2--shopping-cart-32-light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/shopping-cart-32-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3216,
+    "sha256": "d093542cefae85b6e0d0fdf2b2e7ffddbb04d6230727f25afcf11bf53939a227",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-light.png",
+    "local_path": "images/7de341a02b66--trash-9-light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1042,
+    "sha256": "2c659225f0927e6b828a474bac2d291ff932b05bdb949db9de004bcb3130dc8c",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-light@2x.png",
+    "local_path": "images/21ae801bf463--trash-9-light-2x.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-light@2x.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 990,
+    "sha256": "79fcc834a3af12f7db601bf955c933931279db0390f7aa725d060a19cab11646",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-red.png",
+    "local_path": "images/e7c12df618b7--trash-9-red.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-red.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1057,
+    "sha256": "ace98c266accd35a3f7fb78946d7728313325d8a7e420acc19c297331a8db8e5",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-red@2x.png",
+    "local_path": "images/c30ee415aa70--trash-9-red-2x.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/trash-9-red@2x.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1048,
+    "sha256": "7f2a30bd1fe8b4cc2c622bd38552d4452327f65a810c9eb6b96937b731ea39d2",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/icons/icon-settings-16-light.png",
+    "local_path": "images/59e2e088dd39--icon-settings-16-light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/icon-settings-16-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3058,
+    "sha256": "5dd52dcc457a0b59ae4c76b65a46c43d3653e333060fb57bf72bbdf97de89d6b",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/icons/icon-video-24-light-solid.png",
+    "local_path": "images/bb495ad459c5--icon-video-24-light-solid.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/icon-video-24-light-solid.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 365,
+    "sha256": "101762e3384a74f5e093c8bc0edabb94d8f75a075479b1409e9329f63b139864",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png",
+    "local_path": "images/2c5b0ec5e20f--icon_close_7_light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 176,
+    "sha256": "cd52c4d783635c13d274f980f0347aa3c88bc11c26c602dad6c9fc5a2816a0ad",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true",
+      "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/b1c89ed8-4ccd-4fe0-a5f9-42d8ce4c294b_1217/website.components.form.styles.css"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/cd0bbfe3-eb53-46cb-9fa2-c10986fc38b9_1215/website.components.button.styles.css",
+    "local_path": "styles/2a1cac83d490--website.components.button.styles.css",
+    "captured_at": "2026-11-07T18:03:09+00:00",
+    "status": 200,
+    "final_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/cd0bbfe3-eb53-46cb-9fa2-c10986fc38b9_1215/website.components.button.styles.css",
+    "content_type": "text/css; charset=utf-8",
+    "ok": true,
+    "bytes": 1087,
+    "sha256": "1ae84d9f9687b4d101a7e87382c7a11b8029157df95de292ad48ac87f209f912",
+    "kind": "styles",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch",
+      "https://katecourtright.com/listing-02-hatch",
+      "https://katecourtright.com/listing-03-hatch",
+      "https://katecourtright.com/listing-04-hatch"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/b1c89ed8-4ccd-4fe0-a5f9-42d8ce4c294b_1217/website.components.form.styles.css",
+    "local_path": "styles/6db8b99ecfb9--website.components.form.styles.css",
+    "captured_at": "2026-11-07T18:03:09+00:00",
+    "status": 200,
+    "final_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/b1c89ed8-4ccd-4fe0-a5f9-42d8ce4c294b_1217/website.components.form.styles.css",
+    "content_type": "text/css; charset=utf-8",
+    "ok": true,
+    "bytes": 12359,
+    "sha256": "05fe976854954d1af992ded4c569ad5ed391835993bfbf5ce28e159e8d433327",
+    "kind": "styles",
+    "referenced_by": [
+      "https://katecourtright.com/contact"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/c6585c43-7270-43aa-97e4-3b7d5dbb65f7_412/website.components.horizontalrule.styles.css",
+    "local_path": "styles/c47b5eb3be06--website.components.horizontalrule.styles.css",
+    "captured_at": "2026-11-07T18:03:09+00:00",
+    "status": 200,
+    "final_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/c6585c43-7270-43aa-97e4-3b7d5dbb65f7_412/website.components.horizontalrule.styles.css",
+    "content_type": "text/css; charset=utf-8",
+    "ok": true,
+    "bytes": 95,
+    "sha256": "16728fc007853637c7768b0c79c377bcc59811904609cfa1954475b58a32c109",
+    "kind": "styles",
+    "referenced_by": [
+      "https://katecourtright.com/musings",
+      "https://katecourtright.com/musings/2022/3/1/some-of-my-favorite-romantic-moments-in-fiction",
+      "https://katecourtright.com/musings/category/Storytelling+that+Touches+the+Heart",
+      "https://katecourtright.com/musings?author=536510cee4b043dbe028347e"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageLayout/9be94a40-718a-48e9-bf33-9139cab3f24d_289/website.components.imageLayout.styles.css",
+    "local_path": "styles/31f6920eaaa1--website.components.imageLayout.styles.css",
+    "captured_at": "2026-11-07T18:03:09+00:00",
+    "status": 200,
+    "final_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageLayout/9be94a40-718a-48e9-bf33-9139cab3f24d_289/website.components.imageLayout.styles.css",
+    "content_type": "text/css; charset=utf-8",
+    "ok": true,
+    "bytes": 28039,
+    "sha256": "2552fe24b68c1905e57d2d90a4e40019b36e7664400f08818cc03bf337f87008",
+    "kind": "styles",
+    "referenced_by": [
+      "https://katecourtright.com/",
+      "https://katecourtright.com/about-late",
+      "https://katecourtright.com/first-impressions",
+      "https://katecourtright.com/musings",
+      "https://katecourtright.com/musings/category/Musings+on+Creativity",
+      "https://katecourtright.com/musings/category/My+Sharing+Shelf",
+      "https://katecourtright.com/musings/category/Storytelling+that+Touches+the+Heart",
+      "https://katecourtright.com/musings/category/The+Writing+Journey",
+      "https://katecourtright.com/short-stories-novellas",
+      "https://katecourtright.com/welcome",
+      "https://katecourtright.com/musings?author=536510cee4b043dbe028347e",
+      "https://katecourtright.com/musings?author=5c8160afdb7926584fdf6899"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.newsletter/e6fa9db9-87de-411f-ae4c-420af8a965ac_208/website.components.newsletter.styles.css",
+    "local_path": "styles/87f3a80be723--website.components.newsletter.styles.css",
+    "captured_at": "2026-11-07T18:03:09+00:00",
+    "status": 200,
+    "final_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.newsletter/e6fa9db9-87de-411f-ae4c-420af8a965ac_208/website.components.newsletter.styles.css",
+    "content_type": "text/css; charset=utf-8",
+    "ok": true,
+    "bytes": 11572,
+    "sha256": "8610c8f62ed90f6fd301058cd563ea68422d36ef2780337d2e63b0f67272d8fc",
+    "kind": "styles",
+    "referenced_by": [
+      "https://katecourtright.com/",
+      "https://katecourtright.com/about-late",
+      "https://katecourtright.com/arc",
+      "https://katecourtright.com/contact",
+      "https://katecourtright.com/first-impressions",
+      "https://katecourtright.com/listing-01-hatch",
+      "https://katecourtright.com/listing-02-hatch",
+      "https://katecourtright.com/listing-03-hatch",
+      "https://katecourtright.com/listing-04-hatch",
+      "https://katecourtright.com/musings",
+      "https://katecourtright.com/musings/2022/3/1/some-of-my-favorite-romantic-moments-in-fiction",
+      "https://katecourtright.com/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves",
+      "https://katecourtright.com/musings/2023/4/14/reflections-on-the-joy-and-power-of-stories",
+      "https://katecourtright.com/musings/2023/4/14/what-my-enneagram-number-reveals-about-my-writing-process",
+      "https://katecourtright.com/musings/2023/4/14/why-i-didnt-stop-writing-even-when-i-seriously-thought-about-it",
+      "https://katecourtright.com/musings/2023/6/30/kristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process",
+      "https://katecourtright.com/musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process",
+      "https://katecourtright.com/musings/2023/6/30/the-creative-path-to-avoiding-burnout",
+      "https://katecourtright.com/musings/2023/6/30/the-creative-process-of-late-bloomers",
+      "https://katecourtright.com/musings/2023/6/30/the-joys-of-writing-longhand",
+      "https://katecourtright.com/musings/2023/7/31/where-am-i-on-the-spectrum-of-plotting-vs-pantsing",
+      "https://katecourtright.com/musings/2023/8/8/for-this-season-of-gratitude-ten-things-im-grateful-for",
+      "https://katecourtright.com/musings/2023/9/1/reconnecting-to-playtime",
+      "https://katecourtright.com/musings/2023/9/1/the-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my",
+      "https://katecourtright.com/musings/category/Musings+on+Creativity",
+      "https://katecourtright.com/musings/category/My+Sharing+Shelf",
+      "https://katecourtright.com/musings/category/Storytelling+that+Touches+the+Heart",
+      "https://katecourtright.com/musings/category/The+Writing+Journey",
+      "https://katecourtright.com/newsletter",
+      "https://katecourtright.com/privacy-policy",
+      "https://katecourtright.com/short-stories-novellas",
+      "https://katecourtright.com/welcome",
+      "https://katecourtright.com/works-in-progress",
+      "https://katecourtright.com/musings?author=536510cee4b043dbe028347e",
+      "https://katecourtright.com/musings?author=5c8160afdb7926584fdf6899",
+      "https://katecourtright.com/search"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/9e11c647-3be9-4ab9-817d-2bc75c8cf4f5_1368/website.components.spacer.styles.css",
+    "local_path": "styles/ab0c67346b9f--website.components.spacer.styles.css",
+    "captured_at": "2026-11-07T18:03:09+00:00",
+    "status": 200,
+    "final_url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/9e11c647-3be9-4ab9-817d-2bc75c8cf4f5_1368/website.components.spacer.styles.css",
+    "content_type": "text/css; charset=utf-8",
+    "ok": true,
+    "bytes": 98,
+    "sha256": "79cf11e511b4d35a376b07a268e704c15d8f8935b64de4c3a152f5ceb05cf96a",
+    "kind": "styles",
+    "referenced_by": [
+      "https://katecourtright.com/",
+      "https://katecourtright.com/about-late",
+      "https://katecourtright.com/arc",
+      "https://katecourtright.com/first-impressions",
+      "https://katecourtright.com/listing-01-hatch",
+      "https://katecourtright.com/listing-02-hatch",
+      "https://katecourtright.com/listing-03-hatch",
+      "https://katecourtright.com/listing-04-hatch",
+      "https://katecourtright.com/musings",
+      "https://katecourtright.com/musings/category/Musings+on+Creativity",
+      "https://katecourtright.com/musings/category/My+Sharing+Shelf",
+      "https://katecourtright.com/musings/category/Storytelling+that+Touches+the+Heart",
+      "https://katecourtright.com/musings/category/The+Writing+Journey",
+      "https://katecourtright.com/newsletter",
+      "https://katecourtright.com/privacy-policy",
+      "https://katecourtright.com/short-stories-novellas",
+      "https://katecourtright.com/welcome",
+      "https://katecourtright.com/works-in-progress",
+      "https://katecourtright.com/musings?author=536510cee4b043dbe028347e",
+      "https://katecourtright.com/musings?author=5c8160afdb7926584fdf6899"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468792865049-VAA248EV8CDTG7TMWKSH/Untitled-1.jpg",
+    "local_path": "images/efb41c3381f6--Untitled-1.jpg",
+    "captured_at": "2026-11-07T18:03:09+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468792865049-VAA248EV8CDTG7TMWKSH/Untitled-1.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 18332,
+    "sha256": "75267ba1158285c3a03c49b8f297da47cfba368134cf7fde21652d4eb8d7c106",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/",
+      "https://katecourtright.com/welcome"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468792865049-VAA248EV8CDTG7TMWKSH/Untitled-1.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468792865049-VAA248EV8CDTG7TMWKSH/Untitled-1.jpg",
+        "alt": "",
+        "dimensions": "2500x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871307688-FSN8Y3GUGGJUPV0XATRE/JessieWebster_Treehouse_20.jpg",
+    "local_path": "images/31ad7065d667--JessieWebster_Treehouse_20.jpg",
+    "captured_at": "2026-11-07T18:03:10+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871307688-FSN8Y3GUGGJUPV0XATRE/JessieWebster_Treehouse_20.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 288948,
+    "sha256": "c8bd1eb5b5d5a7cfd5c02b1913271edad39332334d8ba77cbd2491f10e23aa91",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871307688-FSN8Y3GUGGJUPV0XATRE/JessieWebster_Treehouse_20.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871307688-FSN8Y3GUGGJUPV0XATRE/JessieWebster_Treehouse_20.jpg",
+        "alt": "JessieWebster_Treehouse_20.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308239-9CZZ74V6G76KZYIQY2V3/JessieWebster_Treehouse_21.jpg",
+    "local_path": "images/d464635cabcb--JessieWebster_Treehouse_21.jpg",
+    "captured_at": "2026-11-07T18:03:11+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308239-9CZZ74V6G76KZYIQY2V3/JessieWebster_Treehouse_21.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 283820,
+    "sha256": "63daf20622c6608f4d52d809300edd124c73c8e03576b7a13a57eb5134746bc5",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308239-9CZZ74V6G76KZYIQY2V3/JessieWebster_Treehouse_21.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308239-9CZZ74V6G76KZYIQY2V3/JessieWebster_Treehouse_21.jpg",
+        "alt": "JessieWebster_Treehouse_21.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308340-ZF4GW1KZOGV0OU42Z7H6/JessieWebster_Treehouse_22.jpg",
+    "local_path": "images/9dec7aca61d0--JessieWebster_Treehouse_22.jpg",
+    "captured_at": "2026-11-07T18:03:10+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308340-ZF4GW1KZOGV0OU42Z7H6/JessieWebster_Treehouse_22.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 218812,
+    "sha256": "9b279923109b2bde79be7bad04b110eeaa7431b33965e739160fcbd11b168de7",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308340-ZF4GW1KZOGV0OU42Z7H6/JessieWebster_Treehouse_22.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308340-ZF4GW1KZOGV0OU42Z7H6/JessieWebster_Treehouse_22.jpg",
+        "alt": "JessieWebster_Treehouse_22.jpg",
+        "dimensions": "2500x1666",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308856-43KR84BNGWOEQ1GBH6MK/JessieWebster_Treehouse_25.jpg",
+    "local_path": "images/e6d9a1f4f894--JessieWebster_Treehouse_25.jpg",
+    "captured_at": "2026-11-07T18:03:10+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308856-43KR84BNGWOEQ1GBH6MK/JessieWebster_Treehouse_25.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 248354,
+    "sha256": "f11517ec1f9214d5b77ac9bff050c4f846987cbe3a24b38b35f7b1eaf1ed48b9",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308856-43KR84BNGWOEQ1GBH6MK/JessieWebster_Treehouse_25.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308856-43KR84BNGWOEQ1GBH6MK/JessieWebster_Treehouse_25.jpg",
+        "alt": "JessieWebster_Treehouse_25.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308857-UJIJC5GU2GU51N5SLBYV/JessieWebster_Treehouse_26.jpg",
+    "local_path": "images/b4ccb55716d1--JessieWebster_Treehouse_26.jpg",
+    "captured_at": "2026-11-07T18:03:11+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308857-UJIJC5GU2GU51N5SLBYV/JessieWebster_Treehouse_26.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 137416,
+    "sha256": "1301ac1149f6d75c14fba5345e2eed4a25345723277c4e8569e4dea2c84a9a54",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308857-UJIJC5GU2GU51N5SLBYV/JessieWebster_Treehouse_26.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871308857-UJIJC5GU2GU51N5SLBYV/JessieWebster_Treehouse_26.jpg",
+        "alt": "JessieWebster_Treehouse_26.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309532-D7M6IAV4BCZS6IQM1H2G/JessieWebster_Treehouse_28.jpg",
+    "local_path": "images/7b96ce627da6--JessieWebster_Treehouse_28.jpg",
+    "captured_at": "2026-11-07T18:03:11+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309532-D7M6IAV4BCZS6IQM1H2G/JessieWebster_Treehouse_28.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 183126,
+    "sha256": "3e3cf20c9f7af3c8e1888df797713f448e8dd277ddb78625efd73f50b07fb06a",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309532-D7M6IAV4BCZS6IQM1H2G/JessieWebster_Treehouse_28.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309532-D7M6IAV4BCZS6IQM1H2G/JessieWebster_Treehouse_28.jpg",
+        "alt": "JessieWebster_Treehouse_28.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309564-C0NUCTIZV62D7G8YAFQE/JessieWebster_Treehouse_29.jpg",
+    "local_path": "images/e2a34d0336bb--JessieWebster_Treehouse_29.jpg",
+    "captured_at": "2026-11-07T18:03:11+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309564-C0NUCTIZV62D7G8YAFQE/JessieWebster_Treehouse_29.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 235124,
+    "sha256": "6640c48af41b7450d9706bd359b9b5ceb33f39b1aa4e19e6f82845c34e05f248",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309564-C0NUCTIZV62D7G8YAFQE/JessieWebster_Treehouse_29.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871309564-C0NUCTIZV62D7G8YAFQE/JessieWebster_Treehouse_29.jpg",
+        "alt": "JessieWebster_Treehouse_29.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871310513-4L5K29NJCWJFELDNMETR/JessieWebster_Treehouse_30.jpg",
+    "local_path": "images/90d90d4d8202--JessieWebster_Treehouse_30.jpg",
+    "captured_at": "2026-11-07T18:03:12+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871310513-4L5K29NJCWJFELDNMETR/JessieWebster_Treehouse_30.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 143584,
+    "sha256": "d881a22fd17a0ab84aabcb9a10d3ed048649afb653deef7a0b3d5b50638149d4",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871310513-4L5K29NJCWJFELDNMETR/JessieWebster_Treehouse_30.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871310513-4L5K29NJCWJFELDNMETR/JessieWebster_Treehouse_30.jpg",
+        "alt": "JessieWebster_Treehouse_30.jpg",
+        "dimensions": "3749x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871311221-V7H2RW45CBAFGU6PUP2U/JessieWebster_Treehouse_33.jpg",
+    "local_path": "images/4261e682fcc2--JessieWebster_Treehouse_33.jpg",
+    "captured_at": "2026-11-07T18:03:12+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871311221-V7H2RW45CBAFGU6PUP2U/JessieWebster_Treehouse_33.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 171518,
+    "sha256": "34ada54156b594fa5d52cc1a4832a4e12f872d5e7d1b4925a418c5911ed0cc35",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-01-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871311221-V7H2RW45CBAFGU6PUP2U/JessieWebster_Treehouse_33.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871311221-V7H2RW45CBAFGU6PUP2U/JessieWebster_Treehouse_33.jpg",
+        "alt": "JessieWebster_Treehouse_33.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871569405-5TQ1P3BFU1IXHKKSPN2U/JessieWebster_HM_07.jpg",
+    "local_path": "images/fad4b3e50625--JessieWebster_HM_07.jpg",
+    "captured_at": "2026-11-07T18:03:12+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871569405-5TQ1P3BFU1IXHKKSPN2U/JessieWebster_HM_07.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 153234,
+    "sha256": "ec31271223a5d38260ec5464f079be70d52cc8ecc2c802e4c73bd18cf55529ad",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871569405-5TQ1P3BFU1IXHKKSPN2U/JessieWebster_HM_07.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871569405-5TQ1P3BFU1IXHKKSPN2U/JessieWebster_HM_07.jpg",
+        "alt": "JessieWebster_HM_07.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871571275-VAPMRI9Z7W4B8SQFX62Q/JessieWebster_HM_10.jpg",
+    "local_path": "images/0e2a7a1a4836--JessieWebster_HM_10.jpg",
+    "captured_at": "2026-11-07T18:03:13+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871571275-VAPMRI9Z7W4B8SQFX62Q/JessieWebster_HM_10.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 426802,
+    "sha256": "57e88654494d45ab74031d194ee3dd28eaf338b8a81c644d118a5f48ea62ad8f",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871571275-VAPMRI9Z7W4B8SQFX62Q/JessieWebster_HM_10.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871571275-VAPMRI9Z7W4B8SQFX62Q/JessieWebster_HM_10.jpg",
+        "alt": "JessieWebster_HM_10.jpg",
+        "dimensions": "2500x3750",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871572794-QQJZ695BAVVDYR42AJIT/JessieWebster_HM_11.jpg",
+    "local_path": "images/837be1801ba0--JessieWebster_HM_11.jpg",
+    "captured_at": "2026-11-07T18:03:13+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871572794-QQJZ695BAVVDYR42AJIT/JessieWebster_HM_11.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 322526,
+    "sha256": "b4219286b8165b44227360a69d66ec7539c5db9931d8dc5c9a9acaa22ab90e85",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871572794-QQJZ695BAVVDYR42AJIT/JessieWebster_HM_11.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871572794-QQJZ695BAVVDYR42AJIT/JessieWebster_HM_11.jpg",
+        "alt": "JessieWebster_HM_11.jpg",
+        "dimensions": "2500x3750",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574308-380JEMX39LC3YVQYWAC5/JessieWebster_HM_12.jpg",
+    "local_path": "images/f60aa8796063--JessieWebster_HM_12.jpg",
+    "captured_at": "2026-11-07T18:03:14+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574308-380JEMX39LC3YVQYWAC5/JessieWebster_HM_12.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 393538,
+    "sha256": "821e201c67f4907044e6f0fe650feb2d43821b1052c78e0fd0f43273e4f86629",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574308-380JEMX39LC3YVQYWAC5/JessieWebster_HM_12.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574308-380JEMX39LC3YVQYWAC5/JessieWebster_HM_12.jpg",
+        "alt": "JessieWebster_HM_12.jpg",
+        "dimensions": "2500x3750",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574948-78VCF5VCJ7Y23DCOLM1S/JessieWebster_HM_09.jpg",
+    "local_path": "images/b8890c3e439c--JessieWebster_HM_09.jpg",
+    "captured_at": "2026-11-07T18:03:13+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574948-78VCF5VCJ7Y23DCOLM1S/JessieWebster_HM_09.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 294350,
+    "sha256": "b96798a57bea76b9f81824f1b696ae2e421dabd388c68194349c8b021c82cf55",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574948-78VCF5VCJ7Y23DCOLM1S/JessieWebster_HM_09.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871574948-78VCF5VCJ7Y23DCOLM1S/JessieWebster_HM_09.jpg",
+        "alt": "JessieWebster_HM_09.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871575745-48Q5PB47UEZC78NLRXOH/JessieWebster_HM_13.jpg",
+    "local_path": "images/7b8040d77745--JessieWebster_HM_13.jpg",
+    "captured_at": "2026-11-07T18:03:15+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871575745-48Q5PB47UEZC78NLRXOH/JessieWebster_HM_13.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 439184,
+    "sha256": "8c6af3d2a0ffc591efcc7f6e6487f6c1e962577a43483d68658ff12fb30cf9b3",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871575745-48Q5PB47UEZC78NLRXOH/JessieWebster_HM_13.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871575745-48Q5PB47UEZC78NLRXOH/JessieWebster_HM_13.jpg",
+        "alt": "JessieWebster_HM_13.jpg",
+        "dimensions": "2500x3750",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871577641-3FE82RPC2XCA80JG3FRO/JessieWebster_Squarespace_26.jpg",
+    "local_path": "images/d339edd54bde--JessieWebster_Squarespace_26.jpg",
+    "captured_at": "2026-11-07T18:03:14+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871577641-3FE82RPC2XCA80JG3FRO/JessieWebster_Squarespace_26.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 248398,
+    "sha256": "e3f1ccbc74a28e45bd1b1aadc96635554e431f2720b119bb3ef742b9a7757d20",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871577641-3FE82RPC2XCA80JG3FRO/JessieWebster_Squarespace_26.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871577641-3FE82RPC2XCA80JG3FRO/JessieWebster_Squarespace_26.jpg",
+        "alt": "JessieWebster_Squarespace_26.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871589145-54GHDOK9B5G9SVQHHRNG/JessieWebster_HM_15.jpg",
+    "local_path": "images/f5c0374f81d5--JessieWebster_HM_15.jpg",
+    "captured_at": "2026-11-07T18:03:15+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871589145-54GHDOK9B5G9SVQHHRNG/JessieWebster_HM_15.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 612742,
+    "sha256": "76749db32d3e2fb1428ddc01a4bec0c93ffe291b58a9bc4eec272606f3411597",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-03-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871589145-54GHDOK9B5G9SVQHHRNG/JessieWebster_HM_15.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871589145-54GHDOK9B5G9SVQHHRNG/JessieWebster_HM_15.jpg",
+        "alt": "JessieWebster_HM_15.jpg",
+        "dimensions": "2500x3750",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871713749-UO2V0MIEQVSKIXOGBFY7/JessieWebster_Squarespace_08.jpg",
+    "local_path": "images/0e3d85f74459--JessieWebster_Squarespace_08.jpg",
+    "captured_at": "2026-11-07T18:03:15+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871713749-UO2V0MIEQVSKIXOGBFY7/JessieWebster_Squarespace_08.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 506792,
+    "sha256": "98c405d2d6209e3a9e466887ad034c0d2aeda56e5aa21fd9c788017ff7873e2e",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-04-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871713749-UO2V0MIEQVSKIXOGBFY7/JessieWebster_Squarespace_08.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871713749-UO2V0MIEQVSKIXOGBFY7/JessieWebster_Squarespace_08.jpg",
+        "alt": "JessieWebster_Squarespace_08.jpg",
+        "dimensions": "2500x3750",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871716926-RL7IZD53ZNWALP5GHG5I/JessieWebster_Squarespace_15.jpg",
+    "local_path": "images/f5ec2187b786--JessieWebster_Squarespace_15.jpg",
+    "captured_at": "2026-11-07T18:03:17+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871716926-RL7IZD53ZNWALP5GHG5I/JessieWebster_Squarespace_15.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 967698,
+    "sha256": "ee032d9ceba21d8fe0dbf279a90231e6dbc2b7e922f10a4ce51f074b0390709e",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-04-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871716926-RL7IZD53ZNWALP5GHG5I/JessieWebster_Squarespace_15.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871716926-RL7IZD53ZNWALP5GHG5I/JessieWebster_Squarespace_15.jpg",
+        "alt": "JessieWebster_Squarespace_15.jpg",
+        "dimensions": "2500x3333",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871728830-NNL538X3HOWZTSDLX39B/JessieWebster_Squarespace_24.jpg",
+    "local_path": "images/29b9db1e7fce--JessieWebster_Squarespace_24.jpg",
+    "captured_at": "2026-11-07T18:03:16+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871728830-NNL538X3HOWZTSDLX39B/JessieWebster_Squarespace_24.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 378570,
+    "sha256": "93d0be8a5444a85bfb49507ccbde8c12a925981df80379a7f7b2416404ad2cc8",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-04-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871728830-NNL538X3HOWZTSDLX39B/JessieWebster_Squarespace_24.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871728830-NNL538X3HOWZTSDLX39B/JessieWebster_Squarespace_24.jpg",
+        "alt": "JessieWebster_Squarespace_24.jpg",
+        "dimensions": "2500x3750",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871735282-YPBK7Q05GF5EPQ630O78/JessieWebster_Squarespace_28.jpg",
+    "local_path": "images/4ede5320a935--JessieWebster_Squarespace_28.jpg",
+    "captured_at": "2026-11-07T18:03:16+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871735282-YPBK7Q05GF5EPQ630O78/JessieWebster_Squarespace_28.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 244156,
+    "sha256": "7b6c36aa5cd69a33cd367166752dc4f8db67d5a057c670c5565a0ffed774b50d",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/listing-04-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871735282-YPBK7Q05GF5EPQ630O78/JessieWebster_Squarespace_28.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871735282-YPBK7Q05GF5EPQ630O78/JessieWebster_Squarespace_28.jpg",
+        "alt": "JessieWebster_Squarespace_28.jpg",
+        "dimensions": "2500x1667",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871748189-1CN4068W0Z91UE2NNGNV/JessieWebster_Squarespace_29.jpg",
+    "local_path": "images/b17dc881df31--JessieWebster_Squarespace_29.jpg",
+    "captured_at": "2026-11-07T18:03:16+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871748189-1CN4068W0Z91UE2NNGNV/JessieWebster_Squarespace_29.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 427230,
+    "sha256": "440f255a2193631027495b283c68f158db11c7c55f298d804299c0bc8ff9d9f9",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/listing-04-hatch"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871748189-1CN4068W0Z91UE2NNGNV/JessieWebster_Squarespace_29.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468871748189-1CN4068W0Z91UE2NNGNV/JessieWebster_Squarespace_29.jpg",
+        "alt": "JessieWebster_Squarespace_29.jpg",
+        "dimensions": "2500x3333",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1552586172358-OP4ZQ5TVM0SPWFAMVK6E/iStock-863785596.jpg",
+    "local_path": "images/955c7a950f19--iStock-863785596.jpg",
+    "captured_at": "2026-11-07T18:03:17+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1552586172358-OP4ZQ5TVM0SPWFAMVK6E/iStock-863785596.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 729942,
+    "sha256": "03ced9dcb2e60039df1e3706593e6c3e4672e9310ea8dd832eab1e28d81d7da8",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563660277571-TURJASI9S08KLP5473U9/bench+on+Whidby+Island.JPG",
+    "local_path": "images/77e132d761ab--bench-on-Whidby-Island.JPG",
+    "captured_at": "2026-11-07T18:03:17+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563660277571-TURJASI9S08KLP5473U9/bench+on+Whidby+Island.JPG",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 705078,
+    "sha256": "0f35921bdc79d1f5044c31eef3111a323ff294a732753eed8a769d7543c10948",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/",
+      "https://katecourtright.com/welcome"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563660277571-TURJASI9S08KLP5473U9/bench+on+Whidby+Island.JPG",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563660277571-TURJASI9S08KLP5473U9/bench+on+Whidby+Island.JPG",
+        "alt": "",
+        "dimensions": "2500x1875",
+        "focal_point": "0.5,0.5",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563665092983-FJ7TC86S079MYIHMAP91/IMG_0673.JPG",
+    "local_path": "images/9fa7d9ec923a--IMG_0673.JPG",
+    "captured_at": "2026-11-07T18:03:18+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563665092983-FJ7TC86S079MYIHMAP91/IMG_0673.JPG",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 391246,
+    "sha256": "6b3e0bb1a12a2e06803bac40e356014196ab19ba7d684f0fd618e627a50497f9",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/contact"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563665092983-FJ7TC86S079MYIHMAP91/IMG_0673.JPG",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1563665092983-FJ7TC86S079MYIHMAP91/IMG_0673.JPG",
+        "alt": "",
+        "dimensions": "2500x1875",
+        "focal_point": "0.5,0.21",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1604758013437-LCBKLD1UUMYN6S4VWX8D/IMG_2312.jpg",
+    "local_path": "images/b69673153a9f--IMG_2312.jpg",
+    "captured_at": "2026-11-07T18:03:18+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1604758013437-LCBKLD1UUMYN6S4VWX8D/IMG_2312.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 1182730,
+    "sha256": "c7fffd385ac0017003e9deea02932fe8c732e8b33f9f80709b22e6a20056ad55",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/works-in-progress"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1604758013437-LCBKLD1UUMYN6S4VWX8D/IMG_2312.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1604758013437-LCBKLD1UUMYN6S4VWX8D/IMG_2312.jpg",
+        "alt": "",
+        "dimensions": "2500x1875",
+        "focal_point": "0.49776785714285715,0.6101190476190477",
+        "srcset": null,
+        "class": "",
+        "style": ""
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg",
+    "local_path": "images/d047f9a08d15--Fireboy-Cover-medium.jpg",
+    "captured_at": "2026-11-07T18:03:22+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 3616584,
+    "sha256": "d2263113e73c763b00b5b1e6b6d376aa84dd370a99afed931f4646c5a6c80bdf",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/short-stories-novellas"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg",
+        "alt": "",
+        "dimensions": "1563x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1626459001445-NVOUAZ5FGHUSZ8KJWFB1/Fireboy-Cover-medium.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg",
+    "local_path": "images/7775bd2cce11--e-Book-cover-Pinkie_updated.jpg",
+    "captured_at": "2026-11-07T18:03:18+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 425096,
+    "sha256": "41d13162e973321e58996f5ee613a13c4b260599ecb8b0cd18046a61efa3edce",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/short-stories-novellas"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg",
+        "alt": "",
+        "dimensions": "1563x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632938826810-N6Z39XR1LU173X8JGEH4/e-Book+cover+Pinkie_updated.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg",
+    "local_path": "images/805f1625316f--e-Book-cover-Former-Things-final-draft-1.jpg",
+    "captured_at": "2026-11-07T18:03:19+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 291098,
+    "sha256": "8c67499f846129549cf068165bcf40cb14d5feb37a5e17b98c430e6c292327c2",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/short-stories-novellas"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg",
+        "alt": "",
+        "dimensions": "1733x2772",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/1632939235053-LEH9VJD6U77JNT23KFO2/e-Book+cover+Former+Things-final+draft+1.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/18b5176a-e2c5-4859-b743-4397f4639f87/Screen+Shot+2022-08-31+at+9.57.13+AM.png",
+    "local_path": "images/023f053fc4cd--Screen-Shot-2022-08-31-at-9.57.13-AM.png",
+    "captured_at": "2026-11-07T18:03:19+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/18b5176a-e2c5-4859-b743-4397f4639f87/Screen+Shot+2022-08-31+at+9.57.13+AM.png",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 133086,
+    "sha256": "d7dac89def81bb3c075d5448b7afe6e4b2bd85e19b736801da4e5e0dcac22f57",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/28377088-01ed-45d7-9d1a-6f0a790bdd4f/Screen+Shot+2022-08-31+at+10.02.12+AM.png",
+    "local_path": "images/f4ca6332f739--Screen-Shot-2022-08-31-at-10.02.12-AM.png",
+    "captured_at": "2026-11-07T18:03:19+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/28377088-01ed-45d7-9d1a-6f0a790bdd4f/Screen+Shot+2022-08-31+at+10.02.12+AM.png",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 90164,
+    "sha256": "7d43bf088e04898445c3c9a490d15447a884078601f6b7376cd7abc2111584eb",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg",
+    "local_path": "images/7151a010f74c--Kate-Author-Photo.jpg",
+    "captured_at": "2026-11-07T18:03:21+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 1406124,
+    "sha256": "56a7929810a676427a771e6e2734e13b63247863415f4ee3128a987b58b4bcad",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/about-late"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg",
+        "alt": "",
+        "dimensions": "2500x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg",
+    "local_path": "images/4f32f7c6e864--January-mid-newsletter-2023.jpg",
+    "captured_at": "2026-11-07T18:03:19+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 118946,
+    "sha256": "cf3ff159a9ad189281ba1299bc5caa7b3b15d0707d761d16f628e58d157b3e01",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/musings",
+      "https://katecourtright.com/musings/category/Musings+on+Creativity",
+      "https://katecourtright.com/musings/category/My+Sharing+Shelf",
+      "https://katecourtright.com/musings/category/Storytelling+that+Touches+the+Heart",
+      "https://katecourtright.com/musings/category/The+Writing+Journey",
+      "https://katecourtright.com/musings?author=536510cee4b043dbe028347e",
+      "https://katecourtright.com/musings?author=5c8160afdb7926584fdf6899"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg",
+        "alt": "",
+        "dimensions": "1000x563",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/491aa62f-8796-4a52-8b38-feeac33b4825/January-mid-newsletter-2023.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg",
+    "local_path": "images/023431a85950--Kate-Author-Photo-4.jpg",
+    "captured_at": "2026-11-07T18:03:20+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 964182,
+    "sha256": "a5a6359df89033cec7753d398fe6aeb8edb7cc882f0788226fad744dbaa8a02e",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/",
+      "https://katecourtright.com/welcome"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg",
+        "alt": "",
+        "dimensions": "2500x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/4b9c1062-7c6d-4a55-a699-3bc84cb6e91b/Kate+Author+Photo-4.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg",
+    "local_path": "images/b8a43ca7467e--e-Book-cover-First-Impressions.jpg",
+    "captured_at": "2026-11-07T18:03:20+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 421806,
+    "sha256": "268903a66165615a43e4f04b80bc3b41b3893f61e9418ac370e5a7c7cf65473a",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/first-impressions"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg",
+        "alt": "",
+        "dimensions": "1563x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/b6caa2e2-7cd1-4f69-ba2f-84bb3ba9d8c8/e-Book+cover+First+Impressions.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg",
+    "local_path": "images/c29e022091e9--The-book-First-Impressions_PROMO-banner-2-281-29.jpg",
+    "captured_at": "2026-11-07T18:03:21+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 531070,
+    "sha256": "a4e547158bb6d37290fb0d461b89ab970c54f354b5e4611669003437605385ff",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/short-stories-novellas"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg",
+        "alt": "",
+        "dimensions": "2362x1594",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/edbfdd87-5d4a-4730-8757-87fc47215fb2/The+book+First+Impressions_PROMO+banner+2+%281%29.jpg?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png",
+    "local_path": "images/288eb0ffeea2--e-Book-cover-It-s-Up-to-You-2C-New-York.png",
+    "captured_at": "2026-11-07T18:03:25+00:00",
+    "status": 200,
+    "final_url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png",
+    "content_type": "image/webp",
+    "ok": true,
+    "bytes": 3029252,
+    "sha256": "9720fa150f19a20f8b015baff0da6253db692ab94afa5dd89722a9221ed6f6c8",
+    "kind": "images",
+    "referenced_by": [
+      "https://katecourtright.com/sitemap.xml",
+      "https://katecourtright.com/short-stories-novellas"
+    ],
+    "occurrences": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png",
+        "source": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png",
+        "alt": "",
+        "dimensions": "1563x2500",
+        "focal_point": "0.5,0.5",
+        "srcset": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/fa2d54cc-6c05-4cde-83f2-bb11010cdd56/e-Book+cover+It-s+Up+to+You%2C+New+York.png?format=2500w 2500w",
+        "class": "",
+        "style": "display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);"
+      }
+    ]
+  },
+  {
+    "source_url": "https://katecourtright.com/s/First-Impressions-Generic.epub",
+    "local_path": "downloads/0fc732d3f0b5--First-Impressions-Generic.epub",
+    "captured_at": "2026-11-07T18:03:22+00:00",
+    "status": 200,
+    "final_url": "https://static1.squarespace.com/static/5c5b03064d546e28246dddd7/t/6439740d7fecfd2b90706de7/1681486861809/First-Impressions-Generic.epub",
+    "content_type": "application/epub+zip",
+    "ok": true,
+    "bytes": 1183504,
+    "sha256": "4f48245274b427a721b3ce07430d883d94f29fdbb946caeed472d078647a8157",
+    "kind": "downloads",
+    "referenced_by": [
+      "https://katecourtright.com/first-impressions"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://katecourtright.com/s/First-Impressions-Kindle.epub",
+    "local_path": "downloads/bdcc5a6f11c8--First-Impressions-Kindle.epub",
+    "captured_at": "2026-11-07T18:03:23+00:00",
+    "status": 200,
+    "final_url": "https://static1.squarespace.com/static/5c5b03064d546e28246dddd7/t/63d559b75f877e67d418c446/1674926521306/First-Impressions-Kindle.epub",
+    "content_type": "application/epub+zip",
+    "ok": true,
+    "bytes": 2633845,
+    "sha256": "82d608af12b1a94568c5c150f9177bd4455ed100520774f57ed1322b5c4179d6",
+    "kind": "downloads",
+    "referenced_by": [
+      "https://katecourtright.com/first-impressions"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true",
+    "local_path": "styles/a9f3edc86f4f--site.css",
+    "captured_at": "2026-11-07T18:03:22+00:00",
+    "status": 200,
+    "final_url": "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true",
+    "content_type": "text/css; charset=UTF-8",
+    "ok": true,
+    "bytes": 925439,
+    "sha256": "fdbe9242e160a6bc6e04143d71ff6677a685a09872d0da56197abd42b795f859",
+    "kind": "styles",
+    "referenced_by": [
+      "https://katecourtright.com/",
+      "https://katecourtright.com/about-late",
+      "https://katecourtright.com/arc",
+      "https://katecourtright.com/contact",
+      "https://katecourtright.com/first-impressions",
+      "https://katecourtright.com/listing-01-hatch",
+      "https://katecourtright.com/listing-02-hatch",
+      "https://katecourtright.com/listing-03-hatch",
+      "https://katecourtright.com/listing-04-hatch",
+      "https://katecourtright.com/musings",
+      "https://katecourtright.com/musings/2022/3/1/some-of-my-favorite-romantic-moments-in-fiction",
+      "https://katecourtright.com/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves",
+      "https://katecourtright.com/musings/2023/4/14/reflections-on-the-joy-and-power-of-stories",
+      "https://katecourtright.com/musings/2023/4/14/what-my-enneagram-number-reveals-about-my-writing-process",
+      "https://katecourtright.com/musings/2023/4/14/why-i-didnt-stop-writing-even-when-i-seriously-thought-about-it",
+      "https://katecourtright.com/musings/2023/6/30/kristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process",
+      "https://katecourtright.com/musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process",
+      "https://katecourtright.com/musings/2023/6/30/the-creative-path-to-avoiding-burnout",
+      "https://katecourtright.com/musings/2023/6/30/the-creative-process-of-late-bloomers",
+      "https://katecourtright.com/musings/2023/6/30/the-joys-of-writing-longhand",
+      "https://katecourtright.com/musings/2023/7/31/where-am-i-on-the-spectrum-of-plotting-vs-pantsing",
+      "https://katecourtright.com/musings/2023/8/8/for-this-season-of-gratitude-ten-things-im-grateful-for",
+      "https://katecourtright.com/musings/2023/9/1/reconnecting-to-playtime",
+      "https://katecourtright.com/musings/2023/9/1/the-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my",
+      "https://katecourtright.com/musings/category/Musings+on+Creativity",
+      "https://katecourtright.com/musings/category/My+Sharing+Shelf",
+      "https://katecourtright.com/musings/category/Storytelling+that+Touches+the+Heart",
+      "https://katecourtright.com/musings/category/The+Writing+Journey",
+      "https://katecourtright.com/newsletter",
+      "https://katecourtright.com/privacy-policy",
+      "https://katecourtright.com/short-stories-novellas",
+      "https://katecourtright.com/welcome",
+      "https://katecourtright.com/works-in-progress",
+      "https://katecourtright.com/musings?author=536510cee4b043dbe028347e",
+      "https://katecourtright.com/musings?author=5c8160afdb7926584fdf6899",
+      "https://katecourtright.com/search"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/360/scripts/site-bundle.js",
+    "local_path": "scripts/780b33e8a999--site-bundle.js",
+    "captured_at": "2026-11-07T18:03:22+00:00",
+    "status": 200,
+    "final_url": "https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/360/scripts/site-bundle.js",
+    "content_type": "application/javascript; charset=UTF-8",
+    "ok": true,
+    "bytes": 146434,
+    "sha256": "35212e3d21f7a121fb6aab540601f310bb90a7aafda7e1a14baed471571f9de7",
+    "kind": "scripts",
+    "referenced_by": [
+      "https://katecourtright.com/",
+      "https://katecourtright.com/about-late",
+      "https://katecourtright.com/arc",
+      "https://katecourtright.com/contact",
+      "https://katecourtright.com/first-impressions",
+      "https://katecourtright.com/listing-01-hatch",
+      "https://katecourtright.com/listing-02-hatch",
+      "https://katecourtright.com/listing-03-hatch",
+      "https://katecourtright.com/listing-04-hatch",
+      "https://katecourtright.com/musings",
+      "https://katecourtright.com/musings/2022/3/1/some-of-my-favorite-romantic-moments-in-fiction",
+      "https://katecourtright.com/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves",
+      "https://katecourtright.com/musings/2023/4/14/reflections-on-the-joy-and-power-of-stories",
+      "https://katecourtright.com/musings/2023/4/14/what-my-enneagram-number-reveals-about-my-writing-process",
+      "https://katecourtright.com/musings/2023/4/14/why-i-didnt-stop-writing-even-when-i-seriously-thought-about-it",
+      "https://katecourtright.com/musings/2023/6/30/kristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process",
+      "https://katecourtright.com/musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process",
+      "https://katecourtright.com/musings/2023/6/30/the-creative-path-to-avoiding-burnout",
+      "https://katecourtright.com/musings/2023/6/30/the-creative-process-of-late-bloomers",
+      "https://katecourtright.com/musings/2023/6/30/the-joys-of-writing-longhand",
+      "https://katecourtright.com/musings/2023/7/31/where-am-i-on-the-spectrum-of-plotting-vs-pantsing",
+      "https://katecourtright.com/musings/2023/8/8/for-this-season-of-gratitude-ten-things-im-grateful-for",
+      "https://katecourtright.com/musings/2023/9/1/reconnecting-to-playtime",
+      "https://katecourtright.com/musings/2023/9/1/the-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my",
+      "https://katecourtright.com/musings/category/Musings+on+Creativity",
+      "https://katecourtright.com/musings/category/My+Sharing+Shelf",
+      "https://katecourtright.com/musings/category/Storytelling+that+Touches+the+Heart",
+      "https://katecourtright.com/musings/category/The+Writing+Journey",
+      "https://katecourtright.com/newsletter",
+      "https://katecourtright.com/privacy-policy",
+      "https://katecourtright.com/short-stories-novellas",
+      "https://katecourtright.com/welcome",
+      "https://katecourtright.com/works-in-progress",
+      "https://katecourtright.com/musings?author=536510cee4b043dbe028347e",
+      "https://katecourtright.com/musings?author=5c8160afdb7926584fdf6899",
+      "https://katecourtright.com/search"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/damask/image-inside-128-dark.png",
+    "local_path": "images/a2d800358f3f--image-inside-128-dark.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/image-inside-128-dark.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 2831,
+    "sha256": "27bb906955dcb8993e1d3e336edb91d11b5df508564adad93a912a26a1d258e7",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/damask/image-inside-64-dark.png",
+    "local_path": "images/079b1d006c7e--image-inside-64-dark.png",
+    "captured_at": "2026-11-07T18:03:27+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/damask/image-inside-64-dark.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1314,
+    "sha256": "6df4b94b66951d33fde92d2b3a8b804c45d7d56323e74f2483cafe80fe6e9c60",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/icons/block-indicator-dark.png",
+    "local_path": "images/653ce462f0e9--block-indicator-dark.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/block-indicator-dark.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 561,
+    "sha256": "a93c4c81b16dc6dd989522dcf7333b105ead0e00de53fba509e7f3027c3a6ed3",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/icons/block-indicator-dark@2x.png",
+    "local_path": "images/4106c84e9c46--block-indicator-dark-2x.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/block-indicator-dark@2x.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 1672,
+    "sha256": "ed4ae13d517520349e6270ce4ccdfe13e5727e7038fac8a035515bfe0fc04615",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/icons/icon-searchqueries-20-dark.png",
+    "local_path": "images/62c938bd1754--icon-searchqueries-20-dark.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/icon-searchqueries-20-dark.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 361,
+    "sha256": "922a90a66533a90f16c1ecf8adc85dffb39b11dbb9f7c4cbe13347358610f799",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/icons/icon-searchqueries-20-light.png",
+    "local_path": "images/233674a4555b--icon-searchqueries-20-light.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/icon-searchqueries-20-light.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 3034,
+    "sha256": "9cbe1fe50ac748d4a3f8a0927b15f0c23a4fa63a1267ff5605741fc12bf5f2d0",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/icons/opentable-icons.png",
+    "local_path": "images/7dc03ad9bd5d--opentable-icons.png",
+    "captured_at": "2026-11-07T18:03:26+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/opentable-icons.png",
+    "content_type": "image/png",
+    "ok": true,
+    "bytes": 2320,
+    "sha256": "dfdcc05edf633393a5cf7530f1759823acbaccfc0d54269c61830f8b3cf53f6d",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  },
+  {
+    "source_url": "https://static1.squarespace.com/universal/images-v6/icons/opentable-icons.svg",
+    "local_path": "images/64d30aa90d04--opentable-icons.svg",
+    "captured_at": "2026-11-07T18:03:27+00:00",
+    "status": 200,
+    "final_url": "https://assets.squarespace.com/universal/images-v6/icons/opentable-icons.svg",
+    "content_type": "image/svg+xml",
+    "ok": true,
+    "bytes": 1495,
+    "sha256": "5f18cf2f425d694b9bbdd4e3d5a4a5052fe72e83f6c193788b4cc70e74da15ca",
+    "kind": "images",
+    "referenced_by": [
+      "https://static1.squarespace.com/static/sitecss/5c5b03064d546e28246dddd7/82/55f0aac0e4b0f0a5b7e0b22e/5c5b03064d546e28246dddec/360/site.css?nocustom=true"
+    ],
+    "occurrences": []
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://assets.squarespace.com/@sqs/polyfiller/1.7.7/modern.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-88f72d5f001c770b-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/common-8db6745c20f15f11-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-66418c0d4d3d1e3e-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-2e71e68f6532e2b6-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5b1fd9aed201e910-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-30a43ba04c0f738d-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/performance-b3f4811a7dd0dc2f-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-70c095566385eee0-min.en-US.js",
+    "archived": false
+  },
+  {
+    "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/cd0bbfe3-eb53-46cb-9fa2-c10986fc38b9_1215/website.components.button.visitor.js",
+    "archived": false
+  },
+  {
+    "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/b1c89ed8-4ccd-4fe0-a5f9-42d8ce4c294b_1217/website.components.form.visitor.js",
+    "archived": false
+  },
+  {
+    "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/c6585c43-7270-43aa-97e4-3b7d5dbb65f7_412/website.components.horizontalrule.visitor.js",
+    "archived": false
+  },
+  {
+    "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageLayout/9be94a40-718a-48e9-bf33-9139cab3f24d_289/website.components.imageLayout.visitor.js",
+    "archived": false
+  },
+  {
+    "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.map/053afdf1-0a76-4ef0-a240-79ffb6929d85_1431/website.components.map.visitor.js",
+    "archived": false
+  },
+  {
+    "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.newsletter/e6fa9db9-87de-411f-ae4c-420af8a965ac_208/website.components.newsletter.visitor.js",
+    "archived": false
+  },
+  {
+    "url": "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/9e11c647-3be9-4ab9-817d-2bc75c8cf4f5_1368/website.components.spacer.visitor.js",
+    "archived": false
+  },
+  {
+    "url": "https://static1.squarespace.com/static/ta/55f0a9b0e4b0f3eb70352f6d/360/scripts/site-bundle.js",
+    "archived": true
+  },
+  {
+    "url": "https://use.typekit.net/ik/GTM_DhVRajT-Eoo0ZBUDYtNgb0N4BOJJYD25Ts0e45CfeGjBfFHN4UJLFRbh52jhWDmRFAJ3wDMhFebuF2Z8wR6kF2ZqZesqFU7dMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdP37O1skdamXOA4udeUcScN1OAuRihS0SaBujW48Sagyjh90jhNlOeBRiA8XpWFR-emqiAUTdcS0jhNlOeBRiA8XpWFR-emqiAUTdcS0dcmXOeBDOcu8OelyiemRdamkiY4TZhyXOcFzdPUCdhFydeyzSabCSaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPUXScNuifuKiAUCZ14zZkuljai1O1FUiABkZWF3jAF8OcFzdPUaiaS0jAFu-WsoShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0dcmXOYiaikoySkolZPUaiaS0-hBXZAFziW4XSc81-Yb0jhNlOYiaikoDSWmyScmDSeBRZWFR-emqiAUTdcS0jhNlOYiaikoXScNuifuKiAUCZ14zZkuljai1O1FUiABkZWF3jAF8OcFzdPJbZ148-AiGifuDjAoDOWgkdkJQZ148-AiGifuq-WF3deBoOWgkdkG4fwTmIMMjgfMfH6qJqcqbMg6BJMJ7fbK9-sMMeMj6MKG4fJoTIMMjgkMfH6qJRAqbMg65JMJ7fbKQ-sMMeMv6MKG4fJNTIMMjIPMfH6GJ34MgIMIjMkMfH6GJzTMgIMIjgfMfH6GJ3TMgIMIjgPMfH6GJz4MgIMIjgkMfH6GJ3ZMgIMIj2PMfH6GJzZMgIMIjIPMfqMeVhTnNgb.js",
+    "archived": false
+  }
+]

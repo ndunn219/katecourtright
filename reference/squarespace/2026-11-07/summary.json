@@ -1,0 +1,26 @@
+{
+  "origin": "https://katecourtright.com",
+  "generated_at": "2026-11-07T18:06:54+00:00",
+  "page_count": 37,
+  "blog_post_count": 14,
+  "asset_count": 77,
+  "bytes": 29626182,
+  "failures": [
+    {
+      "source_url": "https://katecourtright.com/schedule-appointment-hatch",
+      "local_path": null,
+      "captured_at": "2026-11-07T18:03:09+00:00",
+      "status": 404,
+      "final_url": "https://katecourtright.com/schedule-appointment-hatch",
+      "content_type": "text/html;charset=utf-8",
+      "ok": false,
+      "error": "curl: (56) The requested URL returned error: 404"
+    }
+  ],
+  "notes": [
+    "Raw HTML/CSS are unmodified reference captures, not runtime site files.",
+    "Image format resize parameters are removed to request the original CDN asset.",
+    "Fonts and global platform JS are inventoried, not downloaded.",
+    "Re-runs reuse successful responses; use a new output directory for a new snapshot."
+  ]
+}

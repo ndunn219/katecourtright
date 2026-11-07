@@ -1,0 +1,44 @@
+{
+  "verified_at": "2026-11-07T18:32:30+00:00",
+  "archive_checks_passed": true,
+  "response_files_verified": 115,
+  "pages": 37,
+  "successful_pages": 36,
+  "blog_posts": 14,
+  "assets": 77,
+  "image_formats": {
+    "image/svg+xml": 3,
+    "image/png": 26,
+    "image/webp": 38
+  },
+  "epubs": [
+    {
+      "url": "https://katecourtright.com/s/First-Impressions-Generic.epub",
+      "entries": 56,
+      "valid": true
+    },
+    {
+      "url": "https://katecourtright.com/s/First-Impressions-Kindle.epub",
+      "entries": 55,
+      "valid": true
+    }
+  ],
+  "known_missing_at_source": [
+    {
+      "url": "https://katecourtright.com/schedule-appointment-hatch",
+      "status": 404,
+      "note": "Existing sample-listing link is missing at source."
+    }
+  ],
+  "errors": [],
+  "visual_verification": {
+    "status": "references available; original checklist partial",
+    "recorded": 30,
+    "inspected": 16,
+    "evidence_integrity_passed": true,
+    "errors": [],
+    "checklist": "screenshots/README.md",
+    "note": "Inspection flags record manual review. Hashes and dimensions do not prove loaded fonts, images, or complete visual coverage."
+  },
+  "note": "Integrity verification does not establish visual parity or complete issue #1."
+}

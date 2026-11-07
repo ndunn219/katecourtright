@@ -1,0 +1,673 @@
+{
+  "capture_method": "Chrome DevTools screenshots via native computer-use UI; live URLs; cookie banner dismissed; no forms submitted",
+  "screenshots": [
+    {
+      "file": "home-desktop-top.png",
+      "url": "https://katecourtright.com/",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:22:38+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "6919074d38df0d12e6f669bc90ca3d3aea7711d5b86702f51c5a38b8f326631c",
+      "bytes": 2536139,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "home-desktop-footer.png",
+      "url": "https://katecourtright.com/",
+      "state": "desktop-footer",
+      "captured_at": "2026-11-07T18:23:39+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "314130802c0f7ad59aba098242683d2d8441adeafc6e1793aff304fc718661d6",
+      "bytes": 189313,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "home-desktop-full.png",
+      "url": "https://katecourtright.com/",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:23:53+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 2300
+      },
+      "sha256": "732bb4f15ebe75a38439e3c38cf1dc70a556277fcd1c5a010da4307df4fc8bbf",
+      "bytes": 3188032,
+      "inspected": true,
+      "inspection_note": "Parallax background is absent behind the introduction in full-page capture; use scrolled viewport evidence and archived CSS."
+    },
+    {
+      "file": "home-mobile-top.png",
+      "url": "https://katecourtright.com/",
+      "state": "mobile-top",
+      "captured_at": "2026-11-07T18:28:19+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 390,
+        "height": 844
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "18a81e3fd96090683c3b51ec3077a43a9865a5a376b6bb6cad6d689dc7157783",
+      "bytes": 589677,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "home-mobile-menu-open.png",
+      "url": "https://katecourtright.com/",
+      "state": "mobile-menu-open",
+      "captured_at": "2026-11-07T18:28:29+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 390,
+        "height": 844
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "20bce57246b0cd8a9cda7880e08ce1163b175c4b65242edad536a36b9265e28f",
+      "bytes": 35975,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "home-mobile-content.png",
+      "url": "https://katecourtright.com/",
+      "state": "mobile-content",
+      "captured_at": "2026-11-07T18:28:38+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 390,
+        "height": 844
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "7c4a0f239110c0f3d6ced86a1cd20d52f174fdb79fcbaf4fd48e6a110642ede9",
+      "bytes": 342715,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "home-mobile-footer.png",
+      "url": "https://katecourtright.com/",
+      "state": "mobile-footer",
+      "captured_at": "2026-11-07T18:28:46+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 390,
+        "height": 844
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "9e0989a03ab5eb9f672b7f79fa65aa2592754fd08e0af4679561688bc932acb1",
+      "bytes": 62638,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "home-mobile-full.png",
+      "url": "https://katecourtright.com/",
+      "state": "mobile-full",
+      "captured_at": "2026-11-07T18:29:25+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 390,
+        "height": 844
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 390,
+        "height": 3029
+      },
+      "sha256": "9130abe0f53ee8bf15ef7308487cc6de9961ced793bbd60aaf8a4aac158b2ca3",
+      "bytes": 1012100,
+      "inspected": true,
+      "inspection_note": "Parallax background boundary is a full-page capture artifact; not a canonical background-layout reference."
+    },
+    {
+      "file": "about-desktop-top.png",
+      "url": "https://katecourtright.com/about-late",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:24:27+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "996c656ebffbe5256bc5250181080acad6c1984b5c22dedd113567e226e3367a",
+      "bytes": 1135369,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "about-desktop-full.png",
+      "url": "https://katecourtright.com/about-late",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:24:37+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 1902
+      },
+      "sha256": "e66c7c45d450701bd878fedb97acc9e71e5029f48c3ed2602a4ba7bd5e146f3a",
+      "bytes": 1285311,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "about-mobile-full.png",
+      "url": "https://katecourtright.com/about-late",
+      "state": "mobile-full",
+      "captured_at": "2026-11-07T18:29:55+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 390,
+        "height": 844
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 390,
+        "height": 2392
+      },
+      "sha256": "30693ca47bfd9c66395ad34104f846d091ec7a69be2c998bfea579af79b3f24d",
+      "bytes": 523829,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "library-desktop-top.png",
+      "url": "https://katecourtright.com/short-stories-novellas",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:24:52+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "edb81613b71683f37ba0a06c7ed6a77fa6cbc60885c28bd64238b805dd602b95",
+      "bytes": 1177496,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "library-desktop-full.png",
+      "url": "https://katecourtright.com/short-stories-novellas",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:24:57+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 4024
+      },
+      "sha256": "d808e66b804662a70bcb96c9fbebbc1a1361643e645bcd267f6e099c393670c6",
+      "bytes": 2902886,
+      "inspected": true,
+      "inspection_note": "New York cover is blank in this full-page capture although it appears in the scrolled middle view."
+    },
+    {
+      "file": "library-desktop-middle.png",
+      "url": "https://katecourtright.com/short-stories-novellas",
+      "state": "desktop-middle",
+      "captured_at": "2026-11-07T18:25:28+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "cfcc8375dfdd33cc857be39ef5ceabad8bf8c07172a445c8c3a04cbf709cfcd4",
+      "bytes": 664706,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "library-desktop-bottom.png",
+      "url": "https://katecourtright.com/short-stories-novellas",
+      "state": "desktop-bottom",
+      "captured_at": "2026-11-07T18:25:37+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "1ae4411a77fbd6947a348820ce8dc962492623e5d427873424050456edf63c02",
+      "bytes": 138078,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "library-desktop-full-after-scroll.png",
+      "url": "https://katecourtright.com/short-stories-novellas",
+      "state": "desktop-full-after-scroll",
+      "captured_at": "2026-11-07T18:25:45+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 4024
+      },
+      "sha256": "a55362690874426c50c9d919c670a97e2dc832ff5b429da77c57ada328200e49",
+      "bytes": 1640915,
+      "inspected": true,
+      "inspection_note": "Several book covers are blank in this full-page capture; use the first full view and scrolled middle view together."
+    },
+    {
+      "file": "works-desktop-top.png",
+      "url": "https://katecourtright.com/works-in-progress",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:25:56+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "3c2c86b9e27acdc1f641dd59f5d13243be8f7cc4079425e03bd41fb93286de91",
+      "bytes": 3026009,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "works-desktop-excerpt.png",
+      "url": "https://katecourtright.com/works-in-progress",
+      "state": "desktop-excerpt",
+      "captured_at": "2026-11-07T18:26:04+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "df4df767265e2b07d901ed1867ad8a0c3025e78e122e9cfcd4a78954a44090ee",
+      "bytes": 224570,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "works-desktop-full.png",
+      "url": "https://katecourtright.com/works-in-progress",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:26:14+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 8634
+      },
+      "sha256": "ba93c917c3382a24b76cac03e6892437c0d534071accfb267c9a911269011127",
+      "bytes": 4957817,
+      "inspected": true,
+      "inspection_note": "Reviewed for overall structure; inspect full resolution and archived source for long excerpt text."
+    },
+    {
+      "file": "musings-desktop-top.png",
+      "url": "https://katecourtright.com/musings",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:26:26+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "6a84471729ab8885eeedbe529effa390c6ac51a31ee4bbe83adba8dbfdf8e511",
+      "bytes": 1036167,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "musings-desktop-posts.png",
+      "url": "https://katecourtright.com/musings",
+      "state": "desktop-posts",
+      "captured_at": "2026-11-07T18:26:35+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "9d0905c5331cfb501970d11660c2bb72e4f720b79cf15357089d2b40f0fc6539",
+      "bytes": 270214,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "musings-desktop-bottom.png",
+      "url": "https://katecourtright.com/musings",
+      "state": "desktop-bottom",
+      "captured_at": "2026-11-07T18:26:45+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "2205361d7426da42d6c24567530c13da62b062fc1ecc4af87ba99b8d31a304f6",
+      "bytes": 142319,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "musings-desktop-full.png",
+      "url": "https://katecourtright.com/musings",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:26:56+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 4624
+      },
+      "sha256": "11c30d1034cba29cfd2a1b3e47110c8532342a7427e7540f718775a8534a6a36",
+      "bytes": 2138982,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "post-anna-quindlen-desktop-top.png",
+      "url": "https://katecourtright.com/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:27:05+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "d62f51f6d08aaa1cabae597989da5f28b65d0356abbab7434f3b5bfaeaa7f20a",
+      "bytes": 277423,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "post-anna-quindlen-desktop-full.png",
+      "url": "https://katecourtright.com/musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:27:17+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 2472
+      },
+      "sha256": "264a09ec93cace8dd0d29571559c63df558ae3eb4d89f6270fc2276b624781a9",
+      "bytes": 623420,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "contact-desktop-top.png",
+      "url": "https://katecourtright.com/contact",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:27:25+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "10b0fb9af5c34f4aa9c04c48eba14401ec69a31d8d17804e686f4e33ffac8fac",
+      "bytes": 439962,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "contact-desktop-full.png",
+      "url": "https://katecourtright.com/contact",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:27:36+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 1423
+      },
+      "sha256": "53d1d62cf0d0cf83b5eb4ebd6f83e396f7b46aa0b5a496a4f149305b5d682793",
+      "bytes": 483705,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "contact-mobile-full.png",
+      "url": "https://katecourtright.com/contact",
+      "state": "mobile-full",
+      "captured_at": "2026-11-07T18:30:43+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 390,
+        "height": 844
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 390,
+        "height": 1993
+      },
+      "sha256": "fe8da398a1bd0343f1b88ab81d3f9540ffc4abd26d0d57f00b90a9996b51171c",
+      "bytes": 177657,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    },
+    {
+      "file": "first-impressions-desktop-top.png",
+      "url": "https://katecourtright.com/first-impressions",
+      "state": "desktop-top",
+      "captured_at": "2026-11-07T18:27:47+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "32d2d8eea478c080d585248d1b13063e313bc1c31a6fc8750a321641d928b1d4",
+      "bytes": 346642,
+      "inspected": false,
+      "inspection_note": "Supplemental viewport capture; not individually visually reviewed."
+    },
+    {
+      "file": "first-impressions-desktop-full.png",
+      "url": "https://katecourtright.com/first-impressions",
+      "state": "desktop-full",
+      "captured_at": "2026-11-07T18:28:07+00:00",
+      "browser": "Google Chrome 156.0.8078.80",
+      "viewport_css": {
+        "width": 1440,
+        "height": 900
+      },
+      "device_scale_factor": 1,
+      "page_zoom_percent": 100,
+      "emulation": "Responsive; fitted DevTools preview; DPR 1",
+      "image_pixels": {
+        "width": 1440,
+        "height": 2316
+      },
+      "sha256": "f265ebc319e6e2b42bdcb09834525a5b1fa9b426d7e05a4a98e68f261f655314",
+      "bytes": 1403653,
+      "inspected": true,
+      "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
+    }
+  ],
+  "scope_status": "Desktop references for eight pages; representative mobile references for home, About, and Contact. Original eight-page mobile checklist remains partial.",
+  "behavior_checks": {
+    "mobile_menu_open_close": "observed",
+    "mobile_menu_about_navigation": "observed; About Kate loaded from menu",
+    "forms_submitted": false,
+    "category_and_author_filters": "not exercised in browser; source archived",
+    "computed_styles_and_font_loading": "not verified"
+  }
+}
