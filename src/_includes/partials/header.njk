@@ -6,8 +6,8 @@
     {% endfor %}
   </nav>
   <details class="mobile-menu">
-    <summary aria-label="Toggle navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
-    <nav aria-label="Mobile navigation">
+    <summary aria-label="Navigation" aria-controls="mobile-navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
+    <nav id="mobile-navigation" aria-label="Mobile navigation">
       {% for item in navigation %}
       <a href="{{ item.url }}"{% if item.secondary %} class="nav-secondary"{% endif %}{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
       {% endfor %}

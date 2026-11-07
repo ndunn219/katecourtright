@@ -11,6 +11,15 @@ layout: layouts/base.njk
     <p class="post-meta"><a href="{{ authorId | authorUrl }}">{{ author }}</a> · <time datetime="{{ published }}">{{ published | readableDate }}</time></p>
     {% if categories.length %}<p class="post-categories">{% for category in categories %}<a href="{{ category | categoryUrl }}">{{ category }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
   </article>
+  {% set shareUrl = (canonicalPath or page.url) | canonicalUrl | encodeURIComponent %}
+  <nav class="share-links" aria-label="Share this post">
+    <span>Share:</span>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl }}">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url={{ shareUrl }}&amp;text={{ title | encodeURIComponent }}">Twitter</a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ shareUrl }}">LinkedIn</a>
+    <a href="https://www.reddit.com/submit?url={{ shareUrl }}">Reddit</a>
+    <a href="https://www.tumblr.com/share/link?url={{ shareUrl }}">Tumblr</a>
+  </nav>
   <nav class="post-navigation" aria-label="Post navigation">
     <a href="/musings/">All musings</a>
     {% set adjacent = collections.posts | adjacentPosts(page.url) %}

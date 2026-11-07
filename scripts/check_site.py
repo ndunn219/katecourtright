@@ -2,7 +2,7 @@
 """Validate the generated link graph and migration boundaries without a browser."""
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote, urljoin, urlsplit
+from urllib.parse import parse_qs, unquote, urljoin, urlsplit
 import json
 import re
 import sys
@@ -35,9 +35,22 @@ class Page(HTMLParser):
         if tag == 'img':
             assert 'alt' in attrs, f'{self.file}: missing image alt'
             assert int(attrs.get('width', 0)) > 0 and int(attrs.get('height', 0)) > 0, f'{self.file}: missing image dimensions'
-        assert tag not in ('form', 'iframe'), f'{self.file}: unexpected {tag}'
+        assert tag != 'iframe', f'{self.file}: unexpected {tag}'
+        if tag == 'form':
+            assert self.file == OUTPUT / 'search/index.html' and attrs.get('role') == 'search', f'{self.file}: unexpected form'
+            assert attrs.get('action') == PREFIX + 'search/' and attrs.get('method') == 'get', 'Search must stay local'
         assert not any(key.startswith('on') for key in attrs), f'{self.file}: inline event handler'
         assert not (tag == 'script' and attrs.get('src', '').startswith('http')), f'{self.file}: unexpected external runtime'
+        # Rendering must not depend on Squarespace (or another asset host).
+        # The explicitly configured, owner-controlled Adobe font project is optional.
+        resources = [attrs.get(key, '') for key in ('src', 'poster')]
+        if tag == 'link' and attrs.get('rel') in ('stylesheet', 'preload', 'icon'):
+            resources.append(attrs.get('href', ''))
+        if attrs.get('srcset'):
+            resources.extend(item.strip().split()[0] for item in attrs['srcset'].split(','))
+        for resource in resources:
+            host = urlsplit(resource).hostname
+            assert not host or (tag == 'link' and attrs.get('rel') == 'stylesheet' and host == 'use.typekit.net'), f'{self.file}: external asset {resource}'
 
 
 def resolve_reference(reference, base_url):
@@ -67,6 +80,14 @@ for file, page in pages.items():
     assert sum(tag == 'main' for tag, _ in page.tags) == 1, f'{file}: expected one main landmark'
     assert any(tag == 'h1' for tag, _ in page.tags), f'{file}: missing heading'
     assert any(tag == 'meta' and attrs.get('name') == 'viewport' for tag, attrs in page.tags), f'{file}: missing viewport'
+    assert any(tag == 'summary' and attrs.get('aria-controls') == 'mobile-navigation' for tag, attrs in page.tags), f'{file}: menu control missing'
+    assert 'mobile-navigation' in page.ids, f'{file}: menu target missing'
+    if re.match(r'musings/\d{4}/', route):
+        shares = [attrs['href'] for tag, attrs in page.tags if tag == 'a' and urlsplit(attrs.get('href', '')).hostname in ('www.facebook.com', 'twitter.com', 'www.linkedin.com', 'www.reddit.com', 'www.tumblr.com')]
+        assert len(shares) == 5, f'{file}: sharing controls missing'
+        for share in shares:
+            query = parse_qs(urlsplit(share).query)
+            assert (query.get('url') or query.get('u')) == ['https://katecourtright.com/' + route], f'{file}: wrong share destination'
     for reference in page.references:
         assert not reference.startswith('javascript:'), f'{file}: unsafe URL'
         target, fragment = resolve_reference(reference, base)
@@ -79,7 +100,12 @@ for file in OUTPUT.rglob('*.css'):
     css = re.sub(r'/\*.*?\*/', '', file.read_text(), flags=re.S)
     base = ORIGIN + PREFIX + file.relative_to(OUTPUT).as_posix()
     for reference in re.findall(r'url\([\s\'"]*([^\)\'"\s]+)', css):
+        assert not urlsplit(reference).hostname, f'{file}: external CSS asset {reference}'
         resolve_reference(reference, base)
+
+for file in OUTPUT.rglob('*'):
+    if file.suffix in ('.html', '.css', '.js', '.json'):
+        assert not re.search(r'(?:squarespace(?:-cdn|-mail)?\.com|sqspcdn\.com|sqs-block-|Static\.SQUARESPACE_CONTEXT)', file.read_text(), re.I), f'{file}: Squarespace dependency returned'
 
 post = OUTPUT / 'musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves/index.html'
 assert 'datetime="2023-10-01"' in post.read_text(), 'Publication date was lost or derived from permalink'

@@ -18,15 +18,15 @@ All 37 captured page/filter URLs have an explicit destination or retirement deci
 | `/schedule-appointment-hatch` | Already 404 in the capture; remains absent and uses the shared 404. |
 | `/newsletter/` | Retire signup. Keep a notice at the old URL linking readers to Musings; exclude it from the sitemap. |
 | `/privacy-policy/` | Issue #4 updates only the form/newsletter collection paragraph to reflect removal and retain existing-email unsubscribe guidance. The other original policy text is preserved; review hosting, Squarespace, analytics, and font claims against final services before launch. |
-| `/search/` | Preserve a useful destination listing retained pages, posts, categories, and authors. Query-based search remains issue #5; this page does not claim to return search results. Exclude it from the sitemap for now. |
+| `/search/` | Local full-text search at `/search/?q=` covers retained pages, all posts, categories, and authors. A browse directory remains available without JavaScript. Exclude the search UI from the sitemap. |
 
-The three podcast links routed through `engage.squarespace-mail.com` now point directly to the original destinations encoded in their `u` parameters. Other external content and retailer links are retained. Squarespace social-sharing widgets and like counters are not article content and remain in issue #5's behavior scope.
+The three podcast links routed through `engage.squarespace-mail.com` now point directly to the original destinations encoded in their `u` parameters. Other external content and retailer links are retained. Issue #5 replaces social-sharing widgets with ordinary share links. Service-dependent like/share counters are omitted; see [interaction decisions](INTERACTIONS.md).
 
 ## URL handling and metadata
 
 Page output uses `<legacy-path>/index.html`, with a trailing-slash canonical URL. Extensionless old page URLs resolve to these directories on GitHub Pages; the dated blog paths themselves are unchanged. Category paths retain their literal plus signs (not spaces). EPUBs remain files at `/s/First-Impressions-Generic.epub` and `/s/First-Impressions-Kindle.epub` with byte-identical contents.
 
-Both `/` and `/welcome/` render the same homepage; `/welcome/` canonicals to `/`. All pages have absolute production canonicals at `https://katecourtright.com`, including in repository-prefix previews. The sitemap lists each retained canonical page and generated archive once, excluding `/welcome/`, the 404, the newsletter notice, and the temporary search directory. Preview pages remain `noindex, nofollow` until launch review.
+Both `/` and `/welcome/` render the same homepage; `/welcome/` canonicals to `/`. All pages have absolute production canonicals at `https://katecourtright.com`, including in repository-prefix previews. The sitemap lists each retained canonical page and generated archive once, excluding `/welcome/`, the 404, the newsletter notice, and the search UI. Preview pages remain `noindex, nofollow` until launch review.
 
 Source document titles are preserved, including the long Musings/category titles and the legacy “Listing 02” title. Empty source descriptions use the shared site description. Open Graph metadata describes each page, and posts include their author and publication date. Layouts use local URLs for navigation and asset references, so both `/` and `/katecourtright/` builds work.
 
@@ -61,5 +61,5 @@ Browser visual/interaction QA was not performed for this issue. The earlier brow
 ## Coordination with later issues
 
 - **Issue #4:** implemented; see [form-removal audit](FORM-REMOVAL.md) for the final Contact, Newsletter, and ARC decisions, regression checks, and browser-verification limit.
-- **Issue #5:** reuse the implemented author-query compatibility; finish search, remaining interactions, and the platform-credit change. Category and author pages work without Squarespace runtime dependencies.
+- **Issue #5:** independent search, menu and scrolling behavior, share links, and the platform-credit replacement are implemented; author-query compatibility remains intact. See [implementation and browser verification limits](INTERACTIONS.md).
 - **Issue #6:** deploy the output, verify hosted URL/404 behavior and EPUB delivery, complete browser/font checks, review policy/metadata, and only then enable indexing. This change does not deploy or modify the live site.

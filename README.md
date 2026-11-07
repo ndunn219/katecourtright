@@ -2,7 +2,7 @@
 
 Recreate [katecourtright.com](https://katecourtright.com) with Eleventy and GitHub Pages, preserving the existing appearance and content except for the contact form and newsletter signup.
 
-Implementation is tracked in [issues #1–#6](https://github.com/ndunn219/katecourtright/issues). The Eleventy foundation, issue #3 content migration, and issue #4 form-removal audit are implemented: 34 HTML pages, all 14 Musings posts, category/author archives, retained legacy content, and both EPUB downloads. The original Squarespace site has not been changed. See [migration decisions and verification](docs/CONTENT-MIGRATION.md) for URL handling and remaining work.
+Implementation is tracked in [issues #1–#6](https://github.com/ndunn219/katecourtright/issues). The Eleventy foundation, content migration, signup removal, and issue #5 independent interactions are implemented: 34 HTML pages, all 14 Musings posts, category/author archives, retained legacy content, and both EPUB downloads. The original Squarespace site has not been changed. See [migration decisions and verification](docs/CONTENT-MIGRATION.md) for URL handling and remaining work.
 
 ## Run and build
 
@@ -48,6 +48,8 @@ The [Eleventy HTML Base plugin](https://www.11ty.dev/docs/plugins/html-base/) ap
 | `src/authors.njk`, `src/categories.njk` | Static archives generated from post metadata |
 | `eleventy.config.js` | Post ordering, archive collections, shared filters, and path-prefix configuration |
 | `src/assets/js/author-filter.js` | Compatibility for old `?author=` links |
+| `src/assets/js/site.js` | Mobile menu focus/state, anchor focus, and reduced-motion-aware parallax |
+| `src/assets/js/search*.js`, `scripts/search-index.mjs` | Local search UI, ranking, and build-time full-text index |
 | `src/static/s/` | EPUB files at their original download paths |
 | `src/sitemap.njk` | Canonical production sitemap |
 | `src/_includes/content/welcome.njk` | Shared content for `/` and `/welcome/` |
@@ -71,11 +73,11 @@ Each blog post is an editable HTML body in a `.njk` file with JSON front matter.
 
 ## Current verification and remaining work
 
-`npm run check` validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links and audits generated HTML, JavaScript, and CSS for removed signup integrations and calls to action. See [form-removal decisions and verification](docs/FORM-REMOVAL.md). It does not fetch external destinations or prove visual equivalence. Builds need only `src/`; the migration checks also read `reference/`.
+`npm run check` validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links and audits generated HTML, JavaScript, and CSS for removed signup integrations and calls to action. See [form-removal decisions and verification](docs/FORM-REMOVAL.md). It also checks the 30-page search index, search ranking and UI states, mobile-menu keyboard/focus handlers, reduced motion, sharing URLs, and external asset exclusion. These handler tests use DOM doubles; they do not replace browser QA. It does not fetch external destinations or prove visual equivalence. Site builds do not need the capture archive; the migration checks also read `reference/`.
 
 Freight fonts need an owner-controlled Adobe Fonts project ID or separately licensed webfonts. The build currently warns and uses explicitly documented Georgia/Arial system fallbacks. See [font setup](docs/FONTS.md). Browser verification was skipped at the user's request after browser access failed; [layout verification notes](docs/LAYOUT-VERIFICATION.md) list the reference comparisons and remaining differences.
 
-This remains a migration preview with `noindex, nofollow`. Content links now resolve locally. Search currently supplies a browseable directory at its legacy URL; query search and remaining interactions belong to issue #5. Complete the remaining behavior, fonts, final service-policy review, and deployment review before enabling indexing in `src/_data/site.js`. Issue #4’s signup audit is complete; desktop/mobile browser QA remains unverified because browser access is unavailable.
+This remains a migration preview with `noindex, nofollow`. Content links resolve locally, and `/search/?q=` searches retained pages and all 14 posts. Search also offers a browse directory without JavaScript. See [independent interactions and verification](docs/INTERACTIONS.md) for mobile navigation, scrolling effects, sharing, and dependency decisions. Complete fonts, final service-policy review, and deployment review before enabling indexing in `src/_data/site.js`. Desktop/mobile browser QA remains unverified because the browser access host is unavailable.
 
 ## Source capture
 

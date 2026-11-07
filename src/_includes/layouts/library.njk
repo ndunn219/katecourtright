@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 {% from "partials/book.njk" import bookCard %}
 <main id="main" class="page-content library">
-  <h1>Library</h1>
+  <h1 id="library">Library</h1>
   {{ bookCard(books[0], true) }}
   <div class="book-grid">
   {% for book in books %}{% if not loop.first %}{{ bookCard(book, false) }}{% endif %}{% endfor %}

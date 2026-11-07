@@ -4,7 +4,19 @@ title: Search
 permalink: /search/
 sitemap: false
 ---
-<h1>Explore the site</h1>
+<h1>Search</h1>
+<form class="search-form" role="search" action="/search/" method="get">
+  <label for="search-query">Search Kate’s stories, pages, and Musings</label>
+  <div class="search-controls">
+    <input id="search-query" name="q" type="search" maxlength="200" aria-describedby="search-status">
+    <button type="submit">Search</button>
+  </div>
+</form>
+<p id="search-status" role="status" aria-live="polite" aria-atomic="true">Enter a word or phrase, or browse below.</p>
+<ol id="search-results" class="search-results"></ol>
+<noscript><p>Search needs JavaScript. You can browse all pages and Musings below.</p></noscript>
+<script type="module" src="/assets/js/search.js"></script>
+<h2>Explore the site</h2>
 <p>Browse Kate’s stories, works in progress, and Musings below.</p>
 <ul>
 {% for item in navigation %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}

@@ -15,10 +15,9 @@ REMNANTS = re.compile(
     r'sqs-block-(?:form|newsletter)|newsletter-form|newsletter-block|'
     r'form-submission|sqs-form|engage\.squarespace-mail\.com|'
     r'list-manage\.com|mailchimp|static\.klaviyo\.com|'
-    r'/api/(?:1/)?(?:form|newsletter)|'
-    r'\bonsubmit\b|addEventListener\s*\(\s*[\'"]submit[\'"]|'
-    r'\.(?:requestSubmit|submit)\s*\(', re.I,
+    r'/api/(?:1/)?(?:form|newsletter)', re.I,
 )
+SUBMISSION = re.compile(r'\bonsubmit\b|addEventListener\s*\(\s*[\'"]submit[\'"]|\.(?:requestSubmit|submit)\s*\(', re.I)
 
 
 def read_page(route):
@@ -36,12 +35,21 @@ for file in OUTPUT.rglob('*'):
     text = file.read_text()
     match = REMNANTS.search(text)
     assert not match, f'{file}: removed signup integration/handler: {match.group()}'
+    # Only the independent, local search script may handle form submission.
+    if file != OUTPUT / 'assets/js/search.js':
+        assert not SUBMISSION.search(text), f'{file}: unexpected submission handler'
     if file.suffix != '.html':
         continue
     route = file.relative_to(OUTPUT).as_posix().removesuffix('index.html')
     base = 'https://build.example' + local(route)
     for node in Document(text).root.walk():
-        assert node.tag not in ('form', 'iframe'), f'{file}: embedded form/runtime'
+        assert node.tag != 'iframe', f'{file}: embedded runtime'
+        if node.tag == 'form':
+            assert file == OUTPUT / 'search/index.html', f'{file}: unexpected form'
+            assert node.attrs.get('role') == 'search' and node.attrs.get('method') == 'get', 'Unexpected form purpose'
+            assert node.attrs.get('action') == local('/search/'), 'Search action must be local'
+            fields = [n for n in node.walk() if n.tag in ('input', 'textarea', 'select')]
+            assert len(fields) == 1 and fields[0].attrs.get('name') == 'q' and fields[0].attrs.get('type') == 'search', 'Search field changed'
         assert not (node.tag == 'input' and node.attrs.get('type', '').lower() == 'email'), f'{file}: email signup field'
         # Reject local and old-domain links, including extensionless legacy URLs.
         if node.tag == 'a':

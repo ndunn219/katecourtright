@@ -4,6 +4,8 @@ This document records the issue #2 baseline. Issue #3 subsequently migrated all 
 
 Issue #4 completes the signup-copy audit and Contact/Newsletter/ARC decisions. See [FORM-REMOVAL.md](FORM-REMOVAL.md) for the current responsive CSS review and browser-access limitation; the historical old-URL follow-ups below are resolved there.
 
+Issue #5 subsequently implements independent search, menu focus management, scrolling effects, sharing links, and the platform-credit replacement. See [INTERACTIONS.md](INTERACTIONS.md) for current behavior and verification limits; behavior follow-ups below describe the earlier baseline.
+
 ## Scope
 
 Implemented: Eleventy 3.1.8 with a lockfile, clean production builds, shared templates and navigation data, custom responsive CSS, configurable Adobe font embedding, path-prefix support, and developer documentation. Builds read only `src/` and do not depend on the source archive. Selected image copies are mapped in [asset-provenance.json](asset-provenance.json); the archive is unchanged.

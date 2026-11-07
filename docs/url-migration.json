@@ -200,8 +200,8 @@
   {
     "source": "/search",
     "destination": "/search/",
-    "status": "browse-fallback",
-    "note": "Retained as a static directory of pages/posts; query search is explicitly deferred to issue #5."
+    "status": "static-search",
+    "note": "Local full-text search at /search/?q= with ranked results, empty/error states, and a browse directory when JavaScript is unavailable."
   },
   {
     "source": "/short-stories-novellas",
