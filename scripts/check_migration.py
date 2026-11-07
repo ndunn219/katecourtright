@@ -37,7 +37,7 @@ def compact(text):
 
 
 # Issues #4 and the redesign (#9 onward) authorize only these copy replacements. Keep checking every other
-# captured paragraph and link, including the rest of the privacy policy.
+# captured paragraph and link.
 WELCOME_FOLLOW = [(
     'Follow me on Bookbub & Goodreads, too!',
     'Follow on BookBub Follow on Goodreads',
@@ -63,10 +63,21 @@ COPY_REPLACEMENTS = {
         'BookBub Follow for new releases Goodreads Reviews and reading lists'
         ' Instagram @kate_courtright_ Facebook kate.courtright.nyc',
     )],
-    '/privacy-policy/': [(
-        'Newsletter Lists All information collected from this site is used only by Kate and is managed by Kate and her web design team. It is not ever sold to a third party or made available for sale. The information collected, such as your email address, is stored in order for Kate to communicate directly with you through newsletters, promotions or special offers. If you do not wish to receive such emails, you may unsubscribe by clicking the link at the bottom of the newsletter.',
-        'Contact and Signup Forms This website no longer offers a contact form, newsletter signup, or ARC signup, and does not collect names or email addresses through those forms. If you already receive a newsletter and wish to unsubscribe, use the unsubscribe link in that email.',
-    )],
+}
+
+# Redesign issue #15 replaced the whole privacy policy with a short policy whose
+# claims are verified against the build (see check_site.py). Original copy is
+# not compared; the new copy must be present and the retired claims absent.
+REPLACED = {
+    '/privacy-policy/': {
+        'required': [
+            'No cookies, no analytics, and no tracking scripts.',
+            'Fonts and images are served from this site, not from third-party services.',
+            'This site is hosted on GitHub Pages.',
+            'To unsubscribe from Kate’s newsletter, use the link in any newsletter email.',
+        ],
+        'retired': ['Squarespace', 'Google Analytics', 'site analytics', 'Newsletter Lists'],
+    },
 }
 
 # The redesign rebuilt these routes into structured components, so text order
@@ -143,6 +154,12 @@ for p in inventory:
     assert title == p['title'], (route, 'document title changed', title, p['title'])
     original = document(CAPTURE / p['local_path'])
     actual_text = compact(main(actual).text())
+    if route in REPLACED:
+        for phrase in REPLACED[route]['required']:
+            assert compact(phrase) in actual_text, (route, 'replacement copy missing', phrase)
+        for phrase in REPLACED[route]['retired']:
+            assert phrase not in main(actual).text(), (route, 'retired copy returned', phrase)
+        continue
     replacements = COPY_REPLACEMENTS.get(route, [])
     for old, new in replacements:
         assert compact(old) in compact(main(original).text()), (route, 'copy exception no longer matches capture')

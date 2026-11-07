@@ -45,3 +45,13 @@ The November 2026 redesign (tracking issue #17) replaces the Squarespace-parity 
 - **No email address (default decision applied).** The artboard's dashed "Optional: add a direct email link" note was left out. If Kate wants one later, add a fifth tile or a `mailto:` line here, and update the privacy policy.
 - "Be sure to follow me on Bookbub & Goodreads, too!" became the BookBub and Goodreads tiles. This is an approved replacement in `check_migration.py`. All four social URLs are unchanged and come from `src/_data/site.js`.
 - The `hero` and `shortHero` page-layout options were removed. `layouts/page.njk` is now just the plain content layout used by the secondary pages.
+
+## Privacy policy (#15)
+
+- `src/privacy-policy.njk` now holds the short policy from the artboard, last updated November 7, 2026. The old Squarespace/Google Analytics, cookie and log-file text and its inline styles are gone. This replaces the earlier issue #4 copy exception.
+- The claims were verified against the build:
+  - **No cookies, analytics or tracking:** a headless-browser pass over every generated page plus a search query set no cookies, wrote no `localStorage`/`sessionStorage`, and made no request to any other host. `check_site.py` now fails on cookie/storage/beacon APIs, known analytics snippets, inline scripts, or any script outside `assets/js/`.
+  - **Fonts and images from this site:** `check_site.py` already rejects external asset hosts and third-party font hosts (#7).
+  - **No contact/newsletter/sign-up forms:** `check_forms.py` allows only the two search forms (`/search/` and `/musings/`), both of which submit a query to the local search page.
+- No Amazon affiliate tag was kept (#11), so the policy has no Amazon cookie line. If the tag is restored, add one.
+- `check_migration.py` treats this route as **replaced**: it requires the new copy and rejects the retired analytics language, instead of comparing the captured text.

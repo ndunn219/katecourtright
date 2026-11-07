@@ -151,3 +151,14 @@ for book in books:
     for store in (store for fmt in book['formats'] for store in fmt['stores']):
         assert urlsplit(store['url']).scheme == 'https', store
         assert 'tag=' not in store['url'], f'{store["url"]}: unconfirmed affiliate tag'
+
+# Privacy policy claims (redesign #15): no cookies, storage, analytics or
+# tracking scripts, and no third-party fonts or images (asset hosts are
+# rejected above). Only the site's own scripts run.
+for file in OUTPUT.rglob('*'):
+    if file.suffix in ('.html', '.js'):
+        text = file.read_text()
+        assert not re.search(r'document\.cookie|localStorage|sessionStorage|indexedDB|navigator\.sendBeacon|gtag\(|googletagmanager|google-analytics|plausible|fathom|matomo|_gaq|fbq\(', text), f'{file}: cookie, storage or tracking code contradicts the privacy policy'
+scripts = {attrs['src'] for page in pages.values() for tag, attrs in page.tags if tag == 'script' and attrs.get('src')}
+assert all(src.startswith(PREFIX + 'assets/js/') for src in scripts), scripts
+assert all(tag != 'script' or attrs.get('src') or attrs.get('type') == 'application/json' for page in pages.values() for tag, attrs in page.tags), 'Inline script found'

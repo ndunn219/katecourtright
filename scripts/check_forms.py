@@ -69,7 +69,7 @@ for route in ('arc', 'newsletter'):
 arc = read_page('arc')
 assert not re.search(r'\b(?:join my|add you to my)\b', arc.text(), re.I), 'ARC invitation still promises signup'
 policy = read_page('privacy-policy').text()
-assert 'does not collect names or email addresses through those forms' in policy, 'Policy still implies form collection'
+assert 'this site doesn’t collect your name or email address' in policy, 'Policy must state that no names or emails are collected'
 assert 'Newsletter Lists' not in policy, 'Retired newsletter collection policy returned'
 
 contact = read_page('contact')
