@@ -171,13 +171,13 @@
     "source": "/musings?author=536510cee4b043dbe028347e",
     "destination": "/musings/author/536510cee4b043dbe028347e/",
     "status": "query-alias",
-    "note": "Musings recognizes the original author query and opens this static archive; visible author links also work without JavaScript."
+    "note": "All posts are credited to Kate Courtright (redesign #13), so /musings?author=… shows the full Musings index, which is the same list. This static archive of all of Kate's posts also remains, linked from each post byline."
   },
   {
     "source": "/musings?author=5c8160afdb7926584fdf6899",
     "destination": "/musings/author/5c8160afdb7926584fdf6899/",
     "status": "query-alias",
-    "note": "Musings recognizes the original author query and opens this static archive; visible author links also work without JavaScript."
+    "note": "All posts are credited to Kate Courtright (redesign #13), so /musings?author=… shows the full Musings index, which is the same list. This static archive of all of Kate's posts also remains, linked from each post byline."
   },
   {
     "source": "/newsletter",

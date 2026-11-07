@@ -1,16 +1,31 @@
 ---
 layout: layouts/base.njk
 ---
-<main id="main">
-  <div class="blog-intro">
-    <h1><strong><em>{{ heading }}</em></strong></h1>
-    <img src="/assets/images/musings-beach.webp" alt="A sandy path between fences leading to the sea" width="1000" height="563">
-    <div class="blog-intro-copy prose">{{ content | safe }}</div>
-  </div>
-  <div class="page-content archive-content">
-    {% include "partials/archive-links.njk" %}
-    {% set archivePosts = collections.posts %}
-    {% include "partials/post-list.njk" %}
-  </div>
-  <script src="/assets/js/author-filter.js" defer></script>
+<main id="main" class="musings">
+  <section class="musings-intro">
+    <div class="wrap musings-intro-grid">
+      <div>
+        <p class="eyebrow">Musings</p>
+        <h1><em>{{ heading }}</em></h1>
+        <div class="musings-intro-copy">{{ content | safe }}</div>
+      </div>
+      <img src="/assets/images/musings-beach.webp" alt="A sandy path between fences leading to the sea" width="1000" height="563" fetchpriority="high">
+    </div>
+  </section>
+
+  <section class="musings-list" aria-labelledby="musings-all">
+    <div class="wrap">
+      <div class="musings-tools">
+        <div>
+          <p class="eyebrow">All musings</p>
+          <h2 id="musings-all">{{ collections.posts.length }} essays, newest first</h2>
+        </div>
+        {% set searchId = "musings-search" %}
+        {% include "partials/search-form.njk" %}
+      </div>
+      {% set archivePosts = collections.posts %}{% set yearLevel = 3 %}
+      {% include "partials/post-list.njk" %}
+      {% include "partials/archive-links.njk" %}
+    </div>
+  </section>
 </main>

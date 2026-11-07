@@ -38,7 +38,7 @@ class Page(HTMLParser):
             assert int(attrs.get('width', 0)) > 0 and int(attrs.get('height', 0)) > 0, f'{self.file}: missing image dimensions'
         assert tag != 'iframe', f'{self.file}: unexpected {tag}'
         if tag == 'form':
-            assert self.file == OUTPUT / 'search/index.html' and attrs.get('role') == 'search', f'{self.file}: unexpected form'
+            assert self.file in (OUTPUT / 'search/index.html', OUTPUT / 'musings/index.html') and attrs.get('role') == 'search', f'{self.file}: unexpected form'
             assert attrs.get('action') == PREFIX + 'search/' and attrs.get('method') == 'get', 'Search must stay local'
         assert not any(key.startswith('on') for key in attrs), f'{self.file}: inline event handler'
         assert not (tag == 'script' and attrs.get('src', '').startswith('http')), f'{self.file}: unexpected external runtime'
@@ -89,7 +89,10 @@ for file, page in pages.items():
     if re.match(r'musings/\d{4}/', route):
         # Share URLs carry the page in a query parameter; profile links do not.
         shares = [attrs['href'] for tag, attrs in page.tags if tag == 'a' and urlsplit(attrs.get('href', '')).hostname in ('www.facebook.com', 'twitter.com', 'www.linkedin.com', 'www.reddit.com', 'www.tumblr.com') and urlsplit(attrs['href']).query]
-        assert len(shares) == 5, f'{file}: sharing controls missing'
+        # Redesign #13: Facebook, LinkedIn, Reddit and Email (Twitter and Tumblr dropped).
+        assert len(shares) == 3, f'{file}: sharing controls missing'
+        mail = [attrs['href'] for tag, attrs in page.tags if tag == 'a' and attrs.get('href', '').startswith('mailto:')]
+        assert len(mail) == 1 and parse_qs(urlsplit(mail[0]).query)['body'] == ['https://katecourtright.com/' + route], f'{file}: email share'
         for share in shares:
             query = parse_qs(urlsplit(share).query)
             assert (query.get('url') or query.get('u')) == ['https://katecourtright.com/' + route], f'{file}: wrong share destination'
@@ -124,7 +127,9 @@ for font in re.findall(r"url\('\.\./fonts/([^']+)'\)", fonts_css):
 
 post = OUTPUT / 'musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves/index.html'
 assert 'datetime="2023-10-01"' in post.read_text(), 'Publication date was lost or derived from permalink'
-assert 'Kate Dunn' in post.read_text(), 'Source attribution missing'
+assert 'By <a' in post.read_text() and 'Kate Courtright</a>' in post.read_text(), 'Byline missing'
+for file in OUTPUT.glob('musings/[0-9]*/**/index.html'):
+    assert not re.search(r'Vasheena|Kate Dunn', file.read_text()), f'{file}: legacy byline (redesign #13 credits every post to Kate Courtright)'
 index = OUTPUT / 'musings/index.html'
 assert sum(tag == 'article' for tag, _ in pages[index].tags) == 14, 'Blog grid must exercise all 14 entries'
 library = OUTPUT / 'short-stories-novellas/index.html'

@@ -20,12 +20,23 @@ export default function (config) {
       name, url: categoryUrl(name), posts: posts.filter(post => post.data.categories.includes(name)),
     }));
   });
+  // Every post is by Kate Courtright (redesign #13). The two legacy Squarespace
+  // author IDs remain as archive URLs; each now lists all of Kate's posts.
   config.addCollection('authors', collection => {
     const posts = postsByDate(collection);
-    return [...new Set(posts.map(post => post.data.authorId))].map(id => ({
-      id, name: posts.find(post => post.data.authorId === id).data.author,
-      url: authorUrl(id), posts: posts.filter(post => post.data.authorId === id),
-    }));
+    return [...new Set(posts.map(post => post.data.authorId))].sort().map(id => {
+      const name = posts.find(post => post.data.authorId === id).data.author;
+      return { id, name, url: authorUrl(id), posts: posts.filter(post => post.data.author === name) };
+    });
+  });
+  config.addCollection('postsByYear', collection => {
+    const years = new Map();
+    for (const post of postsByDate(collection)) {
+      const year = post.data.published.slice(0, 4);
+      if (!years.has(year)) years.set(year, []);
+      years.get(year).push(post);
+    }
+    return [...years].map(([year, posts]) => ({ year, posts }));
   });
   config.addFilter('categoryUrl', categoryUrl);
   config.addFilter('authorUrl', authorUrl);

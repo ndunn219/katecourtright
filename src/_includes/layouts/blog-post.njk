@@ -1,29 +1,28 @@
 ---
 layout: layouts/base.njk
 ---
-<main id="main" class="page-content blog-post">
-  <article>
-    <header>
-      <p class="post-date"><time datetime="{{ published }}">{{ published | readableDate }}</time></p>
-      <h1>{{ title }}</h1>
-    </header>
+{% set adjacent = collections.posts | adjacentPosts(page.url) %}
+{% set shareUrl = (canonicalPath or page.url) | canonicalUrl %}
+<main id="main" class="wrap">
+  <article class="post">
+    <a class="back-link" href="/musings/"><span aria-hidden="true">←</span> All musings</a>
+    <p class="eyebrow">{{ categories[0] if categories.length else "Musings" }}</p>
+    <h1>{{ title }}</h1>
+    <p class="post-meta"><span>By <a href="{{ authorId | authorUrl }}">{{ author }}</a></span><span><time datetime="{{ published }}">{{ published | readableDate }}</time></span></p>
     <div class="prose post-body">{{ content | safe }}</div>
-    <p class="post-meta"><a href="{{ authorId | authorUrl }}">{{ author }}</a> · <time datetime="{{ published }}">{{ published | readableDate }}</time></p>
-    {% if categories.length %}<p class="post-categories">{% for category in categories %}<a href="{{ category | categoryUrl }}">{{ category }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+    {% if categories.length %}<p class="post-topics"><span class="post-topics-label">Filed under</span> {% for category in categories %}<a href="{{ category | categoryUrl }}">{{ category }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+    <nav class="share-links" aria-labelledby="share-label">
+      <span class="share-label" id="share-label">Share</span>
+      <a class="chip" href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl | encodeURIComponent }}">Facebook</a>
+      <a class="chip" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ shareUrl | encodeURIComponent }}">LinkedIn</a>
+      <a class="chip" href="https://www.reddit.com/submit?url={{ shareUrl | encodeURIComponent }}">Reddit</a>
+      <a class="chip" href="mailto:?subject={{ title | encodeURIComponent }}&amp;body={{ shareUrl | encodeURIComponent }}">Email</a>
+    </nav>
+    {% if adjacent.newer or adjacent.older %}
+    <nav class="post-navigation" aria-label="More musings">
+      {% if adjacent.newer %}<a class="post-nav-newer" href="{{ adjacent.newer.url }}"><span class="post-nav-dir"><span aria-hidden="true">←</span> Newer</span><span class="post-nav-title">{{ adjacent.newer.data.title }}</span></a>{% endif %}
+      {% if adjacent.older %}<a class="post-nav-older" href="{{ adjacent.older.url }}"><span class="post-nav-dir">Older <span aria-hidden="true">→</span></span><span class="post-nav-title">{{ adjacent.older.data.title }}</span></a>{% endif %}
+    </nav>
+    {% endif %}
   </article>
-  {% set shareUrl = (canonicalPath or page.url) | canonicalUrl | encodeURIComponent %}
-  <nav class="share-links" aria-label="Share this post">
-    <span>Share:</span>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl }}">Facebook</a>
-    <a href="https://twitter.com/intent/tweet?url={{ shareUrl }}&amp;text={{ title | encodeURIComponent }}">Twitter</a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ shareUrl }}">LinkedIn</a>
-    <a href="https://www.reddit.com/submit?url={{ shareUrl }}">Reddit</a>
-    <a href="https://www.tumblr.com/share/link?url={{ shareUrl }}">Tumblr</a>
-  </nav>
-  <nav class="post-navigation" aria-label="Post navigation">
-    <a href="/musings/">All musings</a>
-    {% set adjacent = collections.posts | adjacentPosts(page.url) %}
-    {% if adjacent.newer %}<a href="{{ adjacent.newer.url }}">Newer<br>{{ adjacent.newer.data.title }}</a>{% endif %}
-    {% if adjacent.older %}<a href="{{ adjacent.older.url }}">Older<br>{{ adjacent.older.data.title }} →</a>{% endif %}
-  </nav>
 </main>

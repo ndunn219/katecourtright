@@ -164,7 +164,9 @@ for p in inventory:
     assert compact(body.text()) == compact(' '.join(b.text() for b in content_blocks(original))), (route, 'post body differs')
     assert any(n.tag == 'time' and n.attrs.get('datetime') == meta['date'] and n.text() == meta['displayed_date'] for n in actual.walk()), route
     author_id = parse_qs(urlsplit(meta['author_url']).query)['author'][0]
-    assert any(n.tag == 'a' and n.text() == meta['author'] and n.attrs.get('href') == local('/musings/author/' + author_id + '/') for n in actual.walk()), route
+    # Redesign #13: every post is credited to Kate Courtright; the legacy author
+    # ID still names the archive the byline links to.
+    assert any(n.tag == 'a' and n.text() == 'Kate Courtright' and n.attrs.get('href') == local('/musings/author/' + author_id + '/') for n in actual.walk()), route
     categories = [n.text() for n in main(actual).walk() if n.tag == 'a' and '/category/' in n.attrs.get('href', '')]
     assert categories == meta['categories'], (route, 'categories changed')
     original_rules = sum(has_class(n, 'sqs-block-horizontalrule') for n in main(original).walk())
@@ -178,8 +180,9 @@ for p in inventory:
         assert post_urls(generated(route)) == expected, (route, 'category membership/order')
     elif p['kind'] == 'blog-filter':
         author_id = parse_qs(urlsplit(p['source_url']).query)['author'][0]
-        expected = [local(urlsplit(post['source_url']).path + '/') for post in posts if post['post']['author_url'] == p['source_url']]
-        assert len(expected) == 7
+        # Both legacy author archives now list all of Kate's posts (redesign #13).
+        assert sum(post['post']['author_url'] == p['source_url'] for post in posts) == 7
+        expected = [local(urlsplit(post['source_url']).path + '/') for post in posts]
         assert post_urls(generated('/musings/author/' + author_id + '/')) == expected, 'Author membership/order'
 
 for asset in json.loads((CAPTURE / 'assets.json').read_text()):

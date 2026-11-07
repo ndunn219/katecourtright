@@ -15,6 +15,5 @@ for (const [prefix, environment] of [['/katecourtright/', 'preview'], ['/', 'pro
   run('python3', ['scripts/check_site.py', prefix], env);
   run('python3', ['scripts/check_migration.py', prefix], env);
   run('python3', ['scripts/check_forms.py', prefix], env);
-  run(process.execPath, ['scripts/check-author-filter.mjs'], env);
   run(process.execPath, ['scripts/check-interactions.mjs'], env);
 }

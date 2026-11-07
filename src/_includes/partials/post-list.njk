@@ -1,10 +1,21 @@
-<div class="blog-grid">
-  {% for post in archivePosts %}
-  <article>
-    <p class="post-date"><time datetime="{{ post.data.published }}">{{ post.data.published | readableDate }}</time></p>
-    <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-    <p class="post-meta"><a href="{{ post.data.authorId | authorUrl }}">{{ post.data.author }}</a></p>
-    {% if post.data.categories.length %}<p class="post-categories">{% for category in post.data.categories %}<a href="{{ category | categoryUrl }}">{{ category }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+{# Posts grouped by year, newest first. Set `archivePosts` (and optionally
+   `yearLevel`, the year heading level, default 2) before including. #}
+{% set yl = yearLevel or 2 %}
+{% set currentYear = "" %}
+<div class="post-years">
+{% for post in archivePosts %}
+  {% set year = post.data.published.slice(0, 4) %}
+  {% if year != currentYear %}
+    {% if not loop.first %}</div></section>{% endif %}
+    <section class="post-year" aria-labelledby="year-{{ year }}">
+      <h{{ yl }} class="post-year-label" id="year-{{ year }}">{{ year }}</h{{ yl }}>
+      <div class="post-year-list">
+    {% set currentYear = year %}
+  {% endif %}
+  <article class="post-item">
+    <p class="post-item-date"><time datetime="{{ post.data.published }}">{{ post.data.published | monthYear }}</time></p>
+    <h{{ yl + 1 }} class="post-item-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h{{ yl + 1 }}>
   </article>
-  {% endfor %}
+  {% if loop.last %}</div></section>{% endif %}
+{% endfor %}
 </div>

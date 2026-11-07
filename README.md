@@ -46,7 +46,6 @@ The [Eleventy HTML Base plugin](https://www.11ty.dev/docs/plugins/html-base/) ap
 | `src/*.njk`, `src/posts/*.njk` | Page content and front matter |
 | `src/authors.njk`, `src/categories.njk` | Static archives generated from post metadata |
 | `eleventy.config.js` | Post ordering, archive collections, shared filters, and path-prefix configuration |
-| `src/assets/js/author-filter.js` | Compatibility for old `?author=` links |
 | `src/assets/js/site.js` | Mobile menu focus/state, anchor focus, and reduced-motion-aware parallax |
 | `src/assets/js/search*.js`, `scripts/search-index.mjs` | Local search UI, ranking, and build-time full-text index |
 | `src/static/s/` | EPUB files at their original download paths |
