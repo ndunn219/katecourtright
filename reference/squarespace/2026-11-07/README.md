@@ -7,10 +7,10 @@ Reference for [issue #1](https://github.com/ndunn219/katecourtright/issues/1). T
 - [x] URL/content inventory, including items requiring a scope decision.
 - [x] Reproducible source and asset capture with original URLs and SHA-256 hashes.
 - [x] Desktop and representative mobile screenshot evidence saved.
-- [ ] Original exhaustive screenshot/behavior checklist completed.
+- [x] Representative references accepted; exhaustive capture checklist retired (November 7, 2026).
 - [x] Font requirements and missing-source findings documented.
 
-**Issue #1 remains open under its original detailed checklist.** On resumption, native Chrome worked despite the browser connector remaining unavailable. Thirty screenshots are now saved, with sixteen individually inspected: desktop coverage of all eight requested pages, representative mobile coverage of home/About/Contact, and mobile menu behavior. See the [capture notes](screenshots/README.md) for the reduced capture scope, metadata, visual limitations, and remaining gaps.
+**Issue #1 is complete with the representative reference set accepted by the user on November 7, 2026.** On resumption, native Chrome worked despite the browser connector remaining unavailable. Thirty screenshots are now saved, with sixteen individually inspected: desktop coverage of all eight requested pages, representative mobile coverage of home/About/Contact, and mobile menu behavior. See the [capture notes](screenshots/README.md) for the accepted capture scope, metadata, visual limitations, and checks carried into later work.
 
 ## Captured material
 

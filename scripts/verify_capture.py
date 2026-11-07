@@ -18,7 +18,8 @@ def verify_screenshots(root):
     manifest = root / "screenshots/captures.json"
     if not manifest.is_file():
         return {"status": "pending", "recorded": 0, "inspected": 0, "errors": []}
-    records = json.loads(manifest.read_text())["screenshots"]
+    evidence = json.loads(manifest.read_text())
+    records = evidence["screenshots"]
     errors = []
     seen = set()
     for record in records:
@@ -49,7 +50,7 @@ def verify_screenshots(root):
         for key in ("url", "captured_at", "browser", "page_zoom_percent", "state"):
             if not record.get(key):
                 errors.append(f"Missing screenshot metadata {key}: {name}")
-    return {"status": "references available; original checklist partial",
+    return {"status": "representative references accepted" if evidence.get("scope_accepted") else "references available; scope not yet accepted",
             "recorded": len(records), "inspected": sum(r.get("inspected") is True for r in records),
             "evidence_integrity_passed": not errors, "errors": errors,
             "checklist": "screenshots/README.md",

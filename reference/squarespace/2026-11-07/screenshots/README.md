@@ -4,7 +4,7 @@ Captured **November 7, 2026**, from the live Squarespace site using **Google Chr
 
 Desktop: **1440 × 900 CSS pixels**. Mobile: **390 × 844 CSS pixels**. Both use **DPR 1, 100% page zoom** in Chrome's Responsive device toolbar. Its fitted preview does not change the exported PNG dimensions. The cookie banner was dismissed before capture. Browser version was read from the installed app's Info.plist.
 
-The saved HTML/CSS and asset inventory are the primary implementation reference. Screenshots supplement them for visible layout, wrapping, crops, and interactive states. The user questioned the need for an exhaustive screenshot set during capture; further capture was limited to representative mobile layouts. **The original handoff checklist is still partial, not silently completed.**
+The saved HTML/CSS and asset inventory are the primary implementation reference. Screenshots supplement them for visible layout, wrapping, crops, and interactive states. The user accepted the representative set and authorized closing issue #1 on November 7, 2026. **The exhaustive capture checklist is retired; no additional screenshots are required to complete the inventory.**
 
 ## Coverage
 
@@ -30,6 +30,6 @@ The saved HTML/CSS and asset inventory are the primary implementation reference.
 - No obvious copy changes were noticed relative to the archive; a complete live/source diff was not performed.
 - Computed font metrics and loaded font faces were not verified. Chrome blocked a console paste with its self-XSS warning; that protection was left enabled. Existing DESIGN.md measurements remain source declarations.
 
-## Original checklist gaps
+## Follow-up during implementation
 
-The five missing mobile page captures, category/author-filter browser checks, dedicated index-navigation check, and computed typography measurements remain undone. Existing source inventories cover these pages and filters. Issue #1 should remain open under its original detailed handoff unless the smaller representative set is accepted as sufficient. Do not restart the entire screenshot exercise or re-download the source archive just to fill these gaps.
+The five additional mobile page captures from the original checklist are no longer required. Font loading and typography verification belong to issue #2; category/author-filter and index-navigation behavior checks belong to the later interactive-behavior work (issue #5). Existing source inventories cover these pages and filters. The accepted scope does not imply those checks were performed or that every saved screenshot was individually inspected. Do not restart the exhaustive capture exercise or re-download the source archive.

@@ -662,12 +662,13 @@
       "inspection_note": "Reviewed image for visible structure and content; font loading not independently verified."
     }
   ],
-  "scope_status": "Desktop references for eight pages; representative mobile references for home, About, and Contact. Original eight-page mobile checklist remains partial.",
+  "scope_status": "Representative references accepted by the user on 2026-11-07; exhaustive capture checklist retired. Font verification continues in issue #2; navigation behavior checks in issue #5.",
   "behavior_checks": {
     "mobile_menu_open_close": "observed",
     "mobile_menu_about_navigation": "observed; About Kate loaded from menu",
     "forms_submitted": false,
     "category_and_author_filters": "not exercised in browser; source archived",
     "computed_styles_and_font_loading": "not verified"
-  }
+  },
+  "scope_accepted": true
 }

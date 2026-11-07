@@ -25,5 +25,5 @@ python3 scripts/verify_capture.py
 
 For a later capture, pass a new dated directory with `--output reference/squarespace/YYYY-MM-DD`. Use `--refresh` only when deliberately replacing responses in an existing snapshot. Failed URLs are retried on an online run; `--offline` reuses their recorded status.
 
-Desktop references for all eight requested pages and representative mobile references are saved. The [capture notes](reference/squarespace/2026-11-07/screenshots/README.md) and manifest record inspected images, capture limitations, and the remaining gaps in the original exhaustive checklist. Issue #1 remains open under that checklist.
+Desktop references for all eight requested pages and representative mobile references are saved. The [capture notes](reference/squarespace/2026-11-07/screenshots/README.md) and manifest record inspected images and capture limitations. The representative set was accepted and issue #1 closed on November 7, 2026; the exhaustive capture checklist is retired.
 

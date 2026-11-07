@@ -76,5 +76,5 @@ These are visual observations, separate from the source declarations above. See 
 - Screenshots show loaded hero/portrait images and serif/sans typography, but do not establish which font faces rendered. Computed styles and font loading remain unverified; do not label the source table as browser measurements.
 - Full-page capture changes parallax/lazy-image rendering. Home background boundaries and blank library cover regions in full captures are capture limitations; compare the scrolled viewport evidence and original assets. No missing asset is inferred from a blank screenshot region.
 
-The original detailed checklist still lacks five mobile pages, category/author behavior, index navigation, and computed typography checks. The source archive remains authoritative for content and CSS declarations. No obvious copy change was noticed, but no complete source/live diff was performed.
+The user accepted the representative references for issue #1 on November 7, 2026 and retired the additional screenshot requirements. Font and computed typography verification carry into issue #2; category/author and index-navigation checks carry into issue #5. The source archive remains authoritative for content and CSS declarations. No obvious copy change was noticed, but no complete source/live diff was performed.
 
