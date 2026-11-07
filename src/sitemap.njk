@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for entry in collections.all %}{% if entry.url and entry.url != '/welcome/' and entry.data.sitemap != false %}
+{% for entry in collections.all | sort(false, false, 'url') %}{% if entry.url and entry.url != '/welcome/' and entry.data.sitemap != false %}
   <url><loc>{{ entry.url | canonicalUrl }}</loc></url>
 {% endif %}{% endfor %}
 </urlset>

@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urljoin, urlsplit
 import json
+import os
 import re
 import sys
 
@@ -80,6 +81,10 @@ for file, page in pages.items():
     assert sum(tag == 'main' for tag, _ in page.tags) == 1, f'{file}: expected one main landmark'
     assert any(tag == 'h1' for tag, _ in page.tags), f'{file}: missing heading'
     assert any(tag == 'meta' and attrs.get('name') == 'viewport' for tag, attrs in page.tags), f'{file}: missing viewport'
+    private_page = route in ('404.html', 'newsletter/', 'search/')
+    robots = ('noindex, follow' if private_page else 'index, follow') if os.environ.get('SITE_ENV') == 'production' else 'noindex, nofollow'
+    assert [attrs.get('content') for tag, attrs in page.tags if tag == 'meta' and attrs.get('name') == 'robots'] == [robots], f'{file}: incorrect indexing policy'
+    assert any(tag == 'meta' and attrs.get('name') == 'description' and attrs.get('content') for tag, attrs in page.tags), f'{file}: missing description'
     assert any(tag == 'summary' and attrs.get('aria-controls') == 'mobile-navigation' for tag, attrs in page.tags), f'{file}: menu control missing'
     assert 'mobile-navigation' in page.ids, f'{file}: menu target missing'
     if re.match(r'musings/\d{4}/', route):

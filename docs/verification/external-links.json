@@ -1,0 +1,498 @@
+{
+  "checked_at": "2026-11-07T19:40:34.416912+00:00",
+  "mode": "external",
+  "base_url": null,
+  "checked": 34,
+  "failures": 9,
+  "skipped_share_urls": [
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2022%2F3%2F1%2Fsome-of-my-favorite-romantic-moments-in-fiction%2F&text=Some%20of%20My%20Favorite%20Romantic%20Moments%20in%20Fiction",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F10%2F27%2Fmeeting-anna-quindlen-and-having-enough-bookshelves%2F&text=Meeting%20Anna%20Quindlen%20and%20Having%20Enough%20Bookshelves",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Freflections-on-the-joy-and-power-of-stories%2F&text=Reflections%20on%20the%20Joy%20and%20Power%20of%20Stories",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhat-my-enneagram-number-reveals-about-my-writing-process%2F&text=What%20my%20Enneagram%20Number%20Reveals%20about%20My%20Writing%20Process",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhy-i-didnt-stop-writing-even-when-i-seriously-thought-about-it%2F&text=Why%20I%20Didn%E2%80%99t%20Stop%20Writing%2C%20Even%20When%20I%20Seriously%20Thought%20about%20It",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fkristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process%2F&text=Kristin%20Hannah%2C%20Leonard%20Cohen%2C%20and%20the%20Mystery%20of%20the%20Revision%20Process",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fpodcast-recommendations-about-creativity-and-the-writing-process%2F&text=Podcast%20Recommendations%20about%20Creativity%20and%20Sharing%20Stories",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-path-to-avoiding-burnout%2F&text=The%20Creative%20Path%20to%20Avoiding%20Burnout",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-process-of-late-bloomers%2F&text=The%20Creative%20Process%20of%20Late%20Bloomers",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-joys-of-writing-longhand%2F&text=The%20Joys%20of%20Writing%20Longhand",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F7%2F31%2Fwhere-am-i-on-the-spectrum-of-plotting-vs-pantsing%2F&text=Where%20Am%20I%20on%20the%20Spectrum%20of%20Plotting%20vs.%20Pantsing%3F",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F8%2F8%2Ffor-this-season-of-gratitude-ten-things-im-grateful-for%2F&text=For%20This%20Season%20of%20Gratitude%2C%20Ten%20Things%20I'm%20Grateful%20For%3A",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Freconnecting-to-playtime%2F&text=Reconnecting%20to%20Playtime%3A%20Guidance%20on%20Creativity%20from%20Ethan%20Hawke",
+    "https://twitter.com/intent/tweet?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Fthe-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my%2F&text=The%20Courageous%20Legacy%20of%20Hans%20Christian%20Andersen%C2%A0%20%20(and%20whales%2C%20puffins%20and%20sheep%2C%20oh%20my!)",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2022%2F3%2F1%2Fsome-of-my-favorite-romantic-moments-in-fiction%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F10%2F27%2Fmeeting-anna-quindlen-and-having-enough-bookshelves%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Freflections-on-the-joy-and-power-of-stories%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhat-my-enneagram-number-reveals-about-my-writing-process%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhy-i-didnt-stop-writing-even-when-i-seriously-thought-about-it%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fkristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fpodcast-recommendations-about-creativity-and-the-writing-process%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-path-to-avoiding-burnout%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-process-of-late-bloomers%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-joys-of-writing-longhand%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F7%2F31%2Fwhere-am-i-on-the-spectrum-of-plotting-vs-pantsing%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F8%2F8%2Ffor-this-season-of-gratitude-ten-things-im-grateful-for%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Freconnecting-to-playtime%2F",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Fthe-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2022%2F3%2F1%2Fsome-of-my-favorite-romantic-moments-in-fiction%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F10%2F27%2Fmeeting-anna-quindlen-and-having-enough-bookshelves%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Freflections-on-the-joy-and-power-of-stories%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhat-my-enneagram-number-reveals-about-my-writing-process%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhy-i-didnt-stop-writing-even-when-i-seriously-thought-about-it%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fkristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fpodcast-recommendations-about-creativity-and-the-writing-process%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-path-to-avoiding-burnout%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-process-of-late-bloomers%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-joys-of-writing-longhand%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F7%2F31%2Fwhere-am-i-on-the-spectrum-of-plotting-vs-pantsing%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F8%2F8%2Ffor-this-season-of-gratitude-ten-things-im-grateful-for%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Freconnecting-to-playtime%2F",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Fthe-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2022%2F3%2F1%2Fsome-of-my-favorite-romantic-moments-in-fiction%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F10%2F27%2Fmeeting-anna-quindlen-and-having-enough-bookshelves%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Freflections-on-the-joy-and-power-of-stories%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhat-my-enneagram-number-reveals-about-my-writing-process%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhy-i-didnt-stop-writing-even-when-i-seriously-thought-about-it%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fkristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fpodcast-recommendations-about-creativity-and-the-writing-process%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-path-to-avoiding-burnout%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-process-of-late-bloomers%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-joys-of-writing-longhand%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F7%2F31%2Fwhere-am-i-on-the-spectrum-of-plotting-vs-pantsing%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F8%2F8%2Ffor-this-season-of-gratitude-ten-things-im-grateful-for%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Freconnecting-to-playtime%2F",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Fthe-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2022%2F3%2F1%2Fsome-of-my-favorite-romantic-moments-in-fiction%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F10%2F27%2Fmeeting-anna-quindlen-and-having-enough-bookshelves%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Freflections-on-the-joy-and-power-of-stories%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhat-my-enneagram-number-reveals-about-my-writing-process%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F4%2F14%2Fwhy-i-didnt-stop-writing-even-when-i-seriously-thought-about-it%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fkristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fpodcast-recommendations-about-creativity-and-the-writing-process%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-path-to-avoiding-burnout%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-creative-process-of-late-bloomers%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F6%2F30%2Fthe-joys-of-writing-longhand%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F7%2F31%2Fwhere-am-i-on-the-spectrum-of-plotting-vs-pantsing%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F8%2F8%2Ffor-this-season-of-gratitude-ten-things-im-grateful-for%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Freconnecting-to-playtime%2F",
+    "https://www.tumblr.com/share/link?url=https%3A%2F%2Fkatecourtright.com%2Fmusings%2F2023%2F9%2F1%2Fthe-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my%2F"
+  ],
+  "results": [
+    {
+      "url": "https://katebowler.com/podcasts/susan-cain-survival-of-the-kindest/",
+      "status": 200,
+      "final_url": "https://katebowler.com/podcasts/susan-cain-survival-of-the-kindest/",
+      "error": "",
+      "sha256": "131dc4d9b2cbd1b8e7d5872021e4c4b315b9a5c12defd7d532fbe3c8ec2bcbb2",
+      "sources": [
+        "musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://onbeing.org/programs/kate-dicamillo-for-the-eight-year-old-in-you/",
+      "status": 200,
+      "final_url": "https://onbeing.org/programs/kate-dicamillo-on-nurturing-capacious-hearts/",
+      "error": "",
+      "sha256": "127387205b4686b61fb2c895b20870bb66c4bc0ea81b6c57dee3a6e845537e5e",
+      "sources": [
+        "musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://podcasts.apple.com/us/podcast/sue-monk-kidd-ann-patchett-longings-in-writing-life/id1047012231?i=1000476411433",
+      "status": 200,
+      "final_url": "https://podcasts.apple.com/us/podcast/sue-monk-kidd-ann-patchett-longings-in-writing-life/id1047012231?i=1000476411433",
+      "error": "",
+      "sha256": "0e96d05e02ab42fc0d59eee5dfa4e6ae83125cae9b7257687fa922b7042669d7",
+      "sources": [
+        "musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.11ty.dev/",
+      "status": 200,
+      "final_url": "https://www.11ty.dev/",
+      "error": "",
+      "sha256": "27532fdf0eb59e29299708cedbb5af47a35a27972fcc6e68d5e903c7a2609854",
+      "sources": [
+        "404.html",
+        "about-late/index.html",
+        "arc/index.html",
+        "contact/index.html",
+        "first-impressions/index.html",
+        "index.html",
+        "listing-02-hatch/index.html",
+        "musings/2022/3/1/some-of-my-favorite-romantic-moments-in-fiction/index.html",
+        "musings/2023/10/27/meeting-anna-quindlen-and-having-enough-bookshelves/index.html",
+        "musings/2023/4/14/reflections-on-the-joy-and-power-of-stories/index.html",
+        "musings/2023/4/14/what-my-enneagram-number-reveals-about-my-writing-process/index.html",
+        "musings/2023/4/14/why-i-didnt-stop-writing-even-when-i-seriously-thought-about-it/index.html",
+        "musings/2023/6/30/kristin-hannah-leonard-cohen-and-the-mystery-of-the-revision-process/index.html",
+        "musings/2023/6/30/podcast-recommendations-about-creativity-and-the-writing-process/index.html",
+        "musings/2023/6/30/the-creative-path-to-avoiding-burnout/index.html",
+        "musings/2023/6/30/the-creative-process-of-late-bloomers/index.html",
+        "musings/2023/6/30/the-joys-of-writing-longhand/index.html",
+        "musings/2023/7/31/where-am-i-on-the-spectrum-of-plotting-vs-pantsing/index.html",
+        "musings/2023/8/8/for-this-season-of-gratitude-ten-things-im-grateful-for/index.html",
+        "musings/2023/9/1/reconnecting-to-playtime/index.html",
+        "musings/2023/9/1/the-courageous-legacy-of-hans-christian-andersennbsp-and-whales-puffins-and-sheep-oh-my/index.html",
+        "musings/author/536510cee4b043dbe028347e/index.html",
+        "musings/author/5c8160afdb7926584fdf6899/index.html",
+        "musings/category/Musings+on+Creativity/index.html",
+        "musings/category/My+Sharing+Shelf/index.html",
+        "musings/category/Storytelling+that+Touches+the+Heart/index.html",
+        "musings/category/The+Writing+Journey/index.html",
+        "musings/index.html",
+        "newsletter/index.html",
+        "privacy-policy/index.html",
+        "search/index.html",
+        "short-stories-novellas/index.html",
+        "welcome/index.html",
+        "works-in-progress/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/Fire-Boy-Pine-Lodge-Tales-ebook/dp/B087NXW5FB/ref%3Dsr_1_2?dchild=1&keywords=kate%20courtright&qid=1603926349&sr=8-2",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Fire-Boy-Pine-Lodge-Tales-ebook/dp/B087NXW5FB/ref%3Dsr_1_2?dchild=1&keywords=kate%20courtright&qid=1603926349&sr=8-2",
+      "error": "",
+      "sha256": "266002ace74878e67ec9461d1de1b9a2f4f13eb11958db07378d0c16fcea55b9",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/First-Impressions-Five-Short-Stories-ebook/dp/B0BTRRYDRS/ref%3Dsr_1_1?crid=29TV8JLIS3XU3&keywords=first%20impressions%20kate%20courtright&qid=1678731009&sprefix=first%20impressions%20kate%20%2Caps%2C70&sr=8-1",
+      "status": 200,
+      "final_url": "https://www.amazon.com/First-Impressions-Five-Short-Stories-ebook/dp/B0BTRRYDRS/ref%3Dsr_1_1?crid=29TV8JLIS3XU3&keywords=first%20impressions%20kate%20courtright&qid=1678731009&sprefix=first%20impressions%20kate%20%2Caps%2C70&sr=8-1",
+      "error": "",
+      "sha256": "75f0ee82f3ec60e56e03ee54ba0880f630712fc4e336130f7a2a7a0abf1f38f7",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/First-Impressions-Five-Short-Stories/dp/1959491016/ref%3Dtmm_pap_swatch_0?_encoding=UTF8&qid=1678731009&sr=8-1",
+      "status": 200,
+      "final_url": "https://www.amazon.com/First-Impressions-Five-Short-Stories/dp/1959491016/ref%3Dtmm_pap_swatch_0?_encoding=UTF8&qid=1678731009&sr=8-1",
+      "error": "",
+      "sha256": "8fdac7450b5d80feae7210744ef8493cf2e4033380dd682bf7b01365d0e2a212",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/Former-Things-Short-Kate-Courtright-ebook/dp/B09J1LQ38R/ref%3Dsr_1_1?keywords=former%20things%20kate%20courtright&qid=1637610663&sr=8-1",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Former-Things-Short-Kate-Courtright-ebook/dp/B09J1LQ38R/ref%3Dsr_1_1?keywords=former%20things%20kate%20courtright&qid=1637610663&sr=8-1",
+      "error": "",
+      "sha256": "e9740847dc7378641e162e5cfb623ae4229509f2072f1af9c32c7959487dbdc6",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/Pinkie-A-Short-Story/dp/B08NJWGVX1/ref%3Dtmm_aud_swatch_0?_encoding=UTF8&qid=1604756602&sr=8-1",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Pinkie-A-Short-Story/dp/B08NJWGVX1/ref%3Dtmm_aud_swatch_0?_encoding=UTF8&qid=1604756602&sr=8-1",
+      "error": "",
+      "sha256": "eefcb3ecf70459429d5f67a17b84d84406590af433cb3605fa4a9e9eac1d26a6",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/Pinkie-Short-Story-Kate-Courtright-ebook/dp/B082CHQ6KG/ref%3Dsr_1_1?dchild=1&keywords=pinkie%20by%20kate&qid=1604756602&sr=8-1",
+      "status": 200,
+      "final_url": "https://www.amazon.com/Pinkie-Short-Story-Kate-Courtright-ebook/dp/B082CHQ6KG/ref%3Dsr_1_1?dchild=1&keywords=pinkie%20by%20kate&qid=1604756602&sr=8-1",
+      "error": "",
+      "sha256": "ccc9e8cf24302c9502dc4303326f7f5286f9342cd7252ef068501d3396b8a2b9",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/dp/B09XQJ4FQL?_bbid=66494394&tag=individualbookpagesite-20",
+      "status": 200,
+      "final_url": "https://www.amazon.com/dp/B09XQJ4FQL?lv=shuf&_bbid=66494394&tag=individualbookpagesite-20&channelId=1&plpRedirect=mhFallback",
+      "error": "",
+      "sha256": "5e26d8eea50601121f6ada2301c0aa2311ad6165dfc7b3e7f95456e6a0aa26d4",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.amazon.com/stores/Kate-Courtright/author/B08675D3FF?isDramIntegrated=true&ref=ap_rdr&shoppingPortalEnabled=true&store_ref=ap_rdr",
+      "status": 200,
+      "final_url": "https://www.amazon.com/stores/Kate-Courtright/author/B08675D3FF?isDramIntegrated=true&ref=ap_rdr&shoppingPortalEnabled=true&store_ref=ap_rdr",
+      "error": "",
+      "sha256": "07a8662112c98754e4c328f32c8e515b66666583abe2fa98b47124abb004de0a",
+      "sources": [
+        "first-impressions/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.audible.com/pd/Pinkie-Audiobook/B08NJVQQ5V?pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=VJMA5ZFG37CJGHWF44BH&qid=1609283075&ref=a_search_c3_lProduct_1_5&sr=1-5",
+      "status": 200,
+      "final_url": "https://www.audible.com/pd/Pinkie-Audiobook/B08NJVQQ5V?pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=VJMA5ZFG37CJGHWF44BH&qid=1609283075&ref=a_search_c3_lProduct_1_5&sr=1-5",
+      "error": "",
+      "sha256": "bb75a5a717ceeb7234c28c60dd79f856d84b6e59b83efa2b3cd3d3b0f9d778e6",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.barnesandnoble.com/w/fire-boy-kate-courtright/1136942942?ean=2940164055813",
+      "status": 200,
+      "final_url": "https://www.barnesandnoble.com/w/fire-boy-kate-courtright/1136942942?ean=2940164055813",
+      "error": "",
+      "sha256": "3b4e7fc002f0f0ef0c00bb4d2d88531570caacbbaccb62417d05506bc4df4467",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.barnesandnoble.com/w/first-impressions-kate-courtright/1142102527?ean=2940186593102",
+      "status": 404,
+      "final_url": "https://www.barnesandnoble.com/w/first-impressions-kate-courtright/1142102527?ean=2940186593102",
+      "error": "",
+      "sha256": "cdff29bf5a141ec8a14f43131dfa008c945e1e4120d45ed84b0fc4eee6fb333f",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.barnesandnoble.com/w/former-things-kate-courtright/1140325828?ean=2940162592341",
+      "status": 200,
+      "final_url": "https://www.barnesandnoble.com/w/former-things-kate-courtright/1140325828?ean=2940162592341",
+      "error": "",
+      "sha256": "2754522cbcb90c7b5de795f0f3f249cd94b55fa2dc0c8ba88ab4371c1eeae194",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.barnesandnoble.com/w/its-up-to-you-new-york-kate-courtright/1141794885?ean=2940186798064",
+      "status": 200,
+      "final_url": "https://www.barnesandnoble.com/w/its-up-to-you-new-york-kate-courtright/1141794885?ean=2940186798064",
+      "error": "",
+      "sha256": "4aca0fcf85be19ef83cee6671cc18cd8c919508def82da700224ae763342abcd",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.barnesandnoble.com/w/pinkie-kate-courtright/1135410816?ean=2940163409396",
+      "status": 200,
+      "final_url": "https://www.barnesandnoble.com/w/pinkie-kate-courtright/1135410816?ean=2940163409396",
+      "error": "",
+      "sha256": "1f111b498566aeb27d0700b5e403e6ae8a49c6fd5a1ea7ffc0c09767266dcce6",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.bookbub.com/authors/kate-courtright",
+      "status": 403,
+      "final_url": "https://www.bookbub.com/authors/kate-courtright",
+      "error": "",
+      "sha256": "bcc1337207e331e8814f85eb6d116a79978c2be6e38cab3b23746e7b72bc30f8",
+      "sources": [
+        "about-late/index.html",
+        "contact/index.html",
+        "first-impressions/index.html",
+        "index.html",
+        "short-stories-novellas/index.html",
+        "welcome/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.chirpbooks.com/audiobooks/pinkie-by-kate-courtright",
+      "status": 403,
+      "final_url": "https://www.chirpbooks.com/audiobooks/pinkie-by-kate-courtright",
+      "error": "",
+      "sha256": "529b3da4d94108033033edc73164e902182c0530cc39329f349ecb26cc4e7cde",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.facebook.com/kate.courtright.nyc",
+      "status": 200,
+      "final_url": "https://www.facebook.com/kate.courtright.nyc",
+      "error": "",
+      "sha256": "faa8bc2d5e28c672b1416c234b4737d3f0c52309674b06200c4b964810031b11",
+      "sources": [
+        "contact/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.goodreads.com/author/show/19932939.Kate_Courtright?from_search=true&from_srp=true",
+      "status": 200,
+      "final_url": "https://www.goodreads.com/author/show/19932939.Kate_Courtright?from_search=true&from_srp=true",
+      "error": "",
+      "sha256": "8c47b9fb25c7c8c941dd389fcd174c1222cddb0af0d2c4a75353635523453c7e",
+      "sources": [
+        "about-late/index.html",
+        "contact/index.html",
+        "first-impressions/index.html",
+        "index.html",
+        "short-stories-novellas/index.html",
+        "welcome/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.instagram.com/kate_courtright_/",
+      "status": 200,
+      "final_url": "https://www.instagram.com/kate_courtright_/",
+      "error": "",
+      "sha256": "68ed7810d2fbc53078ccbfa1bb093b19606b2a9f6204d22a0d1f975d270f5edf",
+      "sources": [
+        "contact/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.kobo.com/us/en/audiobook/pinkie-2",
+      "status": 403,
+      "final_url": "https://www.kobo.com/us/en/audiobook/pinkie-2",
+      "error": "",
+      "sha256": "d602cac9c4d09dbf4ff4430fabe9a3f03b6b42d6ffa830a23329e7103d72149d",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.kobo.com/us/en/ebook/fire-boy-a-pine-lodge-tale",
+      "status": 403,
+      "final_url": "https://www.kobo.com/us/en/ebook/fire-boy-a-pine-lodge-tale",
+      "error": "",
+      "sha256": "b6b8043e27e1c5109b6784df314a440883c0bce5269c4f83be12032f08e12959",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.kobo.com/us/en/ebook/first-impressions-75",
+      "status": 403,
+      "final_url": "https://www.kobo.com/us/en/ebook/first-impressions-75",
+      "error": "",
+      "sha256": "7358444ddc25ad094590179ab7e92c94492fe39b016a709c31a46b4956d407f2",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.kobo.com/us/en/ebook/former-things",
+      "status": 403,
+      "final_url": "https://www.kobo.com/us/en/ebook/former-things",
+      "error": "",
+      "sha256": "9d61290f2641209722f18f34e2492a9a6355e8689b70271871120afd01584c29",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.kobo.com/us/en/ebook/it-s-up-to-you-new-york-2",
+      "status": 403,
+      "final_url": "https://www.kobo.com/us/en/ebook/it-s-up-to-you-new-york-2",
+      "error": "",
+      "sha256": "1ae305b92ddecdf567b70ecfd566b3f8e3d465b04c99d0793da64c6b40db5ee6",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.kobo.com/us/en/ebook/pinkie-a-short-story",
+      "status": 403,
+      "final_url": "https://www.kobo.com/us/en/ebook/pinkie-a-short-story",
+      "error": "",
+      "sha256": "019e4486d4925ac87f8fb112502c76093f7d247b0f31561c5d77a960685ae335",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": false
+    },
+    {
+      "url": "https://www.smashwords.com/books/view/1018000",
+      "status": 200,
+      "final_url": "https://www.smashwords.com/books/view/1018000",
+      "error": "",
+      "sha256": "586a752b76fe9a14d394b7860c34db0a2a32ed1267666402b24da531494449de",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.smashwords.com/books/view/1108737",
+      "status": 200,
+      "final_url": "https://www.smashwords.com/books/view/1108737",
+      "error": "",
+      "sha256": "aaad32cf6d0c5ace26a77e2e9a19288e0415ff11a48b6451d0a7614af9581cc7",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.smashwords.com/books/view/1145584",
+      "status": 200,
+      "final_url": "https://www.smashwords.com/books/view/1145584",
+      "error": "",
+      "sha256": "e1f98e601f8d5179aaf1e763c116e5e50a29d12a9c8ba8414c61aff78dc34058",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.smashwords.com/books/view/1152658",
+      "status": 200,
+      "final_url": "https://www.smashwords.com/books/view/1152658",
+      "error": "",
+      "sha256": "4a14cea474693602f22eb4f74a30cf49ba4c12a49e39388f517483d7c790a719",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    },
+    {
+      "url": "https://www.smashwords.com/books/view/993991",
+      "status": 200,
+      "final_url": "https://www.smashwords.com/books/view/993991",
+      "error": "",
+      "sha256": "46597c6730f5042fcbec7319249c0f9870443dc27fe2016ebee9994402bdcd47",
+      "sources": [
+        "short-stories-novellas/index.html"
+      ],
+      "ok": true
+    }
+  ]
+}

@@ -6,30 +6,28 @@ Implementation is tracked in [issues #1–#6](https://github.com/ndunn219/kateco
 
 ## Run and build
 
-Requires Node.js 20 or newer and npm. Python 3.9+ is needed only for verification and the source-capture scripts.
+Requires Node.js 20 or newer and npm. Python 3.9+ and curl are needed for verification; the deployment-check tests start a temporary localhost HTTP server. Python is also used by the source-capture scripts.
 
 ```sh
 npm ci
 npm run dev
 # Open http://localhost:8080/
 
-npm run build          # Custom-domain root; static output in _site/
+npm run build          # Root-path preview; static output in _site/
 npm run build:preview  # GitHub repository path /katecourtright/
-npm run check          # Build and check both paths; finishes with the root build
+npm run build:production # Explicit custom-domain launch build with indexing
+npm run check          # Check preview/production; finishes with root preview
 ```
 
 Build commands clean `_site/` first. Publish **only the contents of `_site/`**, never this checkout or `reference/`. The generated `.nojekyll` marker supports GitHub Pages.
 
-## GitHub Pages preview
+## GitHub Pages deployment
 
-The workflow in [pages.yml](.github/workflows/pages.yml) runs checks for both hosting paths, builds with `/katecourtright/`, and uploads only `_site/`. It deploys pushes to `main` and can also be started manually from the Actions tab.
+The [Pages workflow](.github/workflows/pages.yml) installs locked dependencies, checks repository-preview and production builds, and publishes only `_site/`. It deploys pushes to `main` and manual runs on `main`. The repository Actions variable `SITE_ENV` defaults to `preview`; `production` selects the custom-domain root and indexing. The workflow rejects a mismatch between this setting and the configured Pages URL.
 
-1. Open [repository Settings → Pages](https://github.com/ndunn219/katecourtright/settings/pages). Under **Build and deployment → Source**, choose **GitHub Actions**. Leave **Custom domain** empty for this preview.
-2. Commit and push the workflow and README changes to `main`.
-3. Open [Actions](https://github.com/ndunn219/katecourtright/actions) and wait for **Deploy GitHub Pages preview** to finish. If the push ran before Pages was enabled, rerun the workflow after enabling it.
-4. Open the URL reported by the deployment, normally `https://ndunn219.github.io/katecourtright/`.
+Pages is now configured with **GitHub Actions** as its source. The [existing preview](https://ndunn219.github.io/katecourtright/) is live with no custom domain and indexing disabled. The prior deployment passed all 62 HTTP/artifact checks; see [the dated verification record](docs/DEPLOYMENT-VERIFICATION.md) for evidence and remaining launch requirements. The updated workflow adds post-deployment verification and saves a report as an Actions artifact; it still needs its first run after these changes reach `main`.
 
-No personal access token or deployment secret is needed; the workflow uses GitHub's built-in token. Optionally set the repository Actions variable `ADOBE_FONTS_PROJECT_ID` when an owner-controlled Adobe Fonts project is available. Until then, the preview uses the documented system font fallbacks. It retains `noindex, nofollow` but is publicly accessible. This preview does not require changes to the live site's DNS; custom-domain launch remains a separate step.
+See [deployment, updates, and rollback](docs/DEPLOYMENT.md) for repeatable checks, the production switch, DNS preservation, apex/www HTTPS verification, and rollback to Squarespace. Browser QA, font and service-policy decisions, and the domain cutover remain pending. The live domain's DNS is unchanged. No personal access token or deployment secret is needed for the workflow. Set `ADOBE_FONTS_PROJECT_ID` when an owner-controlled font project is available.
 
 To develop with the repository prefix, use `SITE_PATH_PREFIX=/katecourtright/ npm run dev` and open `http://localhost:8080/katecourtright/`. Other prefixes can be set with `SITE_PATH_PREFIX=/another-path/ npm run build`. Restart the dev server when changing environment variables. `.env.example` documents the variables; `.env` files are not loaded automatically.
 
@@ -73,11 +71,11 @@ Each blog post is an editable HTML body in a `.njk` file with JSON front matter.
 
 ## Current verification and remaining work
 
-`npm run check` validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links and audits generated HTML, JavaScript, and CSS for removed signup integrations and calls to action. See [form-removal decisions and verification](docs/FORM-REMOVAL.md). It also checks the 30-page search index, search ranking and UI states, mobile-menu keyboard/focus handlers, reduced motion, sharing URLs, and external asset exclusion. These handler tests use DOM doubles; they do not replace browser QA. It does not fetch external destinations or prove visual equivalence. Site builds do not need the capture archive; the migration checks also read `reference/`.
+`npm run check` validates three configurations (repository preview, production root, and root preview), tests the hosted checker against a local HTTP server, and validates the internal link graph, anchor targets, CSS assets, image metadata/types, archive exclusion, and migration fidelity under both hosting paths. It compares original text, links, titles, all post dates/authors/categories, archive membership/order, URL decisions, canonical URLs, sitemap coverage, and EPUB integrity against the accepted capture. It also executes the legacy author-query script against generated archive links and audits generated HTML, JavaScript, and CSS for removed signup integrations and calls to action. See [form-removal decisions and verification](docs/FORM-REMOVAL.md). It also checks the 30-page search index, search ranking and UI states, mobile-menu keyboard/focus handlers, reduced motion, sharing URLs, and external asset exclusion. These handler tests use DOM doubles; they do not replace browser QA. It does not fetch external destinations or prove visual equivalence. The separate `scripts/check_hosted.py` audits deployed files or external links; see the [verification record](docs/DEPLOYMENT-VERIFICATION.md) for actual HTTP results. Site builds do not need the capture archive; the migration checks also read `reference/`.
 
 Freight fonts need an owner-controlled Adobe Fonts project ID or separately licensed webfonts. The build currently warns and uses explicitly documented Georgia/Arial system fallbacks. See [font setup](docs/FONTS.md). Browser verification was skipped at the user's request after browser access failed; [layout verification notes](docs/LAYOUT-VERIFICATION.md) list the reference comparisons and remaining differences.
 
-This remains a migration preview with `noindex, nofollow`. Content links resolve locally, and `/search/?q=` searches retained pages and all 14 posts. Search also offers a browse directory without JavaScript. See [independent interactions and verification](docs/INTERACTIONS.md) for mobile navigation, scrolling effects, sharing, and dependency decisions. Complete fonts, final service-policy review, and deployment review before enabling indexing in `src/_data/site.js`. Desktop/mobile browser QA remains unverified because the browser access host is unavailable.
+This remains a migration preview with `noindex, nofollow`. Content links resolve locally, and `/search/?q=` searches retained pages and all 14 posts. Search also offers a browse directory without JavaScript. See [independent interactions and verification](docs/INTERACTIONS.md) for mobile navigation, scrolling effects, sharing, and dependency decisions. Complete fonts, final service-policy review, and deployment review before selecting `SITE_ENV=production` for deployment. Desktop/mobile browser QA remains unverified because the browser access host is unavailable.
 
 ## Source capture
 

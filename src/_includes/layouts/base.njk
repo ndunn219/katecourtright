@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if documentTitle %}{{ documentTitle }}{% else %}{% if title and title != site.title %}{{ title }} — {% endif %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ description or site.description }}">
-  <meta name="robots" content="{{ site.robots }}">
+  <meta name="robots" content="{% if sitemap == false and site.robots == 'index, follow' %}noindex, follow{% else %}{{ site.robots }}{% endif %}">
   <link rel="canonical" href="{{ (canonicalPath or page.url) | canonicalUrl }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ title or site.title }}">

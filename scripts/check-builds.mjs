@@ -6,9 +6,11 @@ function run(command, args, env) {
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
-// End on the root build so the default local preview works immediately afterward.
-for (const prefix of ['/katecourtright/', '/']) {
-  const env = { ...process.env, SITE_PATH_PREFIX: prefix };
+run('python3', ['-m', 'unittest', 'discover', '-s', 'scripts', '-p', 'test_*.py'], process.env);
+
+// End on the root preview so local development stays non-indexable.
+for (const [prefix, environment] of [['/katecourtright/', 'preview'], ['/', 'production'], ['/', 'preview']]) {
+  const env = { ...process.env, SITE_PATH_PREFIX: prefix, SITE_ENV: environment };
   run(process.execPath, ['scripts/build.mjs'], env);
   run('python3', ['scripts/check_site.py', prefix], env);
   run('python3', ['scripts/check_migration.py', prefix], env);

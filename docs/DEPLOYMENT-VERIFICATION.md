@@ -1,0 +1,80 @@
+# Issue #6 verification record
+
+Recorded November 7, 2026. **Preview verified over HTTP; domain cutover pending.**
+The changes accompanying this record have been checked locally. The updated
+workflow has not yet run on GitHub; the successful run below is the preceding
+issue #5 revision, not evidence that the new workflow has executed.
+
+## Concrete results
+
+| Check | Result/evidence |
+| --- | --- |
+| Dependencies | Issues #1–#5 are closed on GitHub. Existing scope decisions remain in the content, form-removal, font, layout, and interactions documents. |
+| Actions preview | [Run 42406956093](https://github.com/ndunn219/katecourtright/actions/runs/42406956093), commit `1f02558c77a8d4e1eae741d7c4b50a21d552836e`: build and deploy succeeded. |
+| Pages source | Found `build_type=legacy`, causing an additional failing Jekyll workflow. Changed to `workflow` via Pages API and verified the returned setting. |
+| Preview HTTPS | `https://ndunn219.github.io/katecourtright/`; Pages reports HTTPS enforced, no custom domain. |
+| Published artifact | Downloaded that run's `github-pages` artifact and compared every public file with HTTP GET responses. **62 checks passed**: 57 file responses at 200, five missing/retired routes at 404 with the exact custom 404 body. See [machine-readable report](verification/preview-http.json). |
+| Assets and downloads | All published CSS, JS, images, search JSON, and both EPUBs matched the artifact byte-for-byte. |
+| Local builds | `npm run check` passes repository preview, production root, and root preview: 34 pages, 972 local links/assets per build, all 39 URL decisions, 14 posts, archives, anchor targets, metadata, canonical URLs, sitemap, forms, EPUB integrity, and interaction handler checks. |
+| Production indexing | Explicit production build enables content indexing. Search, Newsletter notice, and 404 stay noindex. Ordinary and repository previews stay noindex. Production rejects a non-root prefix. |
+| Deployment checker tests | Four localhost HTTP regression scenarios: valid artifact/custom 404 passes; soft 404, corrupted download, and redirected content fail. |
+| External links | 34 unique content destinations: 25 returned 200, eight returned 403, one returned 404. See [external audit](verification/external-links.json); social sharing composers are excluded. |
+| Domain state | Public apex A records still point to `198.185.159.144`, `198.185.159.145`, `198.49.23.144`, `198.49.23.145`; www CNAME is `ext-sq.squarespace.com`. No DNS changes made. |
+
+The original sitemap had the same URL membership but different ordering across
+local and CI builds. This implementation sorts its entries. The preview report
+uses the exact preceding deployment artifact, so it is unaffected by that change.
+Reports are observations at their timestamps, not ongoing availability guarantees.
+
+## External destinations needing review
+
+- Barnes & Noble's First Impressions URL returned **404**:
+  `https://www.barnesandnoble.com/w/first-impressions-kate-courtright/1142102527?ean=2940186593102`.
+  Confirm a replacement with the owner before changing the preserved retailer URL.
+- BookBub author page, Chirp's Pinkie audiobook, and six Kobo destinations returned
+  **403**. Browser verification is pending; bot restrictions are possible.
+- The report lists each destination, final URL, HTTP status, and originating page.
+  No retailer URL has been removed or replaced based solely on this automated audit.
+
+## Browser comparison matrix — pending
+
+The computer-use inventory returned **“The browser access host is unavailable”**
+again on November 7. No rendered screenshots or visual equivalence are claimed.
+For each row below, compare with the accepted [reference capture](../reference/squarespace/2026-11-07/screenshots/README.md)
+at desktop 1440×900 and mobile 390×844; also check overflow at 320px. Where no
+matching source screenshot exists, record functional/layout inspection separately.
+
+| Page types | Checks still required |
+| --- | --- |
+| Home and `/welcome/` alias | Bench crop, overlay header, portrait, teal sections, typography, spacing, anchor scrolling |
+| About | Portrait proportions, text wrapping, stacked mobile layout |
+| Library and First Impressions | Featured banner, two-column/stacked covers, retailer links, both downloads |
+| Works and retained Fire Boy excerpt | Railway crop, long-form text, headings, deep anchors |
+| Contact, Newsletter notice, ARC | Intentional signup removal, reader links, spacing without forms |
+| Musings, author and category archives | Card columns, dates, membership, heading wrapping, old author query links |
+| Blog posts | Bold italic text, heading/date layout, adjacent posts and sharing; inspect all 14 for overflow |
+| Search | Empty/results/no-results states, query reload/history, network failure/retry, no-JS directory |
+| Privacy and 404 | Readable text, navigation, missing-route behavior |
+| Shared UI | Tab/Shift+Tab, skip link, menu Enter/Space/Escape, focus restoration, resize, reduced motion, console errors and blocked Squarespace domains |
+
+Automated DOM-double tests do not establish native browser keyboard behavior,
+touch behavior, computed fonts, image crops, or mobile overflow.
+
+## Remaining launch requirements
+
+1. Complete the browser matrix and resolve material differences. Freight fonts
+   are unavailable; an owner-controlled project or an explicit decision to launch
+   with Georgia/Arial is still needed. See [font setup](FONTS.md).
+2. Review the preserved privacy policy against actual production services. It
+   still describes Squarespace analytics and possible Google Analytics despite
+   neither being installed. Confirm the final font provider and hosting disclosures
+   with the owner before publishing revised policy wording.
+3. Review the external destination failures above.
+4. Run the updated workflow after these changes reach `main`, retaining its hosted
+   verification artifact. Complete the [cutover and rollback procedure](DEPLOYMENT.md)
+   with DNS-provider access and a full DNS backup, then verify production apex/www,
+   HTTPS, internal URLs and downloads. Keep Squarespace available meanwhile.
+
+Issue #6 must remain open: preview publication is evidenced, but desktop/mobile
+comparison, final service decisions, and custom-domain production verification
+are not complete.
