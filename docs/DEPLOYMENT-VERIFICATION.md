@@ -1,19 +1,19 @@
 # Issue #6 verification record
 
 Recorded November 7, 2026. **Preview verified over HTTP; domain cutover pending.**
-The changes accompanying this record have been checked locally. The updated
-workflow has not yet run on GitHub; the successful run below is the preceding
-issue #5 revision, not evidence that the new workflow has executed.
+The updated workflow passed on GitHub, including all local checks, preview
+deployment, and verification against the exact published artifact. The report
+below was downloaded from that workflow’s `hosted-verification` artifact.
 
 ## Concrete results
 
 | Check | Result/evidence |
 | --- | --- |
 | Dependencies | Issues #1–#5 are closed on GitHub. Existing scope decisions remain in the content, form-removal, font, layout, and interactions documents. |
-| Actions preview | [Run 42406956093](https://github.com/ndunn219/katecourtright/actions/runs/42406956093), commit `1f02558c77a8d4e1eae741d7c4b50a21d552836e`: build and deploy succeeded. |
+| Actions preview | [Run 42407667213](https://github.com/ndunn219/katecourtright/actions/runs/42407667213), commit `585792056ee3215e3622e123d1d849a78d243dff`: build, deploy, and hosted verification succeeded. |
 | Pages source | Found `build_type=legacy`, causing an additional failing Jekyll workflow. Changed to `workflow` via Pages API and verified the returned setting. |
 | Preview HTTPS | `https://ndunn219.github.io/katecourtright/`; Pages reports HTTPS enforced, no custom domain. |
-| Published artifact | Downloaded that run's `github-pages` artifact and compared every public file with HTTP GET responses. **62 checks passed**: 57 file responses at 200, five missing/retired routes at 404 with the exact custom 404 body. See [machine-readable report](verification/preview-http.json). |
+| Published artifact | The deploy job extracted its `github-pages` artifact and compared every public file with HTTP GET responses. **62 checks passed**: 57 file responses at 200, five missing/retired routes at 404 with the exact custom 404 body. See [machine-readable report](verification/preview-http.json). |
 | Assets and downloads | All published CSS, JS, images, search JSON, and both EPUBs matched the artifact byte-for-byte. |
 | Local builds | `npm run check` passes repository preview, production root, and root preview: 34 pages, 972 local links/assets per build, all 39 URL decisions, 14 posts, archives, anchor targets, metadata, canonical URLs, sitemap, forms, EPUB integrity, and interaction handler checks. |
 | Production indexing | Explicit production build enables content indexing. Search, Newsletter notice, and 404 stay noindex. Ordinary and repository previews stay noindex. Production rejects a non-root prefix. |
@@ -22,8 +22,8 @@ issue #5 revision, not evidence that the new workflow has executed.
 | Domain state | Public apex A records still point to `198.185.159.144`, `198.185.159.145`, `198.49.23.144`, `198.49.23.145`; www CNAME is `ext-sq.squarespace.com`. No DNS changes made. |
 
 The original sitemap had the same URL membership but different ordering across
-local and CI builds. This implementation sorts its entries. The preview report
-uses the exact preceding deployment artifact, so it is unaffected by that change.
+local and CI builds. This implementation sorts its entries. Both the preceding deployment and this updated deployment passed exact-artifact
+HTTP comparisons. The saved preview report is from the updated deployment.
 Reports are observations at their timestamps, not ongoing availability guarantees.
 
 ## External destinations needing review
@@ -70,9 +70,8 @@ touch behavior, computed fonts, image crops, or mobile overflow.
    neither being installed. Confirm the final font provider and hosting disclosures
    with the owner before publishing revised policy wording.
 3. Review the external destination failures above.
-4. Run the updated workflow after these changes reach `main`, retaining its hosted
-   verification artifact. Complete the [cutover and rollback procedure](DEPLOYMENT.md)
-   with DNS-provider access and a full DNS backup, then verify production apex/www,
+4. Complete the [cutover and rollback procedure](DEPLOYMENT.md) with DNS-provider
+   access and a full DNS backup, then verify production apex/www,
    HTTPS, internal URLs and downloads. Keep Squarespace available meanwhile.
 
 Issue #6 must remain open: preview publication is evidenced, but desktop/mobile
