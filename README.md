@@ -18,7 +18,18 @@ npm run build:preview  # GitHub repository path /katecourtright/
 npm run check          # Build and check both paths; finishes with the root build
 ```
 
-Build commands clean `_site/` first. Publish **only the contents of `_site/`**, never this checkout or `reference/`. The generated `.nojekyll` marker supports GitHub Pages. No deployment workflow, domain change, or hosting change is included here.
+Build commands clean `_site/` first. Publish **only the contents of `_site/`**, never this checkout or `reference/`. The generated `.nojekyll` marker supports GitHub Pages.
+
+## GitHub Pages preview
+
+The workflow in [pages.yml](.github/workflows/pages.yml) runs checks for both hosting paths, builds with `/katecourtright/`, and uploads only `_site/`. It deploys pushes to `main` and can also be started manually from the Actions tab.
+
+1. Open [repository Settings → Pages](https://github.com/ndunn219/katecourtright/settings/pages). Under **Build and deployment → Source**, choose **GitHub Actions**. Leave **Custom domain** empty for this preview.
+2. Commit and push the workflow and README changes to `main`.
+3. Open [Actions](https://github.com/ndunn219/katecourtright/actions) and wait for **Deploy GitHub Pages preview** to finish. If the push ran before Pages was enabled, rerun the workflow after enabling it.
+4. Open the URL reported by the deployment, normally `https://ndunn219.github.io/katecourtright/`.
+
+No personal access token or deployment secret is needed; the workflow uses GitHub's built-in token. Optionally set the repository Actions variable `ADOBE_FONTS_PROJECT_ID` when an owner-controlled Adobe Fonts project is available. Until then, the preview uses the documented system font fallbacks. It retains `noindex, nofollow` but is publicly accessible. This preview does not require changes to the live site's DNS; custom-domain launch remains a separate step.
 
 To develop with the repository prefix, use `SITE_PATH_PREFIX=/katecourtright/ npm run dev` and open `http://localhost:8080/katecourtright/`. Other prefixes can be set with `SITE_PATH_PREFIX=/another-path/ npm run build`. Restart the dev server when changing environment variables. `.env.example` documents the variables; `.env` files are not loaded automatically.
 
