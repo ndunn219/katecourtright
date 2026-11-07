@@ -1,15 +1,69 @@
 ---
 layout: layouts/base.njk
-hero: true
 bodyClass: home
 ---
+{% from "partials/book.njk" import bookFormats %}
+{% set featured = books | selectattr("featured") | first %}
 <main id="main">
-  <section id="intro" class="hero" aria-label="A bench overlooking the water on Whidbey Island">
+  <section class="home-hero" aria-labelledby="home-title">
     <img src="/assets/images/whidbey-bench.webp" alt="A wooden bench beside a fence overlooking the water on Whidbey Island" width="2500" height="1875" fetchpriority="high">
-    <a class="scroll-indicator" href="#reviews">Scroll<span aria-hidden="true"></span></a>
+    <div class="home-hero-copy">
+      <div class="wrap">
+        <p class="eyebrow">Author of {{ featured.title }}</p>
+        <h1 id="home-title">Short stories, love stories, and musings on the writing journey.</h1>
+        <div class="buttons">
+          <a class="button button--light" href="/short-stories-novellas/">Browse the books</a>
+          <a class="button button--on-image" href="/musings/">Read the Musings</a>
+        </div>
+      </div>
+    </div>
   </section>
-  <section id="reviews" class="home-intro page-content">
-    <img class="home-portrait" src="/assets/images/home-portrait.webp" alt="Kate Courtright" width="2500" height="2500" loading="lazy">
-    <div class="prose">{{ content | safe }}</div>
+
+  <section class="home-welcome" aria-labelledby="home-welcome-title">
+    <div class="wrap home-welcome-grid">
+      <img class="home-portrait" src="/assets/images/home-portrait.webp" alt="Kate Courtright" width="2500" height="2500" loading="lazy">
+      <div>
+        <p class="eyebrow" id="home-welcome-title">Welcome</p>
+        {{ content | safe }}
+        <div class="buttons home-follow">
+          <a class="button button--ghost" href="{{ site.bookbub }}">Follow on BookBub</a>
+          <a class="button button--ghost" href="{{ site.goodreads }}">Follow on Goodreads</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-book" aria-labelledby="home-book-title">
+    <div class="wrap home-book-grid">
+      <img class="home-book-image" src="{{ featured.banner.src }}" alt="{{ featured.banner.alt }}" width="{{ featured.banner.width }}" height="{{ featured.banner.height }}" loading="lazy">
+      <div>
+        <p class="eyebrow">Latest book</p>
+        <h2 id="home-book-title">{{ featured.title }}</h2>
+        <p class="book-subtitle">{{ featured.subtitle }}</p>
+        <p>{{ featured.summary }}</p>
+        {{ bookFormats(featured, false) }}
+        <a class="more-link" href="/short-stories-novellas/">See all of Kate’s stories <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-musings" aria-labelledby="home-musings-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">From the Musings</p>
+          <h2 id="home-musings-title">On creativity and the writing journey</h2>
+        </div>
+        <a class="more-link" href="/musings/">All musings <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="post-cards">
+        {% for post in collections.posts.slice(0, 3) %}
+        <article class="post-card">
+          <p class="post-card-date"><time datetime="{{ post.data.published }}">{{ post.data.published | monthYear }}</time></p>
+          <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
   </section>
 </main>

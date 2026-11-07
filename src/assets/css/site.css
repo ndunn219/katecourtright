@@ -170,6 +170,43 @@ blockquote { margin: 2em 0; }
   .book-card h3 { font-size: 20px; }
 }
 
+/* Shared section heading row and post cards (home, Musings) */
+.section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 40px; }
+.section-head h2 { margin: 0; }
+
+/* Home */
+.home-hero { position: relative; height: 620px; overflow: hidden; background: #8ba2a7; }
+.home-hero img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+.home-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(18, 38, 42, .78) 0%, rgba(18, 38, 42, .35) 45%, rgba(18, 38, 42, 0) 75%); }
+.home-hero-copy { position: absolute; left: 0; right: 0; bottom: 64px; z-index: 1; color: #fff; }
+.home-hero-copy .eyebrow { color: #e5f0f1; }
+.home-hero-copy h1 { color: #fff; max-width: 760px; font-size: 56px; margin-bottom: 28px; }
+.home-welcome { padding: 112px 0; }
+.home-welcome-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: center; }
+.home-portrait { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 4px; }
+.home-follow { margin-top: 28px; }
+.home-book { background: var(--sea); padding: 112px 0; }
+.home-book-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 72px; align-items: center; }
+.home-book-image { width: 100%; border-radius: 4px; box-shadow: 0 20px 50px -24px rgba(20, 45, 50, .45); }
+.home-book .book-subtitle { font-size: 24px; margin: -8px 0 20px; }
+.home-book .formats { gap: 18px; margin: 28px 0 32px; }
+.home-musings { padding: 112px 0; }
+.post-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.post-card { border-top: 2px solid var(--ink); padding-top: 24px; }
+.post-card-date { font: 600 13px/1.4 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+.post-card h3 a { color: var(--ink-deep); text-decoration: none; }
+.post-card h3 a:hover { text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+@media (max-width: 720px) {
+  .home-hero { height: 480px; }
+  .home-hero-copy { bottom: 36px; }
+  .home-hero::after { background: linear-gradient(to top, rgba(18, 38, 42, .85) 0%, rgba(18, 38, 42, .62) 60%, rgba(18, 38, 42, .2) 100%); }
+  .home-hero-copy h1 { font-size: 34px; }
+  .home-welcome, .home-book, .home-musings { padding: 72px 0; }
+  .home-welcome-grid, .home-book-grid { grid-template-columns: 1fr; gap: 36px; }
+  .home-portrait { aspect-ratio: 1 / 1; }
+  .post-cards { grid-template-columns: 1fr; gap: 28px; }
+}
+
 /* Interim styles for pages not yet rebuilt in the redesign. */
 .page-content { padding: 80px var(--gutter); max-width: 1240px; margin: 0 auto; }
 .display-copy { font: 400 23px/1.55 var(--display); color: var(--text); }
@@ -179,13 +216,7 @@ blockquote { margin: 2em 0; }
 .split-page { display: grid; grid-template-columns: 7fr 5fr; gap: 34px; }
 .split-page .page-copy { padding-top: 145px; }
 .hero { height: 100vh; min-height: 480px; position: relative; overflow: hidden; }
-.hero > img { width: 100%; height: 100%; object-fit: cover; transform: translateY(var(--parallax-offset, 0px)); }
-.scroll-indicator { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color: white; text-transform: uppercase; font-size: 10px; text-align: center; }
-.scroll-indicator span { display: block; width: 1px; height: 45px; background: white; margin: 14px auto 0; }
-.home-intro { display: grid; grid-template-columns: 5fr 7fr; align-items: start; gap: 34px; min-height: 100vh; background: #8ba2a7 url('../images/home-background.webp') center / cover; padding-top: 145px; }
-.home-intro { background-position: center calc(50% + var(--background-offset, 0px)); }
-.home-intro h2 { color: var(--ink); }
-.home-portrait { width: 100%; }
+.hero > img { width: 100%; height: 100%; object-fit: cover; }
 .hero--short { height: 214px; min-height: 0; }
 .blog-intro { padding: 50px var(--gutter) 0; }
 .blog-intro > h1 { text-align: center; margin-bottom: 38px; }
@@ -210,10 +241,8 @@ blockquote { margin: 2em 0; }
 @media (max-width: 720px) {
   .page-content { padding-top: 76px; padding-bottom: 60px; }
   .hero { height: calc(100svh - 70px); min-height: 400px; }
-  .split-page, .home-intro, .contact-page { display: block; }
+  .split-page, .contact-page { display: block; }
   .split-page .page-copy { padding-top: 52px; }
-  .home-intro .prose { padding-top: 40px; }
-  .home-intro { min-height: 0; }
   .hero--short { height: 96px; min-height: 0; }
   .blog-intro-copy { width: 100%; }
   .blog-intro { padding-top: 60px; }
@@ -245,8 +274,4 @@ blockquote { margin: 2em 0; }
 @media (prefers-reduced-motion: no-preference) {
   main { animation: content-enter 480ms ease-out; }
   .desktop-nav a, .button, .chip { transition: color 170ms, background-color 170ms, border-color 170ms; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero > img { transform: none; }
-  .home-intro { background-position: center; }
 }

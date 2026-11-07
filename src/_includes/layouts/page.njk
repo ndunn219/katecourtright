@@ -5,7 +5,6 @@ layout: layouts/base.njk
   {% if hero and image %}
   <div class="hero{% if shortHero %} hero--short{% endif %}">
     <img src="{{ image.src }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" fetchpriority="high">
-    {% if not shortHero %}<a class="scroll-indicator" href="#page-content">Scroll<span aria-hidden="true"></span></a>{% endif %}
   </div>
   {% endif %}
   <div id="page-content" class="page-content {{ pageClass or '' }}">

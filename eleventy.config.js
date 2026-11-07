@@ -35,6 +35,9 @@ export default function (config) {
   });
   config.addFilter('canonicalUrl', path => new URL(path, 'https://katecourtright.com').href);
   config.addFilter('encodeURIComponent', encodeURIComponent);
+  config.addFilter('monthYear', value => new Intl.DateTimeFormat('en-US', {
+    month: 'long', year: 'numeric', timeZone: 'UTC',
+  }).format(new Date(value)));
   config.addFilter('readableDate', value => new Intl.DateTimeFormat('en-US', {
     month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC',
   }).format(new Date(value)));

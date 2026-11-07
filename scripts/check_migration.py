@@ -35,13 +35,20 @@ def compact(text):
     return re.sub(r'\s+', '', text)
 
 
-# Issue #4 authorizes only these copy replacements. Keep checking every other
+# Issues #4 and the redesign (#9 onward) authorize only these copy replacements. Keep checking every other
 # captured paragraph and link, including the rest of the privacy policy.
+WELCOME_FOLLOW = [(
+    'Follow me on Bookbub & Goodreads, too!',
+    'Follow on BookBub Follow on Goodreads',
+)]
 COPY_REPLACEMENTS = {
     '/arc/': [(
         'Join my Advanced Reader Copy (ARC)Team! If you would like an Advanced Reader Copy of an upcoming release and can commit to leaving a review when launch time comes around, I would love to add you to my ARC Team.',
         'Advanced Reader Copies (ARC) ARC readers receive an advance copy of an upcoming release and commit to leaving a review at launch.',
     )],
+    # Redesign issue #9: the welcome follow line became two buttons.
+    '/': WELCOME_FOLLOW,
+    '/welcome/': WELCOME_FOLLOW,
     '/privacy-policy/': [(
         'Newsletter Lists All information collected from this site is used only by Kate and is managed by Kate and her web design team. It is not ever sold to a third party or made available for sale. The information collected, such as your email address, is stored in order for Kate to communicate directly with you through newsletters, promotions or special offers. If you do not wish to receive such emails, you may unsubscribe by clicking the link at the bottom of the newsletter.',
         'Contact and Signup Forms This website no longer offers a contact form, newsletter signup, or ARC signup, and does not collect names or email addresses through those forms. If you already receive a newsletter and wish to unsubscribe, use the unsubscribe link in that email.',
