@@ -12,12 +12,6 @@
     "sha256": "a5a6359df89033cec7753d398fe6aeb8edb7cc882f0788226fad744dbaa8a02e"
   },
   {
-    "file": "src/assets/images/home-background.webp",
-    "source": "reference/squarespace/2026-11-07/images/efb41c3381f6--Untitled-1.jpg",
-    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5751bbc486db4370da3d4e24/1468792865049-VAA248EV8CDTG7TMWKSH/Untitled-1.jpg",
-    "sha256": "75267ba1158285c3a03c49b8f297da47cfba368134cf7fde21652d4eb8d7c106"
-  },
-  {
     "file": "src/assets/images/about-portrait.webp",
     "source": "reference/squarespace/2026-11-07/images/7151a010f74c--Kate-Author-Photo.jpg",
     "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c5b03064d546e28246dddd7/30cce698-fbb1-4c89-9442-3c3419898bee/Kate+Author+Photo.jpg",

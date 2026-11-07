@@ -1,37 +1,37 @@
 ---json
 {
-  "layout": "layouts/page.njk",
+  "layout": "layouts/base.njk",
   "title": "Privacy Policy",
   "permalink": "/privacy-policy/",
-  "pageClass": "reading-page",
-  "documentTitle": "Privacy Policy — Kate Courtright"
+  "documentTitle": "Privacy Policy — Kate Courtright",
+  "updated": "2026-11-07",
+  "points": [
+    "No cookies, no analytics, and no tracking scripts.",
+    "No contact, newsletter or sign-up forms — this site doesn’t collect your name or email address.",
+    "Fonts and images are served from this site, not from third-party services.",
+    "Links to bookstores and social sites take you to services with their own privacy policies."
+  ]
 }
 ---
-<h1>Privacy Policy</h1>
-<h2 style="text-align:center;"> <strong>PRIVACY POLICY SPELLED OUT</strong></h2>
-<p><strong>Contact and Signup Forms</strong></p>
-<p>This website no longer offers a contact form, newsletter signup, or ARC signup, and does not collect names or email addresses through those forms. If you already receive a newsletter and wish to unsubscribe, use the unsubscribe link in that email.</p>
-<p><strong>Cookies</strong></p>
-<p>This website collects personal data to power our site analytics, including:</p>
-<ul><li><p>Information about your browser, network, and device</p>
-</li><li><p>Web pages you visited prior to coming to this website</p>
-</li><li><p>Your IP address</p>
-</li></ul>
-<p>This information may also include details about your use of this website, including:</p>
-<ul><li><p>Clicks</p>
-</li><li><p>Internal links</p>
-</li><li><p>Pages visited</p>
-</li><li><p>Scrolling</p>
-</li><li><p>Searches</p>
-</li><li><p>Timestamps</p>
-</li></ul>
-<p>We share this information with Squarespace, our website analytics provider, to learn about site traffic and activity.</p>
-<p><strong>Ordering Links</strong></p>
-<p>Please be aware that if you purchase a book through a link on this website, your purchase will be handled by the vendor you select (e.g., Smashwords, Kobo, Apple, Amazon) and they maintain their own separate information about you that is NOT shared with Kate.</p>
-<p><strong>Analytics Information </strong></p>
-<p>Kate and her web team may directly collect analytics data, or use third-party analytics tools and services, like Google Analytics, to help measure traffic and usage trends for her web pages, email newsletters, and promotions. These tools collect information sent by your browser or mobile device, including the pages you visit and other information that assist in improving your user experience. This analytics data is collected and used in aggregate form so that it cannot reasonably be manipulated to identify any particular individual user. </p>
-<p><strong>Log file information: </strong> KateCourtright.com is routinely monitored/ scanned for virus checks, malware identification, etc., in order to keep it a secure site. As such, log file information is automatically reported by your browser or mobile device each time you access the site, and the server automatically records certain log file information. These server logs may include anonymous information such as your web request, Internet Protocol (“IP”) address, browser type, referring/ exit pages and URLs, number of clicks and how you interact with links, domain names, landing pages, pages viewed, and other such information. </p>
-<p><strong>Instances where it may be required to share your information</strong></p>
-<p>Your information will only be disclosed where required to do so by law or subpoena or if there is reasonable belief that such action is necessary to a) comply with the law the reasonable requests of law enforcement; b) to protect the security, quality or integrity of the website; and/ or c) to exercise or protect the rights, property, or personal safety of this website’s users, or others. </p>
-<p><strong>Links to Other Websites and Services</strong></p>
-<p>Kate is not responsible for the practices employed by websites or services linked to or from her site, comment pages, or social media sites, including the information or content contained therein. Please remember that when you use a link to go from KateCourtright.com to another website, this Privacy Policy does not apply to third-party websites or services. Your browsing and interaction on any third-party website or service are subject to that third party’s own rules and policies. Kate and her web team are not responsible and do not have control over any third parties that you authorize to access your User Content. If you are using a third-party website or service (like Google groups, Facebook, Instagram etc.) and you allow such a third-party access to your User Content, you do so at your own risk. This Privacy Policy does not apply to information Kate collects by other means (including offline) or from sources other than through KateCourtright.com. </p>
+<main id="main" class="wrap">
+  <article class="policy prose">
+    <h1>Privacy Policy</h1>
+    <p class="policy-updated">Last updated <time datetime="{{ updated }}">{{ updated | readableDate }}</time></p>
+
+    <section class="policy-summary" aria-labelledby="policy-short">
+      <h2 id="policy-short">The short version</h2>
+      <ul class="policy-points">
+        {% for point in points %}<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l5 5L20 7"/></svg><span>{{ point }}</span></li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <h2>Hosting</h2>
+    <p>This site is hosted on GitHub Pages. GitHub logs visitors’ IP addresses for security purposes; Kate doesn’t have access to those logs. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>.</p>
+
+    <h2>Links to other sites</h2>
+    <p>Bookstores, social sites and share buttons linked from this site have their own privacy policies, and purchases are handled entirely by the retailer you choose. To unsubscribe from Kate’s newsletter, use the link in any newsletter email.</p>
+
+    <p class="policy-questions">Questions? <a href="/contact/">Get in touch</a>.</p>
+  </article>
+</main>

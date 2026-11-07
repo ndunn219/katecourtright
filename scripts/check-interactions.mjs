@@ -118,8 +118,7 @@ await flush();
 assert.match(status.textContent, /Enter a word/);
 assert.equal(results.children.length, 0);
 
-// Menu state and keyboard behavior, focus restoration, resize, bfcache restore,
-// native anchor focus, and reduced-motion changes while the page is open.
+// Menu state and keyboard behavior, focus restoration, resize and bfcache restore.
 const menu = new Element();
 menu.open = false;
 const toggle = new Element();
@@ -128,25 +127,20 @@ const links = Array.from({ length: 6 }, () => new Element());
 const background = Array.from({ length: 5 }, () => new Element());
 background[0].inert = true; // Preserve an element that was already inert.
 const mobile = Object.assign(new Element(), { matches: true });
-const motion = Object.assign(new Element(), { matches: false });
 const win = new Element();
 const doc = new Element();
-const hero = new Element();
-hero.getBoundingClientRect = () => ({ top: -200, height: 800 });
-const intro = new Element();
-intro.getBoundingClientRect = () => ({ top: -200, height: 900 });
-const scrollLink = Object.assign(new Element(), { hash: '#reviews' });
-const destination = new Element();
-for (const element of [toggle, ...links, ...background, destination]) element.focus = options => { doc.activeElement = element; element.focusOptions = options; };
+for (const element of [toggle, ...links, ...background]) element.focus = options => { doc.activeElement = element; element.focusOptions = options; };
 menu.querySelector = selector => selector === 'summary' ? toggle : nav;
 menu.querySelectorAll = () => links;
 menu.contains = element => [menu, toggle, nav, ...links].includes(element);
 links.forEach(link => { link.closest = () => link; });
-doc.querySelector = selector => ({ '.mobile-menu': menu, '.brand': background[1], '.home-intro': intro })[selector];
-doc.querySelectorAll = selector => selector === '.scroll-indicator' ? [scrollLink] : selector === '.hero:not(.hero--short)' ? [hero] : background;
-doc.getElementById = id => id === 'reviews' ? destination : null;
-win.matchMedia = query => query.includes('640') ? mobile : motion;
-vm.runInNewContext(readFileSync('_site/assets/js/site.js', 'utf8'), { document: doc, window: win, requestAnimationFrame: callback => callback() });
+doc.querySelector = selector => ({ '.mobile-menu': menu, '.brand': background[1] })[selector];
+doc.querySelectorAll = () => background;
+win.matchMedia = query => {
+  assert.equal(query, '(max-width: 1000px)', 'Menu behavior must match the CSS breakpoint');
+  return mobile;
+};
+vm.runInNewContext(readFileSync('_site/assets/js/site.js', 'utf8'), { document: doc, window: win });
 assert.equal(toggle.attrs['aria-expanded'], 'false');
 menu.open = true;
 menu.dispatch('toggle');
@@ -184,12 +178,9 @@ win.dispatch('pageshow');
 assert.equal(menu.open, false);
 assert.equal(toggle.attrs['aria-expanded'], 'false');
 assert.equal(doc.activeElement, toggle);
-scrollLink.dispatch('click');
-assert.equal(doc.activeElement, destination);
-assert.equal(destination.focusOptions.preventScroll, true);
-assert.notEqual(hero.attrs['--parallax-offset'], '0px');
-motion.matches = true;
-motion.dispatch('change');
-assert.equal(hero.attrs['--parallax-offset'], '0px');
-assert.equal(intro.attrs['--background-offset'], '0px');
-console.log(`PASS interactions ${prefix}: search coverage/ranking, URL and error states, safe rendering, menu focus/state, anchors, reduced motion`);
+const siteScript = readFileSync('_site/assets/js/site.js', 'utf8');
+assert.ok(!/parallax|scroll-indicator|requestAnimationFrame/.test(siteScript), 'Parallax and scroll effects were removed in the redesign');
+const css = readFileSync('_site/assets/css/site.css', 'utf8');
+assert.match(css, /@media \(prefers-reduced-motion: no-preference\)/, 'Animations must be limited to no-preference');
+assert.match(css, /@media \(prefers-reduced-motion: reduce\) \{ html \{ scroll-behavior: auto; \} \}/);
+console.log(`PASS interactions ${prefix}: search coverage/ranking, URL and error states, safe rendering, menu focus/state, reduced motion`);

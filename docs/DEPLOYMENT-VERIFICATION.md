@@ -62,18 +62,17 @@ touch behavior, computed fonts, image crops, or mobile overflow.
 
 ## Remaining launch requirements
 
-1. Complete the browser matrix and resolve material differences. Freight fonts
-   are unavailable; an owner-controlled project or an explicit decision to launch
-   with Georgia/Arial is still needed. See [font setup](FONTS.md).
-2. Review the preserved privacy policy against actual production services. It
-   still describes Squarespace analytics and possible Google Analytics despite
-   neither being installed. Confirm the final font provider and hosting disclosures
-   with the owner before publishing revised policy wording.
+1. Compare the deployed preview against the redesign canvas rather than the
+   Squarespace references (redesign #16). Headless-browser checks of the redesign
+   are recorded in [LAYOUT-VERIFICATION.md](LAYOUT-VERIFICATION.md); fonts are
+   self-hosted Newsreader and Source Sans 3 ([FONTS.md](FONTS.md)).
+2. The privacy policy was replaced with a short policy whose claims are checked
+   against the build (redesign #15; see [REDESIGN.md](REDESIGN.md)). Confirm the
+   wording with Kate before launch.
 3. Review the external destination failures above.
 4. Complete the [cutover and rollback procedure](DEPLOYMENT.md) with DNS-provider
    access and a full DNS backup, then verify production apex/www,
    HTTPS, internal URLs and downloads. Keep Squarespace available meanwhile.
 
-Issue #6 must remain open: preview publication is evidenced, but desktop/mobile
-comparison, final service decisions, and custom-domain production verification
-are not complete.
+Issue #6 must remain open: preview publication is evidenced, but review of the
+deployed redesign and custom-domain production verification are not complete.

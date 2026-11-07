@@ -7,10 +7,10 @@ All 37 captured page/filter URLs have an explicit destination or retirement deci
 | Content | Implementation |
 | --- | --- |
 | Home, About Kate, Short Stories & Novellas, Works in Progress, Contact | Retain the existing migrated copy, images, and retailer links; preserve source document titles. Original Instagram and Facebook destinations are available as text links on Contact. |
-| All 14 posts | Full rich HTML bodies, emphasis, lists, dividers, content links, original titles, and displayed dates. Seven retain the Kate Dunn attribution and seven retain Vasheena Brisbane. None of the captured post bodies contained images. |
+| All 14 posts | Full rich HTML bodies, emphasis, lists, dividers, content links, original titles, and displayed dates. The capture credited seven to Kate Dunn and seven to Vasheena Brisbane (the web designer's account); the redesign (#13) credits all 14 to Kate Courtright. None of the captured post bodies contained images. |
 | Musings index | Generated in descending displayed publication date order from the post files, not dates embedded in URLs. |
 | Four category archives | Preserve the exact assignments, case, and literal `+` characters in legacy paths. Uncategorized posts stay uncategorized. |
-| Two author filters | Static `/musings/author/<original-id>/` archives. Original `/musings?author=<id>` links are recognized by a small script and replaced with the corresponding archive URL. |
+| Two author filters | Static `/musings/author/<original-id>/` archives remain at both legacy IDs. Since the redesign (#13) every post is by Kate Courtright, so each lists all 14 posts, and an original `/musings?author=<id>` link simply shows the full Musings index. |
 | `/arc/` | Retain as an informational ARC page. Issue #4 replaces the invitation with a neutral explanation, states that signup is unavailable, and links to the library and Musings. No form or submission messages. |
 | `/first-impressions/` | Keep the thank-you/review text, original retailer links, linked cover, and both EPUB files. Add clearly labeled download links. Do not add this page to primary navigation. |
 | `/listing-02-hatch/` | Keep the full Fire Boy excerpt at the original path, its original browser title, and the `#listing-02-info` anchor. The original empty “Read the Book” button now leads to the book library. |
@@ -44,7 +44,7 @@ Post metadata and HTML content live together in `src/posts/*.njk`. For example:
   "title": "Post title",
   "permalink": "/musings/2023/6/30/legacy-slug/",
   "published": "2022-07-01",
-  "author": "Vasheena Brisbane",
+  "author": "Kate Courtright",
   "authorId": "536510cee4b043dbe028347e",
   "categories": ["My Sharing Shelf"]
 }
@@ -52,7 +52,7 @@ Post metadata and HTML content live together in `src/posts/*.njk`. For example:
 <p>Editable post content.</p>
 ```
 
-Kate Dunn's ID is `5c8160afdb7926584fdf6899`. Preserve existing IDs because they are part of public author links. `eleventy.config.js` generates collections and adjacent-post navigation; `src/authors.njk` and `src/categories.njk` render the archives. Page copy is editable under `src/`, book cards in `src/_data/books.json`, and shared layouts under `src/_includes/`. No capture parser or archived HTML is used during production builds.
+The two legacy author IDs are `5c8160afdb7926584fdf6899` and `536510cee4b043dbe028347e`. Keep `authorId` on each post, because the IDs are part of public author-archive URLs; set `author` to "Kate Courtright". `eleventy.config.js` generates collections and adjacent-post navigation; `src/authors.njk` and `src/categories.njk` render the archives. Page copy is editable under `src/`, book cards in `src/_data/books.json`, and shared layouts under `src/_includes/`. No capture parser or archived HTML is used during production builds.
 
 `npm run check` passed for both `/` and `/katecourtright/`: 34 HTML pages and 903 internal links/assets per build after issue #4. The migration checks independently compare generated content with the accepted archive, covering every original text block on retained pages with explicit, narrow expectations for the issue #4 ARC and policy edits, all 14 complete post bodies, source titles, content/retailer links, dates, authors, categories, and index/archive order. They verify URL inventory coverage, canonical and sitemap destinations, both EPUB hashes and ZIP/package integrity, and script behavior for both legacy author IDs, missing/empty/unknown IDs, extra query parameters, and hosting prefixes. Capture-fidelity assertions intentionally flag later editorial changes; update the baseline expectations deliberately when such changes are authorized.
 

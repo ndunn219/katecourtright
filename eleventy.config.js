@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import { HtmlBasePlugin } from '@11ty/eleventy';
 import { writeSearchIndex } from './scripts/search-index.mjs';
 
@@ -20,12 +21,23 @@ export default function (config) {
       name, url: categoryUrl(name), posts: posts.filter(post => post.data.categories.includes(name)),
     }));
   });
+  // Every post is by Kate Courtright (redesign #13). The two legacy Squarespace
+  // author IDs remain as archive URLs; each now lists all of Kate's posts.
   config.addCollection('authors', collection => {
     const posts = postsByDate(collection);
-    return [...new Set(posts.map(post => post.data.authorId))].map(id => ({
-      id, name: posts.find(post => post.data.authorId === id).data.author,
-      url: authorUrl(id), posts: posts.filter(post => post.data.authorId === id),
-    }));
+    return [...new Set(posts.map(post => post.data.authorId))].sort().map(id => {
+      const name = posts.find(post => post.data.authorId === id).data.author;
+      return { id, name, url: authorUrl(id), posts: posts.filter(post => post.data.author === name) };
+    });
+  });
+  config.addCollection('postsByYear', collection => {
+    const years = new Map();
+    for (const post of postsByDate(collection)) {
+      const year = post.data.published.slice(0, 4);
+      if (!years.has(year)) years.set(year, []);
+      years.get(year).push(post);
+    }
+    return [...years].map(([year, posts]) => ({ year, posts }));
   });
   config.addFilter('categoryUrl', categoryUrl);
   config.addFilter('authorUrl', authorUrl);
@@ -33,8 +45,17 @@ export default function (config) {
     const index = posts.findIndex(post => post.url === url);
     return { newer: posts[index - 1], older: posts[index + 1] };
   });
+  // Responsive candidates: the resized variants from scripts/resize_images.py
+  // that exist, plus the original at its intrinsic width.
+  config.addFilter('srcset', (src, width) => {
+    const variants = [800, 1600].filter(w => w < width && existsSync(`src${src.replace(/\.webp$/, `-w${w}.webp`)}`));
+    return [...variants.map(w => `${src.replace(/\.webp$/, `-w${w}.webp`)} ${w}w`), `${src} ${width}w`].join(', ');
+  });
   config.addFilter('canonicalUrl', path => new URL(path, 'https://katecourtright.com').href);
   config.addFilter('encodeURIComponent', encodeURIComponent);
+  config.addFilter('monthYear', value => new Intl.DateTimeFormat('en-US', {
+    month: 'long', year: 'numeric', timeZone: 'UTC',
+  }).format(new Date(value)));
   config.addFilter('readableDate', value => new Intl.DateTimeFormat('en-US', {
     month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC',
   }).format(new Date(value)));

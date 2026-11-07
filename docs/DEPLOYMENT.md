@@ -25,8 +25,8 @@ The Actions workflow installs the lockfile with `npm ci`, runs checks, builds th
 selected configuration, and uploads only `_site/`. `SITE_ENV`, a repository
 Actions variable, defaults to `preview`. Set it to `production` only for the
 cutover. The workflow checks that the configured Pages URL matches the selected
-mode and fails on an inconsistent setup. Optional `ADOBE_FONTS_PROJECT_ID` is
-documented in [FONTS.md](FONTS.md).
+mode and fails on an inconsistent setup. Fonts are self-hosted and need no
+build variables; see [FONTS.md](FONTS.md).
 
 Pages **Source must be GitHub Actions**, not deployment from the `main` branch.
 This was corrected on November 7, 2026. For preview, keep the custom domain empty.

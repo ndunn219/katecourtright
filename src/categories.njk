@@ -9,9 +9,16 @@ permalink: "{{ archive.url }}"
 eleventyComputed:
   title: "{{ archive.name }} — Musings on Creativity, the Writing Journey, and Storytelling"
 ---
-<main id="main" class="page-content archive-content">
-  <h1>{{ archive.name }}</h1>
-  {% include "partials/archive-links.njk" %}
-  {% set archivePosts = archive.posts %}
-  {% include "partials/post-list.njk" %}
+<main id="main" class="musings">
+  <section class="musings-archive">
+    <div class="wrap">
+      <a class="back-link" href="/musings/"><span aria-hidden="true">←</span> All musings</a>
+      <p class="eyebrow">Musings topic</p>
+      <h1>{{ archive.name }}</h1>
+      <p class="lede">{{ archive.posts.length }} {{ "essay" if archive.posts.length == 1 else "essays" }}, newest first.</p>
+      {% set archivePosts = archive.posts %}
+      {% include "partials/post-list.njk" %}
+      {% include "partials/archive-links.njk" %}
+    </div>
+  </section>
 </main>

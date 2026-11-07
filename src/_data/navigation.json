@@ -1,8 +1,8 @@
 [
-  { "label": "Welcome", "url": "/" },
+  { "label": "Home", "url": "/" },
   { "label": "About Kate", "url": "/about-late/" },
-  { "label": "Short Stories & Novellas", "url": "/short-stories-novellas/" },
-  { "label": "Works In Progress", "url": "/works-in-progress/" },
-  { "label": "Contact", "url": "/contact/" },
-  { "label": "Musings", "url": "/musings/", "secondary": true }
+  { "label": "Books", "url": "/short-stories-novellas/" },
+  { "label": "Works in Progress", "url": "/works-in-progress/" },
+  { "label": "Musings", "url": "/musings/" },
+  { "label": "Contact", "url": "/contact/" }
 ]

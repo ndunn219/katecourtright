@@ -17,7 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      ADOBE_FONTS_PROJECT_ID: ${{ vars.ADOBE_FONTS_PROJECT_ID }}
       SITE_ENV: ${{ vars.SITE_ENV || 'preview' }}
     steps:
       - uses: actions/checkout@v6

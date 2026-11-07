@@ -1,18 +1,44 @@
 ---json
 {
-  "layout": "layouts/page.njk",
+  "layout": "layouts/base.njk",
   "title": "About Kate",
   "permalink": "/about-late/",
-  "pageClass": "split-page",
-  "image": {
-    "src": "/assets/images/about-portrait.webp",
-    "alt": "Kate Courtright",
-    "width": 2500,
-    "height": 2500
-  },
   "documentTitle": "About Kate — Kate Courtright"
 }
 ---
-<h1>About Kate</h1>
-<h2>Kate Courtright has found joy in stories her entire life. A romantic at heart, she loves reading stories from a wide variety of literary genres, and most appreciates the ones that make her laugh and cry and believe in the power of love to change people’s lives.&nbsp; Kate wrote her first story, about Cinderella eating spaghetti, when she was seven years old and has been writing in one form or another ever since. She is currently writing both short and long form love stories. She lives with her family in New York City and enjoys escaping to small towns and inviting bodies of water whenever she can.</h2>
-<h2>You can follow me on <a href="https://www.bookbub.com/authors/kate-courtright"><strong>Bookbub</strong></a> &amp; <a href="https://www.goodreads.com/author/show/19932939.Kate_Courtright?from_search=true&amp;from_srp=true"><strong>Goodreads</strong></a>, too!</h2>
+<main id="main">
+  <section class="about-main">
+    <div class="wrap about-grid">
+      <img class="about-photo" src="/assets/images/about-portrait.webp" srcset="{{ '/assets/images/about-portrait.webp' | srcset(2500) }}" sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1240px) 40vw, 480px" alt="Kate Courtright" width="2500" height="2500" fetchpriority="high">
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h1>About Kate</h1>
+        <p class="lede">Kate Courtright has found joy in stories her entire life. A romantic at heart, she loves reading stories from a wide variety of literary genres, and most appreciates the ones that make her laugh and cry and believe in the power of love to change people’s lives.</p>
+        <p>Kate wrote her first story, about Cinderella eating spaghetti, when she was seven years old and has been writing in one form or another ever since. She is currently writing both short and long form love stories.</p>
+        <p>She lives with her family in New York City and enjoys escaping to small towns and inviting bodies of water whenever she can.</p>
+        <dl class="about-facts">
+          <div><dt>Writes</dt><dd>Short &amp; long form love stories</dd></div>
+          <div><dt>Lives</dt><dd>New York City</dd></div>
+          <div><dt>First story</dt><dd>Cinderella eating spaghetti, age seven</dd></div>
+        </dl>
+        <p class="about-follow">You can follow me on BookBub &amp; Goodreads, too!</p>
+        <div class="buttons">
+          <a class="button" href="{{ site.bookbub }}">Follow on BookBub</a>
+          <a class="button button--ghost" href="{{ site.goodreads }}">Follow on Goodreads</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-next" aria-labelledby="about-next-title">
+    <div class="wrap">
+      <p class="eyebrow">Keep reading</p>
+      <h2 id="about-next-title">Where to go next</h2>
+      <div class="tile-grid">
+        <a class="tile" href="/short-stories-novellas/"><h3>Short Stories &amp; Novellas</h3><p>First Impressions, Pinkie, Fire Boy, Former Things and It’s Up to You, New York.</p><span>See the books <span aria-hidden="true">→</span></span></a>
+        <a class="tile" href="/works-in-progress/"><h3>Works in Progress</h3><p>Hello, Honeymoon, Shakespeare in the Glen, and the Cemetery of First Pages.</p><span>Read the drafts <span aria-hidden="true">→</span></span></a>
+        <a class="tile" href="/musings/"><h3>Musings</h3><p>On creativity, the writing journey, and storytelling.</p><span>Read the Musings <span aria-hidden="true">→</span></span></a>
+      </div>
+    </div>
+  </section>
+</main>

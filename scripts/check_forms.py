@@ -45,7 +45,7 @@ for file in OUTPUT.rglob('*'):
     for node in Document(text).root.walk():
         assert node.tag != 'iframe', f'{file}: embedded runtime'
         if node.tag == 'form':
-            assert file == OUTPUT / 'search/index.html', f'{file}: unexpected form'
+            assert file in (OUTPUT / 'search/index.html', OUTPUT / 'musings/index.html'), f'{file}: unexpected form'
             assert node.attrs.get('role') == 'search' and node.attrs.get('method') == 'get', 'Unexpected form purpose'
             assert node.attrs.get('action') == local('/search/'), 'Search action must be local'
             fields = [n for n in node.walk() if n.tag in ('input', 'textarea', 'select')]
@@ -69,7 +69,7 @@ for route in ('arc', 'newsletter'):
 arc = read_page('arc')
 assert not re.search(r'\b(?:join my|add you to my)\b', arc.text(), re.I), 'ARC invitation still promises signup'
 policy = read_page('privacy-policy').text()
-assert 'does not collect names or email addresses through those forms' in policy, 'Policy still implies form collection'
+assert 'this site doesn’t collect your name or email address' in policy, 'Policy must state that no names or emails are collected'
 assert 'Newsletter Lists' not in policy, 'Retired newsletter collection policy returned'
 
 contact = read_page('contact')

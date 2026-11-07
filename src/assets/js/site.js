@@ -1,7 +1,7 @@
 const menu = document.querySelector('.mobile-menu');
 const toggle = menu.querySelector('summary');
-const mobile = window.matchMedia('(max-width: 640px)');
-const background = [...document.querySelectorAll('.skip-link, .brand, .desktop-nav, main, .site-footer')];
+const mobile = window.matchMedia('(max-width: 1000px)');
+const background = [...document.querySelectorAll('.skip-link, .brand, main, .site-footer')];
 const inertBeforeOpen = new Map();
 menu.dataset.enhanced = 'true';
 
@@ -64,43 +64,3 @@ window.addEventListener('pageshow', () => {
   if (hadFocus) (mobile.matches ? toggle : document.querySelector('.brand')).focus();
 });
 syncMenu();
-
-// Native anchors retain history, deep links, and a no-script fallback. Move
-// keyboard focus to the destination without interrupting native smooth scrolling.
-document.querySelectorAll('.scroll-indicator').forEach(link => {
-  link.addEventListener('click', () => {
-    const destination = document.getElementById(link.hash.slice(1));
-    if (destination) {
-      destination.setAttribute('tabindex', '-1');
-      destination.focus({ preventScroll: true });
-    }
-  });
-});
-
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const heroes = [...document.querySelectorAll('.hero:not(.hero--short)')];
-const intro = document.querySelector('.home-intro');
-let scheduled = false;
-function paintParallax() {
-  scheduled = false;
-  for (const hero of heroes) {
-    const bounds = hero.getBoundingClientRect();
-    const offset = reducedMotion.matches ? 0 : Math.max(0, Math.min(-bounds.top * .18, bounds.height * .18));
-    hero.style.setProperty('--parallax-offset', `${offset}px`);
-  }
-  if (intro) {
-    const bounds = intro.getBoundingClientRect();
-    const offset = reducedMotion.matches ? 0 : Math.max(-60, Math.min(60, -bounds.top * .08));
-    intro.style.setProperty('--background-offset', `${offset}px`);
-  }
-}
-function scheduleParallax() {
-  if (!scheduled) {
-    scheduled = true;
-    requestAnimationFrame(paintParallax);
-  }
-}
-window.addEventListener('scroll', scheduleParallax, { passive: true });
-window.addEventListener('resize', scheduleParallax);
-reducedMotion.addEventListener('change', scheduleParallax);
-paintParallax();

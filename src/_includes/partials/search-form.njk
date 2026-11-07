@@ -1,0 +1,7 @@
+<form class="site-search" action="/search/" method="get" role="search">
+  <label for="{{ searchId or 'site-search' }}">Search the site</label>
+  <div class="site-search-row">
+    <input id="{{ searchId or 'site-search' }}" name="q" type="search" placeholder="Try “revision”">
+    <button type="submit">Search</button>
+  </div>
+</form>

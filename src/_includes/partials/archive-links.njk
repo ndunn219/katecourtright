@@ -1,9 +1,8 @@
-<nav class="archive-links" aria-label="Musings archives">
-  <p><a href="/musings/">All musings</a></p>
-  <ul aria-label="Categories">
-    {% for category in collections.categories %}<li><a href="{{ category.url }}"{% if page.url == category.url %} aria-current="page"{% endif %}>{{ category.name }}</a></li>{% endfor %}
-  </ul>
-  <ul aria-label="Authors">
-    {% for author in collections.authors %}<li><a href="{{ author.url }}" data-author-id="{{ author.id }}"{% if page.url == author.url %} aria-current="page"{% endif %}>{{ author.name }}</a></li>{% endfor %}
+<nav class="archive-links" aria-labelledby="archive-links-title">
+  <p class="eyebrow" id="archive-links-title">Browse by topic</p>
+  <ul class="chips">
+    <li><a class="chip" href="/musings/"{% if page.url == "/musings/" %} aria-current="page"{% endif %}>All musings</a></li>
+    {% for category in collections.categories %}<li><a class="chip" href="{{ category.url }}"{% if page.url == category.url %} aria-current="page"{% endif %}>{{ category.name }}</a></li>
+    {% endfor %}
   </ul>
 </nav>
