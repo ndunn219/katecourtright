@@ -137,3 +137,12 @@ for asset in json.loads(Path('docs/asset-provenance.json').read_text()):
     assert path.suffix == '.webp' and path.read_bytes()[8:12] == b'WEBP', f'{path}: incorrect image type'
 
 print(f'PASS {PREFIX}: {len(pages)} pages, {count} local links/assets, CSS URLs, anchors, metadata and archive isolation')
+
+# Book data is structured: no HTML strings, and every retailer link is a plain URL.
+books = json.loads(Path('src/_data/books.json').read_text())
+assert sum(book.get('featured', False) for book in books) == 1, 'Exactly one featured book'
+for book in books:
+    assert '<' not in json.dumps(book), f'{book["slug"]}: HTML in book data'
+    for store in (store for fmt in book['formats'] for store in fmt['stores']):
+        assert urlsplit(store['url']).scheme == 'https', store
+        assert 'tag=' not in store['url'], f'{store["url"]}: unconfirmed affiliate tag'

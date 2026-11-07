@@ -1,13 +1,40 @@
 ---
 layout: layouts/base.njk
 ---
-{% from "partials/book.njk" import bookCard %}
-<main id="main" class="page-content library">
-  <h1 id="library">Library</h1>
-  {{ bookCard(books[0], true) }}
-  <div class="book-grid">
-  {% for book in books %}{% if not loop.first %}{{ bookCard(book, false) }}{% endif %}{% endfor %}
-  </div>
-  {{ content | safe }}
-  {% include "partials/reader-links.njk" %}
+{% from "partials/book.njk" import bookFormats, bookCard %}
+{% set featured = books | selectattr("featured") | first %}
+<main id="main" class="library">
+  <section class="library-intro" id="library">
+    <div class="wrap">
+      <p class="eyebrow">Library</p>
+      <h1>{{ heading }}</h1>
+      <p class="lede">{{ lede }}</p>
+    </div>
+  </section>
+
+  <section class="featured-book" aria-labelledby="featured-book-title">
+    <article class="wrap featured-book-grid">
+      <img class="featured-book-cover" src="{{ featured.cover.src }}" alt="{{ featured.cover.alt }}" width="{{ featured.cover.width }}" height="{{ featured.cover.height }}" fetchpriority="high">
+      <div>
+        <p class="badge">Latest book</p>
+        <h2 id="featured-book-title">{{ featured.title }}</h2>
+        <p class="book-subtitle">{{ featured.subtitle }}</p>
+        <p class="lede">{{ featured.summary }}</p>
+        {{ bookFormats(featured, false) }}
+      </div>
+    </article>
+  </section>
+
+  <section class="more-books" aria-labelledby="more-books-title">
+    <div class="wrap">
+      <p class="eyebrow">More stories</p>
+      <h2 id="more-books-title">Short stories &amp; a Pine Lodge Tale</h2>
+      <div class="book-grid">
+        {% for book in books %}{% if not book.featured %}{{ bookCard(book) }}{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% include "partials/follow-band.njk" %}
 </main>

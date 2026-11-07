@@ -1,7 +1,23 @@
-{% macro bookCard(book, featured) %}
-<article class="book{% if featured %} book--featured{% endif %}">
-  <img src="{{ book.image.src }}" alt="{{ book.image.alt }}" width="{{ book.image.width }}" height="{{ book.image.height }}"{% if not featured %} loading="lazy"{% endif %}>
-  <h2 class="book-title">{{ book.title }}{% if book.subtitle %}<br>{{ book.subtitle }}{% endif %}</h2>
-  <div class="book-links display-copy">{{ book.links | safe }}</div>
+{# Retailer links grouped by format. `compact` uses short store names (B&N). #}
+{% macro bookFormats(book, compact) %}
+<div class="formats{% if compact %} formats--compact{% endif %}">
+  {% for format in book.formats %}
+  <div class="format">
+    <p class="format-label">{{ format.label }}</p>
+    <ul class="chips">
+      {% for store in format.stores %}<li><a class="chip" href="{{ store.url }}">{% if compact and store.shortName %}<abbr title="{{ store.name }}">{{ store.shortName }}</abbr>{% else %}{{ store.name }}{% endif %}<span class="visually-hidden">: {{ book.title }} {{ format.label | lower }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro bookCard(book) %}
+<article class="book-card">
+  <img src="{{ book.cover.src }}" alt="{{ book.cover.alt }}" width="{{ book.cover.width }}" height="{{ book.cover.height }}" loading="lazy">
+  <h3>{{ book.title }}</h3>
+  {% if book.subtitle %}<p class="book-subtitle">{{ book.subtitle }}</p>{% endif %}
+  {{ bookFormats(book, true) }}
 </article>
 {% endmacro %}

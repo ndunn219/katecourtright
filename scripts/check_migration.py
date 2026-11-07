@@ -48,6 +48,17 @@ COPY_REPLACEMENTS = {
     )],
 }
 
+# Redesign issue #11 rebuilt these routes' copy into structured components, so
+# text order changed. Every original word (except the retired connective
+# labels) must still appear, and every original link is still checked below.
+RESTRUCTURED = {
+    '/short-stories-novellas/': {'available', 'at', 'for', 'download', '|'},
+}
+
+
+def words(text):
+    return re.findall(r"[\w’'&|]+", text.lower())
+
 
 def main(doc):
     return next(n for n in doc.walk() if n.tag == 'main')
@@ -65,6 +76,11 @@ def normalized_link(url):
     parts = urlsplit(url)
     if parts.netloc == 'engage.squarespace-mail.com':
         return normalized_link(parse_qs(parts.query)['u'][0])
+    # Issue #11 reduces Amazon product links to their canonical /dp/<ASIN> path
+    # (dropping /ref= search tracking and query strings, including the
+    # unconfirmed affiliate tag). The product identifier must still match.
+    if parts.hostname == 'www.amazon.com' and re.search(r'/dp/[A-Z0-9]{10}', parts.path):
+        return 'https://www.amazon.com' + re.sub(r'/ref=[^/]*$', '', parts.path)
     # Percent-encoded spaces and literal spaces in existing retailer queries agree.
     return unquote(url)
 
@@ -110,7 +126,11 @@ for p in inventory:
         expected_text = compact(block.text())
         for old, new in replacements:
             expected_text = expected_text.replace(compact(old), compact(new))
-        assert expected_text in actual_text, (route, 'missing original text', block.text()[:120])
+        if route in RESTRUCTURED:
+            missing = set(words(block.text())) - set(words(main(actual).text())) - RESTRUCTURED[route]
+            assert not missing, (route, 'restructured copy lost words', missing)
+        else:
+            assert expected_text in actual_text, (route, 'missing original text', block.text()[:120])
         for n in block.walk():
             if n.tag == 'a' and urlsplit(n.attrs.get('href', '')).netloc:
                 expected = normalized_link(n.attrs['href'])
