@@ -2,13 +2,8 @@
 layout: layouts/base.njk
 ---
 <main id="main">
-  {% if hero and image %}
-  <div class="hero{% if shortHero %} hero--short{% endif %}">
-    <img src="{{ image.src }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" fetchpriority="high">
-  </div>
-  {% endif %}
   <div id="page-content" class="page-content {{ pageClass or '' }}">
-    {% if image and not hero %}<img class="page-image" src="{{ image.src }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}">{% endif %}
+    {% if image %}<img class="page-image" src="{{ image.src }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}">{% endif %}
     <div class="page-copy prose">{{ content | safe }}</div>
   </div>
 </main>

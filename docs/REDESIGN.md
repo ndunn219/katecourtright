@@ -38,3 +38,10 @@ The November 2026 redesign (tracking issue #17) replaces the Squarespace-parity 
 - **Archives:** the category and author pages use the same year-grouped list and topic chips.
 - **Posts:** the layout is a 720px column with a back link, eyebrow (the first category, or "Musings"), H1, a "By Kate Courtright · date" meta row, a drop cap, and categories as "Filed under" links. Share links are Facebook, LinkedIn, Reddit and Email (`mailto:`); Twitter and Tumblr were dropped. Newer/Older are `--sea` cards. The duplicate meta line at the bottom was removed.
 - In the header, Musings is marked `aria-current="true"` on posts and archives, and `aria-current="page"` on the index.
+
+## Contact (#14)
+
+- Two columns: the lake photo, then the copy (eyebrow, "Contact Me", lede) and four linked tiles with inline stroke icons, ending with "Thank you!". The photo is 320px tall at ≤1000px and 200px at ≤720px.
+- **No email address (default decision applied).** The artboard's dashed "Optional: add a direct email link" note was left out. If Kate wants one later, add a fifth tile or a `mailto:` line here, and update the privacy policy.
+- "Be sure to follow me on Bookbub & Goodreads, too!" became the BookBub and Goodreads tiles. This is an approved replacement in `check_migration.py`. All four social URLs are unchanged and come from `src/_data/site.js`.
+- The `hero` and `shortHero` page-layout options were removed. `layouts/page.njk` is now just the plain content layout used by the secondary pages.

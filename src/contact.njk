@@ -1,22 +1,32 @@
 ---json
 {
-  "layout": "layouts/page.njk",
+  "layout": "layouts/base.njk",
   "title": "Contact",
   "permalink": "/contact/",
-  "pageClass": "contact-page",
-  "image": {
-    "src": "/assets/images/contact-lake.webp",
-    "alt": "Branches silhouetted against sky and water",
-    "width": 2500,
-    "height": 1875
-  },
-  "hero": true,
-  "shortHero": true,
-  "documentTitle": "Contact — Kate Courtright"
+  "documentTitle": "Contact — Kate Courtright",
+  "contactTiles": [
+    { "name": "BookBub", "key": "bookbub", "description": "Follow for new releases", "icon": "<path d=\"M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z\"/><path d=\"M4 21V5\"/><path d=\"M9 7h6\"/>" },
+    { "name": "Goodreads", "key": "goodreads", "description": "Reviews and reading lists", "icon": "<path d=\"M6 3h12v18l-6-4-6 4z\"/>" },
+    { "name": "Instagram", "key": "instagram", "description": "@kate_courtright_", "icon": "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\".6\"/>" },
+    { "name": "Facebook", "key": "facebook", "description": "kate.courtright.nyc", "icon": "<path d=\"M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z\"/><path d=\"M14.5 8H13a2 2 0 0 0-2 2v11\"/><path d=\"M9 13h5\"/>" }
+  ]
 }
 ---
-<h1>Contact Me</h1>
-<h2>I’m always happy to hear from readers!</h2>
-<h2>Be sure to follow me on <a href="https://www.bookbub.com/authors/kate-courtright">Bookbub</a> &amp; <a href="https://www.goodreads.com/author/show/19932939.Kate_Courtright?from_search=true&amp;from_srp=true">Goodreads</a>, too!</h2>
-<h2><em>Thank you!&nbsp;&nbsp;</em></h2>
-<p>Follow Kate on <a href="https://www.instagram.com/kate_courtright_/">Instagram</a> and <a href="https://www.facebook.com/kate.courtright.nyc">Facebook</a>.</p>
+<main id="main" class="contact">
+  <div class="contact-photo">
+    <img src="/assets/images/contact-lake.webp" alt="Branches silhouetted against sky and water" width="2500" height="1875" fetchpriority="high">
+  </div>
+  <div class="contact-copy">
+    <p class="eyebrow">Contact</p>
+    <h1>Contact Me</h1>
+    <p class="lede">I’m always happy to hear from readers!</p>
+    <ul class="contact-tiles">
+      {% for tile in contactTiles %}<li><a class="contact-tile" href="{{ site[tile.key] }}">
+        <span class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ tile.icon | safe }}</svg></span>
+        <span><span class="contact-tile-name">{{ tile.name }}</span> <span class="contact-tile-description">{{ tile.description }}</span></span>
+      </a></li>
+      {% endfor %}
+    </ul>
+    <p class="contact-thanks"><em>Thank you!</em></p>
+  </div>
+</main>

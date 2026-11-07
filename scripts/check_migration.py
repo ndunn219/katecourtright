@@ -57,6 +57,12 @@ COPY_REPLACEMENTS = {
         'whenever she can. Writes Short & long form love stories Lives New York City First story Cinderella eating spaghetti, age seven'
         ' You can follow me on BookBub & Goodreads, too!',
     )],
+    # Redesign issue #14: the follow line became four linked social tiles.
+    '/contact/': [(
+        'Be sure to follow me on Bookbub & Goodreads, too!',
+        'BookBub Follow for new releases Goodreads Reviews and reading lists'
+        ' Instagram @kate_courtright_ Facebook kate.courtright.nyc',
+    )],
     '/privacy-policy/': [(
         'Newsletter Lists All information collected from this site is used only by Kate and is managed by Kate and her web design team. It is not ever sold to a third party or made available for sale. The information collected, such as your email address, is stored in order for Kate to communicate directly with you through newsletters, promotions or special offers. If you do not wish to receive such emails, you may unsubscribe by clicking the link at the bottom of the newsletter.',
         'Contact and Signup Forms This website no longer offers a contact form, newsletter signup, or ARC signup, and does not collect names or email addresses through those forms. If you already receive a newsletter and wish to unsubscribe, use the unsubscribe link in that email.',
