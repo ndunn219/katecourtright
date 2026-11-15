@@ -68,40 +68,69 @@ sharing URL construction is covered by the offline checks. HTTP 403 can indicate
 bot restrictions; successful HTTP responses do not prove the destination's
 content is correct. Browser review remains necessary.
 
+## DNS and registrar
+
+DNS for `katecourtright.com` is hosted by **Cloudflare** in Nat Dunn's account
+(nameservers `hans.ns.cloudflare.com` and `piper.ns.cloudflare.com`, switched at
+Squarespace on November 14, 2026). The registration is moving from Squarespace to
+Cloudflare Registrar; see issue #19. Make all DNS changes in the Cloudflare
+dashboard. Squarespace's DNS panel no longer applies.
+
+Keep every record **DNS only** (grey cloud). GitHub Pages issues its own HTTPS
+certificate and needs DNS to resolve directly to GitHub; Cloudflare's proxy is
+optional and can be considered only after HTTPS is enforced and verified.
+
+Records before the GitHub Pages cutover (Cloudflare import, verified against
+Squarespace and public DNS on November 14, 2026; TTL Auto). This is the rollback
+reference for the website records:
+
+| Type | Name | Content | Purpose |
+| --- | --- | --- | --- |
+| A | `@` | `198.185.159.144`, `198.185.159.145`, `198.49.23.144`, `198.49.23.145` | Squarespace site |
+| CNAME | `www` | `ext-sq.squarespace.com` | Squarespace site |
+| CNAME | `_domainconnect` | Squarespace Domain Connect | Squarespace; removable after transfer |
+| MX | `@` | `aspmx.l.google.com` (1), `alt1`/`alt2.aspmx.l.google.com` (5), `alt3`/`alt4.aspmx.l.google.com` (10) | Google email |
+| TXT | `@` | `v=spf1 include:squarespace-mail.com ~all` | SPF |
+| TXT | `_dmarc` | `v=DMARC1; p=none` | DMARC |
+
 ## Domain cutover
 
-Proceed after the verification record's unresolved requirements are complete.
-Keep Squarespace hosting active throughout cutover and production verification.
+Proceed after the verification record's unresolved requirements are complete,
+or after the owner accepts launching with them open. Keep Squarespace hosting
+active throughout cutover and production verification.
 
-1. Save the current Squarespace configuration, the last good Pages deployment
-   SHA, the repository Actions variables, and a complete DNS zone export from
-   the authoritative provider. Public DNS queries are not a complete backup.
-   Record original website record values and TTLs. Preserve MX, SPF, DKIM,
-   DMARC, other TXT records, and all unrelated subdomains.
-2. Verify ownership in the GitHub account's Pages settings using GitHub's
-   supplied TXT record. Retain that record. Do not guess its value.
-3. In repository Settings → Pages, save `katecourtright.com` as the custom
-   domain. Set the repository Actions variable `SITE_ENV=production`, then run
-   the workflow on the reviewed `main` commit. Coordinate this with the DNS
-   change: adding the custom domain can redirect the repository preview before
-   DNS propagation finishes. The first hosted check may fail during that window.
-4. Replace only the website-routing records: apex A records become
-   `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`;
-   `www` CNAME becomes `ndunn219.github.io` (without a repository path).
-   Inspect any existing apex AAAA/ALIAS/ANAME records and remove or replace
-   conflicting website records; use GitHub's documented IPv6 values if retaining
-   IPv6. Do not change nameservers or unrelated records. Recheck the current
-   GitHub documentation before applying these values.
-5. Wait for DNS verification and certificate provisioning, then enable
-   **Enforce HTTPS** in Pages. Verify both apex and www certificates, HTTP → HTTPS,
-   and www → apex redirects, including a deep post URL. Check authoritative DNS
-   and multiple recursive resolvers; cached records can persist through the TTL.
+1. Confirm Cloudflare shows the zone as **Active** and the `.com` registry lists
+   only the Cloudflare nameservers:
+   `dig +norec katecourtright.com NS @a.gtld-servers.net`. Record the last good
+   Pages deployment SHA and the repository Actions variables.
+2. Verify ownership in the GitHub **account** settings (Settings → Pages →
+   Add a domain), not the repository settings. Add GitHub's supplied
+   `_github-pages-challenge-…` TXT record in Cloudflare (DNS only), wait for it to
+   resolve, then click **Verify**. Retain that record. Do not guess its value.
+3. In Cloudflare, replace only the website-routing records. Delete the four
+   Squarespace A records and add four apex A records: `185.199.108.153`,
+   `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. Edit the `www`
+   CNAME to `ndunn219.github.io` (without a repository path). All DNS only.
+   Do not touch MX, SPF, DMARC, or other records. Recheck the current GitHub
+   documentation before applying these values.
+4. In repository Settings → Pages, save `katecourtright.com` as the custom
+   domain, and set the repository Actions variable `SITE_ENV=production`. Adding
+   the custom domain redirects the repository preview, and the site shows a
+   GitHub 404 until the production deployment completes, so continue promptly.
+5. Wait for GitHub's DNS check and certificate provisioning (it took minutes on
+   November 14, 2026), then enable **Enforce HTTPS** in Pages. Run the workflow on
+   the reviewed `main` commit only after that: until HTTPS is enforced, the Pages
+   URL is `http://katecourtright.com` and the production build deliberately fails
+   its URL check without deploying. Verify both apex and www certificates,
+   HTTP → HTTPS, and www → apex redirects, including a deep post URL. Check
+   Cloudflare's authoritative answers and multiple recursive resolvers; cached
+   Squarespace records can persist through their TTL.
 6. Rerun the workflow and hosted checker at the custom domain. Review the browser
    matrix, keyboard navigation, search queries, and both EPUB downloads on the
    live site. Confirm there are no `/katecourtright/` asset paths in production.
-   Compare the DNS export to confirm email and unrelated records are unchanged.
-   Record the successful run, date, SHA, DNS results, and HTTPS results before
-   marking issue #6 complete. Retain Squarespace until all verification passes.
+   Confirm email and unrelated records match the table above. Record the
+   successful run, date, SHA, DNS results, and HTTPS results before marking
+   issue #6 complete. Retain Squarespace until all verification passes.
 
 GitHub Actions publishing does not require a `CNAME` file; Pages settings own the
 custom domain. See GitHub's [domain configuration](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site),
@@ -125,8 +154,8 @@ variable and domain settings. Verify the resulting deployment; do not rewrite
 shared history or assume rerunning an old preview workflow produces a valid
 custom-domain build.
 
-For a failed domain cutover, restore only the exact prior website DNS records
-and TTLs from the zone export. Leave all email records unchanged. Keep Squarespace
+For a failed domain cutover, restore in Cloudflare only the prior website
+records from the table under [DNS and registrar](#dns-and-registrar) (DNS only). Leave all email records unchanged. Keep Squarespace
 active and verify its site/certificate at apex and www after propagation. Keep
 the GitHub custom-domain association until DNS no longer routes to GitHub; then
 remove that domain, restore `SITE_ENV=preview`, and rerun the current workflow to

@@ -1,0 +1,47 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+sitemap: false
+---
+{% if site.robots == 'index, follow' -%}
+# AI training, AI answer and data-collection crawlers may not use this site.
+# Search engines (Googlebot, Bingbot, etc.) are unaffected.
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: aiHitBot
+User-agent: Amazonbot
+User-agent: anthropic-ai
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: ClaudeBot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Diffbot
+User-agent: DuckAssistBot
+User-agent: FacebookBot
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: GPTBot
+User-agent: img2dataset
+User-agent: Meta-ExternalAgent
+User-agent: MyCentralAIScraperBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PerplexityBot
+User-agent: Quora-Bot
+User-agent: TikTokSpider
+User-agent: YouBot
+Disallow: /
+
+User-agent: *
+Disallow: /search/
+
+Sitemap: https://katecourtright.com/sitemap.xml
+{%- else -%}
+# Preview build: not for indexing.
+User-agent: *
+Disallow: /
+{%- endif %}
