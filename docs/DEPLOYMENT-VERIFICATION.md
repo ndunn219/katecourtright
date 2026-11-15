@@ -70,8 +70,8 @@ touch behavior, computed fonts, image crops, or mobile overflow.
    against the build (redesign #15; see [REDESIGN.md](REDESIGN.md)). Confirm the
    wording with Kate before launch.
 3. Review the external destination failures above.
-4. Complete the [cutover and rollback procedure](DEPLOYMENT.md) with DNS-provider
-   access and a full DNS backup, then verify production apex/www,
+4. Complete the [cutover and rollback procedure](DEPLOYMENT.md) in Cloudflare DNS
+   (moved November 14, 2026; prior records are listed there), then verify production apex/www,
    HTTPS, internal URLs and downloads. Keep Squarespace available meanwhile.
 
 Issue #6 must remain open: preview publication is evidenced, but review of the
